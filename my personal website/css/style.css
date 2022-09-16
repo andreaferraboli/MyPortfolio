@@ -4208,7 +4208,6 @@ input:focus:-ms-input-placeholder {
 }
 .section-full {
   min-height: 100vh;
-  padding: 9rem 3rem;
   position: relative;
   opacity: 0;
   -webkit-transition: opacity 0.4s;
@@ -4474,8 +4473,7 @@ input:focus:-ms-input-placeholder {
   bottom: 0;
   right: 0;
 }
-.section-about #myCanvasContainer {
-  position: relative;
+.myCanvasContainer {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -7234,3 +7232,27 @@ body.blog-page {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
 }
+/* personal area */
+.text-right{
+  text-align: right;
+  -webkit-text-align: end;
+  -moz-text-align: end;
+  text-align: end;
+  font-size: 50%;
+  margin-left: 20%;
+  overflow: hidden;
+  white-space:nowrap
+}
+.text-left{
+  text-align: left;
+  -webkit-text-align: end;
+  -moz-text-align: end;
+  text-align: end;
+  font-size: 60%;
+  overflow: hidden;
+  white-space:nowrap
+}
+div#tag {
+    color: rgb(160, 39, 39);
+}
+   
