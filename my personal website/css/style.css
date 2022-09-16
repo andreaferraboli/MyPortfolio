@@ -3563,7 +3563,6 @@ select:-webkit-autofill:focus {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -3732,6 +3731,7 @@ select:-webkit-autofill:focus {
   height: 100%;
   left: 0;
   border: 1px solid #c91818;
+  margin: 0 auto;
 }
 .flat-button span.text {
   z-index: 4;
@@ -4458,20 +4458,19 @@ input:focus:-ms-input-placeholder {
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 .section-about .text-zone {
   width: 40%;
 }
-.section-about .skills-charts {
-  width: 60%;
+.section-about .tagcloud {
+  width: 100%;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
+  top: 20%;
+  bottom: 10%;
+  left: 60%;
 }
 .myCanvasContainer {
   height: 100%;
@@ -7238,10 +7237,15 @@ body.blog-page {
   -webkit-text-align: end;
   -moz-text-align: end;
   text-align: end;
-  font-size: 50%;
-  margin-left: 20%;
+  font-size: 60%;
   overflow: hidden;
-  white-space:nowrap
+  white-space:nowrap;
+  background: linear-gradient(to right, #ffffff, rgb(206, 12, 12), #0fa3bd);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
 }
 .text-left{
   text-align: left;
@@ -7250,9 +7254,30 @@ body.blog-page {
   text-align: end;
   font-size: 60%;
   overflow: hidden;
-  white-space:nowrap
+  white-space:nowrap;
+  background: linear-gradient(to right, #ffffff, rgb(206, 12, 12), #0fa3bd);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
-div#tag {
-    color: rgb(160, 39, 39);
+.tagcloud{
+  margin-left:0px;
+}
+.personal-job-area{
+  text-align: center;
+  justify-content: center;
+  -webkit-transition: 0.3s ease-out all;
+  -o-transition: 0.3s ease-out all;
+  transition: 0.3s ease-out all;
+}
+.aforisma{
+  font-size:160%;
+  background: linear-gradient(to right, #ffffff, rgb(187, 190, 7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  justify-content: center;
 }
    
