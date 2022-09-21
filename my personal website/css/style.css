@@ -287,6 +287,7 @@ h2 {
   color: var(--secondary-color);
   font-weight: 400;
   margin-top: 0;
+  opacity: 1;
   position: relative;
   margin-bottom: 40px;
   left: -10px;
@@ -322,16 +323,23 @@ h2:after {
 }
 h2 .blast,
 h1 .blast {
-  opacity: 0;
-  font-size: 50%;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: 400;
   /* display: inline-block; */
-  -webkit-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  
 }
 h1 .blast:hover,
 h2 .blast:hover {
   color: var(--secondary-color);
+  -webkit-transition: 0.3s ease-out all;
+  -o-transition: 0.3s ease-out all;
+  transition: 0.3s ease-out all;
+  -webkit-transform: skewX(-10deg);
+  -ms-transform: skewX(-10deg);
+  transform: skewX(-10deg);
 }
 .text-zone blockquote {
   border-left: 2px solid var(--third-color);
@@ -874,23 +882,7 @@ select:-webkit-autofill:focus {
 .contact-form form {
   position: relative;
 }
-.contact-form form:before {
-  font-family: "La Belle Aurore", cursive;
-  color: var(--primary-color);
-  font-size: 18px;
-  position: absolute;
-  bottom: 100%;
-  left: -1rem;
-}
-.contact-form form:after {
-  display: block !important;
-  font-family: "La Belle Aurore", cursive;
-  color: var(--primary-color);
-  font-size: 18px;
-  position: absolute;
-  top: 100%;
-  left: -1rem;
-}
+
 .contact-form ul {
   padding: 0;
   margin: 0;
@@ -900,7 +892,7 @@ select:-webkit-autofill:focus {
   margin: 0;
   list-style: none;
   margin-bottom: 10px;
-  opacity: 0;
+  opacity: 1;
   overflow: hidden;
   display: block;
   clear: both;
@@ -914,6 +906,9 @@ select:-webkit-autofill:focus {
 }
 .contact-form ul li.submit {
   overflow: hidden;
+  display: flex;
+align-items: center;
+justify-content: center;
 }
 .contact-form ul li.half:first-child {
   margin-left: 0;
@@ -1160,6 +1155,7 @@ input:focus:-ms-input-placeholder {
 }
 .section-full {
   min-height: 100vh;
+  min-width: 100vh;
   position: relative;
   opacity: 0;
   -webkit-transition: opacity 0.4s;
@@ -1343,7 +1339,7 @@ input:focus:-ms-input-placeholder {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-transition: opacity 0.5s, -webkit-transform 0.4s;
@@ -1422,7 +1418,7 @@ input:focus:-ms-input-placeholder {
   position: absolute;
   top: 20%;
   bottom: 10%;
-  left: 60%;
+  left: 50%;
 }
 .myCanvasContainer {
   height: 100%;
@@ -1534,6 +1530,7 @@ input:focus:-ms-input-placeholder {
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
+
 }
 .section-contact .text-zone {
   width: 50%;
@@ -1614,6 +1611,13 @@ input:focus:-ms-input-placeholder {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.back-video {
+  position : absolute ;
+  z-index : -1 ;
+  height: 100hv;
+  opacity: 0.3;
+  background-size: cover;
 }
 .section-blog .fake-big {
   margin: auto;
@@ -4232,4 +4236,18 @@ body.blog-page {
   text-align: center;
   justify-content: center;
 }
-   
+.aboutMe{
+ background-image: url('../img/background-home.png');
+ background-size: cover;
+ background-position: center;
+ background-color: var(--primary-color);
+
+}
+p>span{
+  color: var(--secondary-color);
+}
+.center-btn{
+  display: flex;
+align-items: center;
+justify-content: center;
+}  
