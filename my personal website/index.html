@@ -27,8 +27,6 @@
 
     <title>Andrea Ferraboli</title>
 
-
-
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -55,11 +53,12 @@
             </a>
         </div>
         <nav class="main-menu_nav">
-            <a rel="about" href="https://jacekjeznach.com/about/">About</a>
-            <a rel="skills" href="https://jacekjeznach.com/skills/">My Skills</a>
-            <a rel="work" href="https://jacekjeznach.com/portfolio/">Work</a>
-            <a rel="contact" href="https://jacekjeznach.com/contact/">Contact</a>
-            <a style="color: #c91818" href="https://jacekjeznach.com/wall/">Blog</a>
+            <a rel="about" href="#section-home">Home</a>
+            <a rel="about" href="#section-about">About</a>
+            <a rel="skills" href="#section-skills">My Skills</a>
+            <a rel="skills" href="#section-books">My Books</a>
+            <a rel="work" href="#section-work">Work</a>
+            <a rel="contact" href="#section-contact">Contact</a>
         </nav>
 
         <ul class="main-menu__social">
@@ -80,12 +79,12 @@
                     <section id="section-home" class="section-full section-home js-page-home loaded">
                         <div class="text-zone personal-job-area">
                             <h1 class="personal-job-area">
-                                <span class="text-left">Cybersecurity Specialist </span> <br />
-                                <span class="text-right">Chief Information Security Officer</span>
+                                <span class="text-job">Cybersecurity Specialist </span> <br />
+                                <span class="text-job">Chief Information Security Officer</span>
                                 <br />
-                                <span class="text-left">Senior Manager</span> <br />
-                                <span class="text-right">Counselor</span> <br />
-                                <span class="text-left">Mental Coach</span> <br />
+                                <span class="text-job">Senior Manager</span> <br />
+                                <span class="text-job">Counselor</span> <br />
+                                <span class="text-job">Mental Coach</span> <br />
                             </h1>
                             <br />
                             <p class="aforisma">
@@ -106,6 +105,52 @@
 
                     </section>
                 </div>
+                <section class="section-information">
+                    <div class="container h-50">
+                        <div class="row personal-profile">
+                          <div class="col-md-4 personal-profile__avatar">
+                            <img class="" src="img/img_avatar.png" alt="avatar">
+                          </div>
+                          <div class="col-md-8">
+                            <h2 class="personal-profile__name">Andrea Ferraboli</h2>
+                            <p class="personal-profile__work">Cybersecurity Specialist, mental coach</p>
+                            <div class="personal-profile__contacts">
+                              <dl class="contact-list contact-list__opacity-titles">
+                                <dt>Age:</dt>
+                                <dd>23</dd>
+                                <dt>Phone:</dt>
+                                <dd><a href="tel:+39 3339431378">(+39) 333 9431379</a></dd>
+                                <dt>Email:</dt>
+                                <dd><a href="mailto:andrew.ferro04@gmail.com">andrew.ferro04@gmail.com</a></dd>
+                                <dt>Address:</dt>
+                                <dd>Via G. A. Cavellini 1, 25134, Brescia</dd>
+                              </dl>
+                            </div>
+                            <p class="personal-profile__social">
+                                <a href="https://www.facebook.com/andrea.ferraboli.7/" target="_blank"><i class="bx bxl-facebook"></i></a>
+                                <a href="https://www.instagram.com/andrea_ferraboli/" target="_blank"><i class="bx bxl-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/andrea-ferraboli-845135188/" target="_blank"><i
+                                        class="bx bxl-linkedin"></i></a>
+                                <a href="https://github.com/andreaferraboli" target="_blank"><i class="bx bxl-github"></i></a>
+                                <a href="mailto: andrew.ferro04@gmail.com" target="_blank"><i class="bx bxl-gmail"></i></a>
+                                <a href="https://t.me/Ferro624" target="_blank"><i class="bx bxl-telegram"></i></a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="hello" class="cv-container h-50">
+                        <div class="row">
+                          <div>
+                            <p class="section__description">
+                                Professionista dell'Information Technology (IT) con una forte competenza nella gestione dell'IT, nella gestione della sicurezza IT e nell'architettura aziendale IT.
+                                Ho effettuato valutazioni e selezioni di strumenti di sicurezza IT e ho implementato con successo sistemi di sicurezza IT per proteggere la disponibilità, l'integrità e la riservatezza delle informazioni aziendali critiche e dei sistemi informativi.
+                                Persona altamente qualificata, dedita al lavoro di squadra ed entusiasta, con eccellenti capacità di leadership,motivazione e di comunicazione.
+                            </p>
+                            <a href="" class="section_btn site-btn">Download CV<i class="bx bx-download"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                </section>
                 <section id="section-about" data-load="about" class="section-full section-about js-way">
                     <div class="text-zone">
                         <header>
@@ -208,7 +253,39 @@
                         });
                     </script>
                 </section>
-                <section id="section-work" data-load="work" class="section-full section-work js-way">
+                <section class="section-education" id="section-education">
+                    <div class="rightbox">
+                        <div class="rb-container">
+                          <ul class="rb">
+                            <li class="rb-item" ng-repeat="itembx" data-date="2018-2022">
+                              <div class="timestamp">
+                                3rd May 2020<br> 7:00 PM
+                              </div>
+                              <div class="item-title">Chris Serrano posted a photo on your wall.</div>
+                    
+                            </li>
+                            <li class="rb-item" ng-repeat="itembx">
+                              <div class="timestamp">
+                                19th May 2020<br> 3:00 PM
+                              </div>
+                              <div class="item-title">Mia Redwood commented on your last post.</div>
+                    
+                            </li>
+                    
+                            <li class="rb-item" ng-repeat="itembx">
+                              <div class="timestamp">
+                                17st June 2020<br> 7:00 PM
+                              </div>
+                              <div class="item-title">Lucas McAlister just send you a message.</div>
+                    
+                            </li>
+                    
+                          </ul>
+                    
+                        </div>
+                      </div>
+                </section>
+                <section id="section-books" data-load="work" class="section-full section-work js-way">
                     <div class="fake-big">Work</div>
                     <div class="text-zone">
                         <div>
@@ -216,15 +293,11 @@
                                 <h2 aria-label="My Portfolio">
                                     <span class="blast" aria-hidden="true" style="opacity: 1">M</span><span
                                         class="blast" aria-hidden="true" style="opacity: 1">y</span>
-                                    <span class="blast" aria-hidden="true" style="opacity: 1">P</span><span
+                                    <span class="blast" aria-hidden="true" style="opacity: 1">B</span><span
                                         class="blast" aria-hidden="true" style="opacity: 1">o</span><span class="blast"
-                                        aria-hidden="true" style="opacity: 1">r</span><span class="blast"
-                                        aria-hidden="true" style="opacity: 1">t</span><span class="blast"
-                                        aria-hidden="true" style="opacity: 1">f</span><span class="blast"
                                         aria-hidden="true" style="opacity: 1">o</span><span class="blast"
-                                        aria-hidden="true" style="opacity: 1">l</span><span class="blast"
-                                        aria-hidden="true" style="opacity: 1">i</span><span class="blast"
-                                        aria-hidden="true" style="opacity: 1">o</span>
+                                        aria-hidden="true" style="opacity: 1">k</span><span class="blast"
+                                        aria-hidden="true" style="opacity: 1">s</span>
                                 </h2>
                             </header>
                             <p>
@@ -245,8 +318,6 @@
                             </a>
                         </div>
                     </div>
-                </section>
-                <section class="section-work">
                     <div id="home-magicwalle" class="fake-magicwall">
                         <ul>
                             <li>
@@ -330,9 +401,11 @@
                         </ul>
                     </div>
                 </section>
-                <section class="section-work">
-                    <h2>Compagnie in cui ho lavorato</h2>
-                    <div class="slider">
+                <section class="section-companies">
+                    <div class="col-3">
+                        <h2>Worked with</h2>
+                    </div>
+                    <div class="slider col-7">
                         <div class=" slide-track">
                             <div class="slide"><img
                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/2560px-IBM_logo.svg.png">
@@ -357,7 +430,46 @@
                         </div>
                     </div>
                 </section>
-
+                <section class="section-certificates" id="section-certificates">
+                    <div class="div-certificates">
+                        <h3 class="heading-77-copy"><strong class="bold-text-3-copy thin-copy">Certificazioni<br></strong>
+                        </h3>
+                        <div class="div-block-803">
+                            <div class="certificates"><a
+                                    href="https://www.coursera.org/account/accomplishments/specialization/GTALZL5FFT9E"
+                                    target="_blank" class="w-inline-block"><img
+                                        src="https://uploads-ssl.webflow.com/5f30faecbbdfa95fe4273bfb/5f327892a19e4f1abf0056ec_calarts.svg"
+                                        width="150" alt="" class="image-92"></a></div>
+                            <div class="certificates"><a
+                                    href="https://www.interaction-design.org/emre-devseren/certificate/course/fltqnHSHvQvx2QRBp4"
+                                    target="_blank" class="w-inline-block"><img
+                                        src="https://uploads-ssl.webflow.com/5f30faecbbdfa95fe4273bfb/5f3278b5db325b8a2f953fb9_idf%20certificate%20emre%20devseren.svg"
+                                        width="185" alt="" class="image-92"></a></div>
+                            <div class="certificates"><a href="https://www.futurelearn.com/certificates/odtd7zh"
+                                    target="_blank" class="w-inline-block"><img
+                                        src="https://uploads-ssl.webflow.com/5f30faecbbdfa95fe4273bfb/5f3278e6dfac67fda36bf0a8_accenture.svg"
+                                        width="150" alt="" class="image-92"></a></div>
+                            
+                        </div>
+                        <div class="div-block-803">
+                            <div class="certificates"><a
+                                    href="https://www.coursera.org/account/accomplishments/specialization/GTALZL5FFT9E"
+                                    target="_blank" class="w-inline-block"><img
+                                        src="https://uploads-ssl.webflow.com/5f30faecbbdfa95fe4273bfb/5f327892a19e4f1abf0056ec_calarts.svg"
+                                        width="150" alt="" class="image-92"></a></div>
+                            <div class="certificates"><a
+                                    href="https://www.interaction-design.org/emre-devseren/certificate/course/fltqnHSHvQvx2QRBp4"
+                                    target="_blank" class="w-inline-block"><img
+                                        src="https://uploads-ssl.webflow.com/5f30faecbbdfa95fe4273bfb/5f3278b5db325b8a2f953fb9_idf%20certificate%20emre%20devseren.svg"
+                                        width="185" alt="" class="image-92"></a></div>
+                            <div class="certificates"><a href="https://www.futurelearn.com/certificates/odtd7zh"
+                                    target="_blank" class="w-inline-block"><img
+                                        src="https://uploads-ssl.webflow.com/5f30faecbbdfa95fe4273bfb/5f3278e6dfac67fda36bf0a8_accenture.svg"
+                                        width="150" alt="" class="image-92"></a></div>
+                            
+                        </div>
+                    </div>
+                </section>
                 <section id="section-contact" data-load="contact" class="section-full section-contact js-way">
                     <video autoplay loop muted plays-inline class="back-video">
                         <source src="img/Unbroken - Motivational Video_Trim.mp4" type="video/mp4">
