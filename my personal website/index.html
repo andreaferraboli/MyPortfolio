@@ -278,8 +278,8 @@
                             ];
                             var settings = {
                                 entries: entries,
-                                width: 700,
-                                height: 600,
+                                width:1000,
+                                height: 700,
                                 radius: "80%",
                                 radiusMin: 100,
                                 bgDraw: true,
@@ -430,7 +430,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container-skills h-40">
+                    <div class="container-skills h-40" id="section-skills">
                         <div class="row section__resume progress-list js-progress-list">
                             <div class="col-md-12 container-skills-title">
                                 <p>general skills</p>
@@ -499,7 +499,7 @@
                                     <div class="progress-list__skill">
                                         <p>
                                             <span class="progress-list__skill-title">Blockchain Security</span>
-                                            <span class="progress-list__skill-value">60%</span>
+                                            <span class="progress-list__skill-value" id="span-1">60%</span>
                                         </p>
                                         <div class="progress">
                                             <div class="progress-bar" role="progressbar" aria-valuenow="60"
@@ -537,7 +537,8 @@
                 </section>
                 <section id="section-certificates" class="section-certificates">
                     <div class="container-work h-20">
-                        <div class="col-3 f-left">
+                        <div class="
+                         f-left">
                             <h2>Worked with</h2>
                         </div>
                         <div class="slider col-7 f-right">
@@ -799,7 +800,16 @@
             // Only completely visible elements return true:
             // var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
             // Partially visible elements return true:
-            isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+            isVisible = elemTop + 100 < window.innerHeight && elemBottom >= 0;
+            return isVisible;
+        }
+        function isIntoView(el) {
+            var rect = el.getBoundingClientRect();
+            var elemTop = rect.top;
+            var elemBottom = rect.bottom;
+
+            // Only completely visible elements return true:
+            var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
             return isVisible;
         }
         // If element is scrolled into view, fade it in
@@ -809,7 +819,17 @@
                     // this.style.animation = "fadeOutLeft 3s cubic-bezier(0.36, 0.07, 0.19, 0.97) both alternate-reverse ";
                     this.style.animation = "puff-in-center 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) both";
                 }
+                if (isScrolledIntoView(this) === false)
+                    this.style.animation = "";
+
             });
+            $(".progress-list__skill").each(function () {
+                if (isIntoView(this) === true) {
+                    let name = this.querySelectorAll("p .progress-list__skill-value ")[0].textContent.trim().replace('%', '');
+                    let temp_animation = "load_" + name + " 3s normal forwards";
+                    this.querySelectorAll("div div")[1].style.animation = temp_animation;
+                }
+            })
         });
     </script>
 
