@@ -1,0 +1,32 @@
+{
+    "books":[
+        {
+            "titolo": "Le 48 leggi del potere",
+            "autore": "Robert Greene",
+            "copertina":"https://www.lafeltrinelli.it/images/9788893881289_0_536_0_75.jpg",
+            "pagine":639,
+            "anno":2018
+        },
+        {
+            "titolo": "Come migliorare il proprio stato mentale, fisico e finanziario. Manuale di psicologia del cambiamento",
+            "autore": "Tony Robbins",
+            "copertina":"https://www.lafeltrinelli.it/images/9788830104334_0_536_0_75.jpg",
+            "pagine":660,
+            "anno":2020
+        },
+        {
+            "titolo": "Le 48 leggi del potere",
+            "autore": "Robert Greene",
+            "copertina":"https://www.lafeltrinelli.it/images/9788893881289_0_536_0_75.jpg",
+            "pagine":639,
+            "anno":2018
+        },
+        {
+            "titolo": "Come migliorare il proprio stato mentale, fisico e finanziario. Manuale di psicologia del cambiamento",
+            "autore": "Tony Robbins",
+            "copertina":"https://www.lafeltrinelli.it/images/9788830104334_0_536_0_75.jpg",
+            "pagine":660,
+            "anno":2020
+        }
+    ]
+}

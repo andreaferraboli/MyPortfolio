@@ -47,9 +47,6 @@ hr {
   margin-top: 2.7rem;
   margin-bottom: 2.7rem;
 }
-section{
-  /* animation:slideOutRight 3s cubic-bezier(0.42,0,0.58,1) alternate-reverse; */
-}
 .no-border {
   border: none;
 }
@@ -4199,7 +4196,6 @@ body.blog-page {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 .tagcloud {
   margin-left: 0px;

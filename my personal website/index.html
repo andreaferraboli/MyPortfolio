@@ -73,10 +73,9 @@
     </menu>
     <div id="ajaxify">
         <div class="page-outer">
-            <span class="tags top-tags"> </span>
             <div class="page-inner">
                 <div class="aboutMe">
-                    <section id="section-home" class="section-full section-home js-page-home loaded">
+                    <section id="section-home" class="section-full section-home js-page-home loaded scroll">
                         <div class="text-zone personal-job-area">
                             <h1 class="personal-job-area">
                                 <span class="text-job">Cybersecurity Specialist </span> <br />
@@ -105,7 +104,7 @@
 
                     </section>
                 </div>
-                <section id="section-information" class="section-information">
+                <section id="section-information" class="section-information scroll">
                     <div class="container h-50">
                         <div class="row personal-profile">
                             <div class="col-md-4 personal-profile__avatar">
@@ -207,7 +206,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="section-about" data-load="about" class="section-full section-about js-way">
+                <section id="section-about" data-load="about" class="section-full section-about js-way scroll">
                     <div class="text-zone">
                         <header>
                             <h2 aria-label="Me, Myself and I">
@@ -278,7 +277,7 @@
                             ];
                             var settings = {
                                 entries: entries,
-                                width:1000,
+                                width: 1000,
                                 height: 700,
                                 radius: "80%",
                                 radiusMin: 100,
@@ -309,7 +308,7 @@
                         });
                     </script>
                 </section>
-                <section class="section-education" id="section-education">
+                <section class="section-education scroll" id="section-education">
                     <div class="h-60">
                         <div class="rightbox f-left">
                             <div class="center-btn">
@@ -535,7 +534,7 @@
                     </div>
 
                 </section>
-                <section id="section-certificates" class="section-certificates">
+                <section id="section-certificates" class="section-certificates scroll">
                     <div class="container-work h-20">
                         <div class="
                          f-left">
@@ -606,7 +605,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="section-books" data-load="work" class="section-full section-work js-way">
+                <section id="section-books" data-load="work" class="section-full section-work js-way scroll">
                     <div class="fake-big">Work</div>
                     <div class="text-zone">
                         <div>
@@ -627,11 +626,11 @@
                                 diventare una persona migliore e trasformando le mie debolezze
                                 in punti di forza. <br />
                                 Sei interessato a scoprirli tutti?
-                                <a rel="work" href="libri.html">I miei libri</a>
+                                <a  href="./books.html">I miei libri</a>
                             </p>
                         </div>
                         <div>
-                            <a rel="work" href="/portfolio/" class="flat-button">
+                            <a rel="work" href="./books.html" class="flat-button">
                                 <div>
                                     <span class="bg"></span> <span class="base"></span>
                                     <span class="text">scopri di più!</span>
@@ -723,7 +722,7 @@
                     </div>
                 </section>
 
-                <section id="section-contact" data-load="contact" class="section-full section-contact js-way">
+                <section id="section-contact" data-load="contact" class="section-full section-contact js-way scroll">
                     <video autoplay loop muted plays-inline class="back-video">
                         <source src="img/Unbroken - Motivational Video_Trim.mp4" type="video/mp4">
                     </video>
@@ -831,8 +830,26 @@
                 }
             })
         });
-    </script>
 
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.scrollify({
+                section: '.scroll',
+                sectionName: 'section- name',
+                easing: "easeOutExpo",
+                scrollSpeed: 1900,
+                offset: 0,
+                setHeights: true,
+                updateHash: true,
+                scrollbars: true,
+                overflowScroll: true,
+                touchScroll: true,
+            })
+        });
+
+    </script>
     <script src="https://jacekjeznach.com/wp-content/themes/new/js/vendor/osciliator.js" id="oscil"></script>
     <script src="https://jacekjeznach.com/wp-content/themes/new/js/vendor/tagcanvas.js" id="tagcanvas"></script>
 </body>
