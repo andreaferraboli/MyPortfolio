@@ -4409,6 +4409,9 @@ p > span {
   align-items: center;
   font-size: 2rem;
 }
+.h-10{
+  height: 10%;
+}
 .h-20{
   height: 20%;
 }

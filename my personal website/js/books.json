@@ -1,0 +1,44 @@
+{
+    "books": [
+        {
+            "titolo": "Le 48 leggi del potere",
+            "autore": "Robert Greene",
+            "copertina": "https://www.lafeltrinelli.it/images/9788893881289_0_536_0_75.jpg",
+            "descrizione": "Qualcuno è attratto dal potere ma, dopo averlo conquistato con grande abilità, lo perde per qualche errore imperdonabile. Altri, sulla strada del potere, si spingono oltre le proprie possibilità: vanno troppo avanti. Oppure, spesso, rimangono indietro e perdono perché osano troppo poco. E poi ci sono quelli che sanno cavalcare il potere e riescono a utilizzarlo senza sbagliare una mossa: ogni loro gesto, con istintiva intelligenza, è in armonia con le 48 leggi che lo governano. Scrittori e filosofi si sono interrogati lungamente sulle leggi che reggono il potere. Hanno cercato di far affiorare, dai successi e dalle sconfitte di chi ci ha preceduto, indicazioni che possano guidarci nel nostro quotidiano. Disincantato, apparentemente amorale e cinico ma assolutamente realistico e denso di indicazioni: un libro che nasce dall'analisi di trenta secoli di storia del potere, dal pensiero dei più profondi strateghi, dall'esperienza di guerrieri e leader carismatici, conquistatori di nazioni e manipolatori di folle.",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/48-leggi-del-potere-libro-robert-greene/e/9788893881289",
+            "pagine": 639,
+            "anno": 2018
+        },
+        {
+            "titolo": "Come migliorare il proprio stato mentale, fisico e finanziario. Manuale di psicologia del cambiamento",
+            "autore": "Tony Robbins",
+            "copertina": "https://www.lafeltrinelli.it/images/9788830104334_0_536_0_75.jpg",
+            "descrizione": "Di fronte al destino e agli ostacoli che mettono a repentaglio la nostra felicità, viene spontaneo credere che l'unica reazione sensata sia quella di convivere serenamente con i propri fallimenti. Caterve di libri e guru di ogni sorta hanno teorizzato l'accettazione passiva dei propri mali, dimenticando che rimuovere i propri desideri non fa che aumentare il livello di frustrazione di ciascun individuo. Anthony Robbins insegna a proiettarsi nella giusta dimensione mentale per realizzare le proprie aspirazioni, lasciando da parte la paura di sbagliare. Un libro a cui fare riferimento ogni volta che la vita presenta una nuova sfida così da affrontarla con coraggio ed energia per migliorare la qualità della propria esistenza.",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/come-migliorare-proprio-stato-mentale-libro-anthony-robbins/e/9788830104334",
+            "pagine": 660,
+            "anno": 2020
+        },
+        {
+            "titolo": "Le 48 leggi del potere",
+            "autore": "Robert Greene",
+            "copertina": "https://www.lafeltrinelli.it/images/9788893881289_0_536_0_75.jpg",
+            "descrizione": "Qualcuno è attratto dal potere ma, dopo averlo conquistato con grande abilità, lo perde per qualche errore imperdonabile. Altri, sulla strada del potere, si spingono oltre le proprie possibilità: vanno troppo avanti. Oppure, spesso, rimangono indietro e perdono perché osano troppo poco. E poi ci sono quelli che sanno cavalcare il potere e riescono a utilizzarlo senza sbagliare una mossa: ogni loro gesto, con istintiva intelligenza, è in armonia con le 48 leggi che lo governano. Scrittori e filosofi si sono interrogati lungamente sulle leggi che reggono il potere. Hanno cercato di far affiorare, dai successi e dalle sconfitte di chi ci ha preceduto, indicazioni che possano guidarci nel nostro quotidiano. Disincantato, apparentemente amorale e cinico ma assolutamente realistico e denso di indicazioni: un libro che nasce dall'analisi di trenta secoli di storia del potere, dal pensiero dei più profondi strateghi, dall'esperienza di guerrieri e leader carismatici, conquistatori di nazioni e manipolatori di folle.",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/48-leggi-del-potere-libro-robert-greene/e/9788893881289",
+            "pagine": 639,
+            "anno": 2018
+        },
+        {
+            "titolo": "Come migliorare il proprio stato mentale, fisico e finanziario. Manuale di psicologia del cambiamento",
+            "autore": "Tony Robbins",
+            "copertina": "https://www.lafeltrinelli.it/images/9788830104334_0_536_0_75.jpg",
+            "descrizione": "Di fronte al destino e agli ostacoli che mettono a repentaglio la nostra felicità, viene spontaneo credere che l'unica reazione sensata sia quella di convivere serenamente con i propri fallimenti. Caterve di libri e guru di ogni sorta hanno teorizzato l'accettazione passiva dei propri mali, dimenticando che rimuovere i propri desideri non fa che aumentare il livello di frustrazione di ciascun individuo. Anthony Robbins insegna a proiettarsi nella giusta dimensione mentale per realizzare le proprie aspirazioni, lasciando da parte la paura di sbagliare. Un libro a cui fare riferimento ogni volta che la vita presenta una nuova sfida così da affrontarla con coraggio ed energia per migliorare la qualità della propria esistenza.",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/come-migliorare-proprio-stato-mentale-libro-anthony-robbins/e/9788830104334",
+            "pagine": 660,
+            "anno": 2020
+        }
+    ]
+}
