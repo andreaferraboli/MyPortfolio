@@ -8,21 +8,28 @@ Books.books.forEach((book) => {
       <img src="${book.copertina}">
       </div>
       <div class="description">
-        <div class="h-10">
+        <div class="center h-30">
             <h2>${book.titolo}</h2>
         </div>
-        <div class="h-10">
-            <h4>${book.autore}</h4>
+        <div class="left h-10">
+            <h1><span class="span">Autore:</span> ${book.autore}</h1>
         </div>
-        <div class="h-10">
-            <h1>${book.anno}</h1>
+        <div class="left h-10">
+            <h1><span class="span">Anno: </span>${book.anno}</h1>
         </div>
-        <div class="h-50">
-            <p>${book.descrizione}</p>
+        <div class="left h-10">
+            <h1><span class="span">Numero pagine: </span>${book.pagine}</h1>
         </div>
-        <div class="h-20">
-        <button href="${book.link}">Add to Cart</button>
-            <button>Wishlist</button>
+        <div class="left h-10">
+            <h1><span class="span">Categoria: </span>${book.categoria}</h1>
+        </div>
+        <div class="left h-10">
+            <h1><span class="span">Lingua: </span>${book.lingua}</h1>
+        </div>
+        
+        <div class="center h-20">
+        <button><a target="_blank" href="${book.link}"></a>Scopri di più!</button>
+        <button><a target="_blank" href="${book.amazon}"></a>Compra</button>
         </div>
       </div>
     </div>
@@ -30,3 +37,6 @@ Books.books.forEach((book) => {
   let section = document.getElementById("section-books");
   section.innerHTML += div_book;
 });
+{/* <div class="center h-40">
+            <p>${book.descrizione}</p>
+        </div> */}
