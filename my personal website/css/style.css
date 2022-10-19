@@ -341,15 +341,8 @@ h2 .blast:hover {
   -ms-transform: skewX(-10deg);
   transform: skewX(-10deg);
 }
-.text-zone blockquote {
-  border-left: 2px solid var(--third-color);
-  background: #363636;
-  margin: 2rem 0;
-  padding: 1.5rem 3rem;
-}
-.text-zone header {
-  position: relative;
-}
+
+
 .text-zone p {
   position: relative;
   margin-bottom: 1.5%;
@@ -363,70 +356,7 @@ h2 .blast:hover {
   font-size: 3rem;
   margin: 0;
 }
-.text-zone pre {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 1rem;
-  position: relative;
-  max-width: 100%;
-  color: var(--text-color);
-  overflow: auto;
-}
-.text-zone--secondary {
-  line-height: 1.7;
-  font-size: 1.8rem;
-}
-.text-zone--secondary .syntaxhighlighter table td.code {
-  padding: 2rem !important;
-}
-.text-zone--secondary img {
-  width: 100%;
-  height: auto;
-}
-.text-zone--secondary h1:after {
-  left: 0;
-  margin-left: -2rem;
-  margin-top: 0;
-  top: 90%;
-}
-.text-zone--secondary h2 {
-  margin-top: 4rem;
-  font-size: 4.5rem;
-  line-height: 4.5rem;
-}
-.text-zone--secondary h3 {
-  font-size: 3rem;
-  margin-top: 4rem;
-  line-height: 4.5rem;
-}
-.text-zone--secondary h2:before {
-  margin-top: -3rem;
-}
-.text-zone--secondary h2:after {
-  bottom: -3rem;
-}
-.text-zone--secondary figure {
-  margin: 0;
-}
-.text-zone--secondary h1 {
-  font-size: 7.3rem;
-  line-height: 6.7rem;
-}
-.text-zone--secondary p:before,
-.text-zone--secondary p:after {
-  display: none;
-}
-.text-zone--secondary table.selectors th {
-  background-color: var(--third-color);
-  color: var(--text-color);
-  padding: 15px;
-}
-.text-zone--secondary table.selectors td {
-  border: 1px dotted rgba(255, 255, 255, 0.3);
-  padding: 10px;
-}
-.text-zone--secondary table.selectors td:first-child {
-  color: #05fdd8;
-}
+
 .animation-logo {
   -webkit-animation: animation2 1000ms linear both;
   animation: animation2 1000ms linear both;
@@ -1152,20 +1082,12 @@ input:focus:-ms-input-placeholder {
 .section-full {
   min-height: 100vh;
   min-width: 100vh;
-  position: relative;
-  opacity: 0;
-  -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
-  transition: opacity 0.4s;
 }
 .section-full .text-zone {
   padding-left: 5rem;
 }
 .section-full--nopadding {
   padding: 0 !important;
-}
-.window-loaded .section-full {
-  opacity: 1;
 }
 .section-full--nomin {
   min-height: 0;
@@ -1264,7 +1186,6 @@ input:focus:-ms-input-placeholder {
 .section-work {
   overflow: hidden;
   min-height: 300px;
-  z-index: -1;
 }
 .section-work .text-zone {
   display: -webkit-box;
