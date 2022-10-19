@@ -11,6 +11,239 @@
             "anno": 2018,
             "lingua":"Italiano"
         },
+        
+        {
+            "titolo": "Come migliorare il proprio stato mentale, fisico e finanziario. Manuale di psicologia del cambiamento",
+            "autore": "Tony Robbins",
+            "copertina": "https://www.lafeltrinelli.it/images/9788830104334_0_536_0_75.jpg",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/come-migliorare-proprio-stato-mentale-libro-anthony-robbins/e/9788830104334",
+            "amazon":"https://www.amazon.it/48-leggi-del-potere/dp/8893881284/ref=sr_1_2?keywords=48+leggi+del+potere&qu=eyJxc2MiOiIxLjMzIiwicXNhIjoiMC42OSIsInFzcCI6IjAuNzEifQ%3D%3D",
+            "pagine": 660,
+            "anno": 2020,
+            "lingua":"Italiano"
+        },
+        {
+            "titolo": "Come ottenere il meglio da sé e dagli altri. Il manuale del successo nella vita e nel lavoro",
+            "autore": "Tony Robbins",
+            "copertina": "https://www.lafeltrinelli.it/images/9788830103146_0_536_0_75.jpg",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/come-ottenere-meglio-da-se-libro-anthony-robbins/e/9788830103146?queryId=9d427daea5a712f0bc675382fda20370",
+            "amazon":"",
+            "pagine": 516,
+            "anno": 2020,
+            "lingua":"Italiano"
+        },
+        {
+            "titolo": "Passi da gigante",
+            "autore": "Tony Robbins",
+            "copertina": "https://www.lafeltrinelli.it/images/9788830102323_0_0_200_75.jpg",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/passi-da-gigante-libro-anthony-robbins/e/9788830102323",
+            "amazon":"https://www.amazon.it/48-leggi-del-potere/dp/8893881284/ref=sr_1_2?keywords=48+leggi+del+potere&qu=eyJxc2MiOiIxLjMzIiwicXNhIjoiMC42OSIsInFzcCI6IjAuNzEifQ%3D%3D",
+            "pagine": 240,
+            "anno": 2020,
+            "lingua":"Italiano"
+        },
+        {
+            "titolo": "Soldi. Domina il gioco. Sette semplici passi per la libertà finanziaria",
+            "autore": "Tony Robbins",
+            "copertina": "https://www.lafeltrinelli.it/images/9788830104334_0_536_0_75.jpg",
+            "categoria":"Educazione Finanziaria",
+            "link":"https://www.lafeltrinelli.it/soldi-domina-gioco-sette-semplici-libro-anthony-robbins/e/9788845297540",
+            "amazon":"https://www.amazon.it/48-leggi-del-potere/dp/8893881284/ref=sr_1_2?keywords=48+leggi+del+potere&qu=eyJxc2MiOiIxLjMzIiwicXNhIjoiMC42OSIsInFzcCI6IjAuNzEifQ%3D%3D",
+            "pagine": 688,
+            "anno": 2020,
+            "lingua":"Italiano"
+        },
+        
+        {
+            "titolo": "Scopri il leader che è in te",
+            "autore": "Dale Carniege",
+            "copertina": "https://www.lafeltrinelli.it/images/9788845295027_0_536_0_75.jpg",
+            "categoria":"Leadership",
+            "link":"https://www.lafeltrinelli.it/scopri-leader-che-in-te-libro-dale-carnegie/e/9788845295027?queryId=7ee4ae9697b89dd810171b1ecd1ecfb9",
+            "amazon":"",
+            "pagine": 256,
+            "anno": 2017,
+            "lingua":"Italiano"
+        },
+        {
+            "titolo": "Come raggiungere il successo",
+            "autore": "Dale Carniege",
+            "copertina": "https://www.lafeltrinelli.it/images/9788893881289_0_536_0_75.jpg",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/48-leggi-del-potere-libro-robert-greene/e/9788893881289",
+            "amazon":"",
+            "pagine": 639,
+            "anno": 2018,
+            "lingua":"Italiano"
+        },
+        {
+            "titolo": "Le cinque qualità essenziali per costruire un rapporto con gli altri, avere successo ed essere felici",
+            "autore": "Dale Carniege",
+            "copertina": "https://www.lafeltrinelli.it/images/9788845298035_0_536_0_75.jpg",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/cinque-qualita-essenziali-per-costruire-libro-dale-carnegie/e/9788845298035?queryId=7ee4ae9697b89dd810171b1ecd1ecfb9",
+            "amazon":"",
+            "pagine": 288,
+            "anno": 2018,
+            "lingua":"Italiano"
+        },
+        {
+            "titolo": "10 comandamenti per una vita gratificante",
+            "autore": "Dale Carniege",
+            "copertina": "https://www.lafeltrinelli.it/images/9788893881289_0_536_0_75.jpg",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/48-leggi-del-potere-libro-robert-greene/e/9788893881289",
+            "amazon":"",
+            "pagine": 639,
+            "anno": 2018,
+            "lingua":"Italiano"
+        },
+        {
+            "titolo": "Come parlare in pubblico e convincere gli altri",
+            "autore": "Dale Carniege",
+            "copertina": "https://www.lafeltrinelli.it/images/9788845294952_0_150_0_75.jpg",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/48-leggi-del-potere-libro-robert-greene/e/9788893881289",
+            "amazon":"",
+            "pagine": 639,
+            "anno": 2018,
+            "lingua":"Italiano"
+        },
+        {
+            "titolo": "Scopri il leader che è in te",
+            "autore": "Dale Carniege",
+            "copertina": "https://www.lafeltrinelli.it/images/9788893881289_0_536_0_75.jpg",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/48-leggi-del-potere-libro-robert-greene/e/9788893881289",
+            "amazon":"",
+            "pagine": 639,
+            "anno": 2018,
+            "lingua":"Italiano"
+        },
+        {
+            "titolo": "Come raggiungere il successo",
+            "autore": "Dale Carniege",
+            "copertina": "https://www.lafeltrinelli.it/images/9788893881289_0_536_0_75.jpg",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/48-leggi-del-potere-libro-robert-greene/e/9788893881289",
+            "amazon":"",
+            "pagine": 639,
+            "anno": 2018,
+            "lingua":"Italiano"
+        },
+        {
+            "titolo": "5 qualità essenziali per un leader di successo",
+            "autore": "Dale Carniege",
+            "copertina": "https://www.lafeltrinelli.it/images/9788893881289_0_536_0_75.jpg",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/48-leggi-del-potere-libro-robert-greene/e/9788893881289",
+            "amazon":"",
+            "pagine": 639,
+            "anno": 2018,
+            "lingua":"Italiano"
+        },
+        {
+            "titolo": "10 comandamenti per una vita gratificante",
+            "autore": "Dale Carniege",
+            "copertina": "https://www.lafeltrinelli.it/images/9788893881289_0_536_0_75.jpg",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/48-leggi-del-potere-libro-robert-greene/e/9788893881289",
+            "amazon":"",
+            "pagine": 639,
+            "anno": 2018,
+            "lingua":"Italiano"
+        },
+        {
+            "titolo": "Come parlare in pubblico e convincere gli altri",
+            "autore": "Dale Carniege",
+            "copertina": "https://www.lafeltrinelli.it/images/9788845294952_0_150_0_75.jpg",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/48-leggi-del-potere-libro-robert-greene/e/9788893881289",
+            "amazon":"",
+            "pagine": 639,
+            "anno": 2018,
+            "lingua":"Italiano"
+        },
+        {
+            "titolo": "Scopri il leader che è in te",
+            "autore": "Dale Carniege",
+            "copertina": "https://www.lafeltrinelli.it/images/9788893881289_0_536_0_75.jpg",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/48-leggi-del-potere-libro-robert-greene/e/9788893881289",
+            "amazon":"",
+            "pagine": 639,
+            "anno": 2018,
+            "lingua":"Italiano"
+        },
+        {
+            "titolo": "Come raggiungere il successo",
+            "autore": "Dale Carniege",
+            "copertina": "https://www.lafeltrinelli.it/images/9788893881289_0_536_0_75.jpg",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/48-leggi-del-potere-libro-robert-greene/e/9788893881289",
+            "amazon":"",
+            "pagine": 639,
+            "anno": 2018,
+            "lingua":"Italiano"
+        },
+        {
+            "titolo": "5 qualità essenziali per un leader di successo",
+            "autore": "Dale Carniege",
+            "copertina": "https://www.lafeltrinelli.it/images/9788893881289_0_536_0_75.jpg",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/48-leggi-del-potere-libro-robert-greene/e/9788893881289",
+            "amazon":"",
+            "pagine": 639,
+            "anno": 2018,
+            "lingua":"Italiano"
+        },
+        {
+            "titolo": "10 comandamenti per una vita gratificante",
+            "autore": "Dale Carniege",
+            "copertina": "https://www.lafeltrinelli.it/images/9788893881289_0_536_0_75.jpg",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/48-leggi-del-potere-libro-robert-greene/e/9788893881289",
+            "amazon":"",
+            "pagine": 639,
+            "anno": 2018,
+            "lingua":"Italiano"
+        },
+        {
+            "titolo": "Come parlare in pubblico e convincere gli altri",
+            "autore": "Dale Carniege",
+            "copertina": "https://www.lafeltrinelli.it/images/9788845294952_0_150_0_75.jpg",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/48-leggi-del-potere-libro-robert-greene/e/9788893881289",
+            "amazon":"",
+            "pagine": 639,
+            "anno": 2018,
+            "lingua":"Italiano"
+        },
+        {
+            "titolo": "Come migliorare il proprio stato mentale, fisico e finanziario. Manuale di psicologia del cambiamento",
+            "autore": "Tony Robbins",
+            "copertina": "https://www.lafeltrinelli.it/images/9788830104334_0_536_0_75.jpg",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/come-migliorare-proprio-stato-mentale-libro-anthony-robbins/e/9788830104334",
+            "amazon":"https://www.amazon.it/48-leggi-del-potere/dp/8893881284/ref=sr_1_2?keywords=48+leggi+del+potere&qu=eyJxc2MiOiIxLjMzIiwicXNhIjoiMC42OSIsInFzcCI6IjAuNzEifQ%3D%3D",
+            "pagine": 660,
+            "anno": 2020,
+            "lingua":"Italiano"
+        },
+        {
+            "titolo": "Le 48 leggi del potere",
+            "autore": "Robert Greene",
+            "copertina": "https://www.lafeltrinelli.it/images/9788893881289_0_536_0_75.jpg",
+            "categoria":"Professioni e successo",
+            "link":"https://www.lafeltrinelli.it/48-leggi-del-potere-libro-robert-greene/e/9788893881289",
+            "amazon":"",
+            "pagine": 639,
+            "anno": 2018,
+            "lingua":"Italiano"
+        },
         {
             "titolo": "Come migliorare il proprio stato mentale, fisico e finanziario. Manuale di psicologia del cambiamento",
             "autore": "Tony Robbins",
@@ -22,5 +255,6 @@
             "anno": 2020,
             "lingua":"Italiano"
         }
+
     ]
 }
