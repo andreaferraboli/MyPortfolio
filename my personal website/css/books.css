@@ -77,12 +77,21 @@ p {
   height: 100%;
 }
 
-button {
+.link {
   border-color: transparent;
   border-radius: 20px;
   font-size: 100%;
-  color: black;
+  color: var(--text-color);
   background-color: var(--secondary-color);
+  width: 30%;
+  margin-right: 5px;
+}
+.amazon {
+  border-color: transparent;
+  border-radius: 20px;
+  font-size: 100%;
+  color: var(--text-color);
+  background-color: var(--third-color);
   width: 30%;
   margin-right: 5px;
 }

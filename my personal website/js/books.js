@@ -29,8 +29,8 @@ Books.books.forEach((book) => {
         </div>
         
         <div class="center h-20">
-        <button><a target="_blank" href="${book.link}"></a>Scopri di più!</button>
-        <button><a target="_blank" href="${book.amazon}"></a>Compra</button>
+        <button class="link"><a target="_blank" href="${book.link}"></a>Scopri di più!</button>
+        <button class="amazon"><a target="_blank" href="${book.amazon}"></a>Compra</button>
         </div>
       </div>
     </div>

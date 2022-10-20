@@ -1,7 +1,9 @@
 @import url("palette.css");
 @import url("animation.css");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
-
+*{
+  font-family: 'Marcellus' !important;
+}
 html {
   font-size: 62.5%;
   min-width: 320px;
@@ -36,7 +38,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #019e86;
+  color: var(--third-color);
 }
 img {
   max-width: 100%;
