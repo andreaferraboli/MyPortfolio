@@ -1,7 +1,8 @@
 import Books from "./books.json" assert { type: "json" };
-console.log(Books);
+// let somma=0;
 Books.books.forEach((book) => {
-  console.log(book);
+  // somma+=book.pagine;
+  
   let div_book = `
     <div class="card">
       <div class="photo">
@@ -37,6 +38,7 @@ Books.books.forEach((book) => {
   let section = document.getElementById("section-books");
   section.innerHTML += div_book;
 });
+// console.log(somma);
 {/* <div class="center h-40">
             <p>${book.descrizione}</p>
         </div> */}
