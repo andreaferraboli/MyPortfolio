@@ -1326,11 +1326,15 @@ input:focus:-ms-input-placeholder {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
 }
-.section-about .text-zone {
+
+.text-zone{
   width: 40%;
 }
-.section-about .tagcloud {
+.section-about{
   width: 100%;
+}
+.tagcloud {
+  width: 60%;
 }
 .myCanvasContainer {
   height: 100%;

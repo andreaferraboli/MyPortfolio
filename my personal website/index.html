@@ -1,4 +1,4 @@
-<html lang="en-US" >
+<html lang="en-US">
 
 <head>
     <script type="text/javascript">
@@ -111,7 +111,7 @@
                                 <div class="personal-profile__contacts">
                                     <dl class="contact-list contact-list__opacity-titles">
                                         <dt>Age:</dt>
-                                        <dd>23</dd>
+                                        <dd id="age" alt="06/02/2004"></dd>
                                         <dt>Phone:</dt>
                                         <dd><a href="tel:+39 3339431378">(+39) 333 9431379</a></dd>
                                         <dt>Email:</dt>
@@ -778,6 +778,20 @@
         </div>
     </div>
     <script type="text/javascript">
+        //add age 
+        function getAge(dateString) {
+            var today = new Date();
+            var birthDate = new Date(dateString);
+            var age = today.getFullYear() - birthDate.getFullYear();
+            var m = today.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            return age;
+        }
+
+        var myAge = '2/6/2004';
+        document.getElementById("age").innerHTML= getAge(myAge);
 
         $(function () {
             $(".main-menu_nav a").on('click', function () {
