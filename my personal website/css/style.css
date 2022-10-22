@@ -49,6 +49,16 @@ hr {
 .top-spacer {
   margin-top: 4rem;
 }
+.w-90{
+  width: 90%;
+  float:right;
+}
+.h-50{
+  height:50%;
+}
+.h-70{
+  height:70%;
+}
 .pb-0 {
   padding-bottom: 0rem;
 }
@@ -333,7 +343,7 @@ h2 .blast:hover {
 .text-zone p {
   position: relative;
   margin-bottom: 1.5%;
-  font-size: 100%;
+  font-size: 2.5vh;
 }
 .text-zone h3 {
   font-size: 4rem;
@@ -1196,9 +1206,6 @@ input:focus:-ms-input-placeholder {
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
-.section-work .text-zone > div:first-child {
-  max-width: 800px;
-}
 .fake-magicwall {
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -1284,7 +1291,6 @@ input:focus:-ms-input-placeholder {
   width: 100%;
   height: 100%;
   z-index: 9;
-  background: url(../img/circle.png) no-repeat center;
   opacity: 0;
   -webkit-transition: all 150ms ease-out;
   -o-transition: all 150ms ease-out;
@@ -1314,11 +1320,11 @@ input:focus:-ms-input-placeholder {
   -ms-flex-pack: justify;
 }
 
-.text-zone{
-  width: 40%;
-}
 .section-about{
   width: 100%;
+}
+.text-zone{
+  width: 40%;
 }
 .tagcloud {
   width: 60%;
@@ -1517,7 +1523,7 @@ input:focus:-ms-input-placeholder {
 .back-video {
   position: absolute;
   z-index: -1;
-  height: 100hv;
+  height: 100vh;
   opacity: 0.3;
   background-size: cover;
 }
@@ -1525,7 +1531,6 @@ input:focus:-ms-input-placeholder {
   margin: auto;
   top: -33%;
   left: 80px;
-  display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
@@ -2064,14 +2069,7 @@ body.blog-page {
 .page-blog .logo-bg {
   display: none;
 }
-.page-blog .text-zone--secondary img {
-  width: auto;
-  border: 2px solidvar(--text-color);
-}
-.page-blog .text-zone--secondary iframe {
-  border: 3px solidvar(--text-color);
-  width: 100%;
-}
+
 .blog-page .section-full {
   padding: 1rem 3rem 1rem 5rem !important;
 }
@@ -4102,12 +4100,11 @@ body.blog-page {
     90deg,
     var(--text-color),
     var(--secondary-color),
-    var(--text-color)
+    var(--third-color)
   );
   background-size: cover;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 .tagcloud {
   margin-left: 0px;
@@ -4184,7 +4181,7 @@ p > span {
 }
 .section-certificates {
   overflow: hidden;
-  min-height: 100hv;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -4444,14 +4441,13 @@ ul.rb li .timestamp {
 
 .container-3 {
   width: 5em;
-  vertical-align: right;
   white-space: nowrap;
   position: absolute;
 }
 
 .rb-item {
   border-bottom: 1px dashed fade(var(--secondary-color), 10%);
-  padding-bottom: (50px * 0.5);
+  padding-bottom:25px;
   margin-bottom: 50px;
   position: relative;
 }
