@@ -1,5 +1,8 @@
-*{
-  font-family: 'Marcellus' !important;
+@import url("palette.css");
+@import url("animation.css");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+* {
+  font-family: "Marcellus" !important;
 }
 .card {
   border-radius: 25px;
@@ -8,27 +11,42 @@
   margin-top: 1%;
   width: 60%;
   height: 46%;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  background-color: rgba(255, 255, 255, 0.90);
+  box-shadow: 0 2px 5px 0 rgba(248, 246, 246, 0.16), 0 2px 10px 0 rgba(235, 231, 231, 0.12);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .section-books {
   justify-content: center;
   align-items: center;
   text-align: center;
   display: flexbox;
-  width: 100%;
+  width: 80%;
   height: 100%;
+  float: left;
+  margin-right: 0;
+}
+.section-filter{
+  width: 10%;
+  height: 100%;
+  float: left;
+}
+.section-menu{
+  width: 10%;
+  height: 100%;
+  float: left;
 }
 .card:hover {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.center{
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.left{
+.left {
   text-align: left;
+}
+.w-100{
+  width: 100%;
 }
 .photo {
   width: 45%;
@@ -53,13 +71,12 @@ h1 {
   color: #515151;
   font-size: 120%;
   line-height: 0;
-  ;
 }
 
 h2 {
   color: #515151;
   font-size: 150%;
-  margin-bottom:0;
+  margin-bottom: 0;
   line-height: normal;
 }
 
@@ -72,7 +89,7 @@ h4 {
 p {
   font-size: 100%;
   color: #727272;
-  overflow-x: hidden ;
+  overflow-x: hidden;
   overflow-y: auto;
   height: 100%;
 }
@@ -80,6 +97,7 @@ p {
 .link {
   border-color: transparent;
   border-radius: 20px;
+  padding: 2% 1% 2% 1%;
   font-size: 100%;
   color: var(--text-color);
   background-color: var(--secondary-color);
@@ -89,12 +107,139 @@ p {
 .amazon {
   border-color: transparent;
   border-radius: 20px;
+  padding: 2% 1% 2% 1%;
   font-size: 100%;
   color: var(--text-color);
   background-color: var(--third-color);
   width: 30%;
   margin-right: 5px;
 }
-.span{
+.span {
+  color: var(--secondary-color);
+}
+/*menu filter*/
+.menu-filter {
+  background-color: var(--third-color);
+  height: 100%;
+  position: fixed;
+}
+.container {
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+}
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+}
+input[type="checkbox"] {
+  /* ...existing styles */
+  display: grid;
+  place-content: center;
+}
+input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  width: 80px;
+  height: 20px;
+  transform: translateY(-0.075em);
+}
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 80% 80% var(--secondary-color);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+/* Hide the browser's default checkbox */
+.container input {
+  display: none;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  height: 100%;
+  width: 100%;
+  background-color: #eee;
+}
+
+.show {
+  display: block;
+}
+.dropbtn {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 10%;
+  font-size: 100%;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+.dropbtn > i {
+  width: 15%;
+}
+.dropbtn > button {
+  width: 80%;
+}
+
+.dropbtn:hover {
+  opacity: 0.7;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--third-color);
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.arrow {
+  font-size: 100%;
+}
+.apply-filters {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+.apply-filters .apply{
+  width: 50%;
+  padding: 2% 1% 2% 1%;
+  float: left;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border:none;
+}
+.apply-filters .discard{
+  border:none;
+  padding: 2% 1% 2% 1%;
+  width: 50%;
+  float: right;
+  background-color: var(--third-color);
   color: var(--secondary-color);
 }

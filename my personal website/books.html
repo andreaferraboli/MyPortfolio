@@ -37,44 +37,99 @@
 
 </head>
 
-<body
-    class="home page-template page-template-template-home page-template-template-home-php page page-id-11 window-loaded">
-    <menu class="main-menu">
-        <div class="main-menu__top">
-            <a class="logo" rel="home" href="index.html">
-                <img src="img/logo.png" alt="" href="https://andreaferraboli.it" />
-                <span>Andrea</span>
-                <span>Ferraboli</span>
-            </a>
-        </div>
-        <nav class="main-menu_nav">
-            <a rel="about" href="#section-home">Home</a>
-            <a rel="about" href="#section-information">Introduction</a>
-            <a rel="about" href="#section-about">About</a>
-            <a rel="about" href="#section-education">Education</a>
-            <a rel="skills" href="#section-education">Skills</a>
-            <a rel="skills" href="#section-certificates">Certificate</a>
-            <a rel="skills" href="#section-books">My Books</a>
-            <a rel="contact" href="#section-contact">Contact</a>
-        </nav>
+<body>
+    <div class="w-100">
 
-        <ul class="main-menu__social">
-            <a href="https://www.facebook.com/andrea.ferraboli.7/" target="_blank"><i class="bx bxl-facebook"></i></a>
-            <a href="https://www.instagram.com/andrea_ferraboli/" target="_blank"><i class="bx bxl-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/andrea-ferraboli-845135188/" target="_blank"><i
-                    class="bx bxl-linkedin"></i></a> <br>
-            <a href="https://github.com/andreaferraboli" target="_blank"><i class="bx bxl-github"></i></a>
-            <a href="mailto: andrew.ferro04@gmail.com" target="_blank"><i class="bx bxl-gmail"></i></a>
-            <a href="https://t.me/Ferro624" target="_blank"><i class="bx bxl-telegram"></i></a>
-        </ul>
-    </menu>
-    <div id="ajaxify">
-        <div class="page-outer">
-            <div class="page-inner" id="page-inner">
-                    <section class="section-books" id="section-books"></section>
+
+        <section class="section-menu">
+            <menu class="main-menu">
+                <div class="main-menu__top">
+                    <a class="logo" rel="home" href="index.html">
+                        <img src="img/logo.png" alt="" href="https://andreaferraboli.it" />
+                        <span>Andrea</span>
+                        <span>Ferraboli</span>
+                    </a>
+                </div>
+                <nav class="main-menu_nav">
+                    <a rel="about" href="#div-home">Home</a>
+                    <a rel="about" href="#div-information">Introduction</a>
+                    <a rel="about" href="#div-about">About</a>
+                    <a rel="about" href="#div-education">Education</a>
+                    <a rel="skills" href="#div-education">Skills</a>
+                    <a rel="skills" href="#div-certificates">Certificate</a>
+                    <a rel="skills" href="#div-books">My Books</a>
+                    <a rel="contact" href="#div-contact">Contact</a>
+                </nav>
+
+                <ul class="main-menu__social">
+                    <a href="https://www.facebook.com/andrea.ferraboli.7/" target="_blank"><i
+                            class="bx bxl-facebook"></i></a>
+                    <a href="https://www.instagram.com/andrea_ferraboli/" target="_blank"><i
+                            class="bx bxl-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/andrea-ferraboli-845135188/" target="_blank"><i
+                            class="bx bxl-linkedin"></i></a> <br>
+                    <a href="https://github.com/andreaferraboli" target="_blank"><i class="bx bxl-github"></i></a>
+                    <a href="mailto: andrew.ferro04@gmail.com" target="_blank"><i class="bx bxl-gmail"></i></a>
+                    <a href="https://t.me/Ferro624" target="_blank"><i class="bx bxl-telegram"></i></a>
+                </ul>
+            </menu>
+        </section>
+
+        <section class="section-filter">
+            <div class="menu-filter">
+
+                <div>
+                    <button onclick="showResults('categoriesDropdown')" class="dropbtn">Categoria <i
+                            id="categories-arrow" class='arrow bx bx-chevron-down'></i></button>
+                    <div id="categoriesDropdown" class="dropdown-content"></div>
+                    <button onclick="showResults('authorsDropdown')" class="dropbtn">Autori<i id="categories-arrow"
+                            class='arrow bx bx-chevron-down'></i></button>
+                    <div id="authorsDropdown" class="dropdown-content"></div>
+                    <button onclick="showResults('languagesDropdown')" class="dropbtn">Lingue<i id="categories-arrow"
+                            class='arrow bx bx-chevron-down'></i></button>
+                    <div id="languagesDropdown" class="dropdown-content"></div>
+                </div>
+
+
+                <!-- <label class="container">One
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+    
+                        <label class="container">Two
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+    
+                        <label class="container">Three
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+    
+                        <label class="container">Four
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label> -->
+                <div class="apply-filters">
+                    <button class="apply">Apply</button>
+                    <button class="discard" onclick="">Discard</button>
+                </div>
             </div>
-        </div>
+        </section>
+        <section class="section-books" id="section-books"></section>
+
     </div>
 </body>
 <script src="js/books.js" type="module"></script>
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function showResults(id) {
+        document.getElementById(id).classList.toggle("show");
+        document.getElementById("categories-arrow").classList.toggle("bx-chevron-down");
+        document.getElementById("categories-arrow").classList.toggle("bx-chevron-up");
+    }
+
+</script>
+
 </html>

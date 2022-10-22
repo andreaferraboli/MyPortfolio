@@ -4,26 +4,11 @@
 *{
   font-family: 'Marcellus' !important;
 }
-html {
-  font-size: 62.5%;
-  min-width: 320px;
-}
 body {
-  font-size: 1.6rem;
-  line-height: 1.5;
   background: var(--primary-color);
-  display: block;
-  min-width: 320px;
-  font-family: "Open Sans", sans-serif;
   color: var(--text-color);
-  padding-left: 13rem;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
-body * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+
 :focus {
   outline: 0;
 }
@@ -419,7 +404,7 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 .main-menu {
-  width: 13rem;
+  width: 10%;
   background-color: #181818;
   height: 100vh;
   position: fixed;

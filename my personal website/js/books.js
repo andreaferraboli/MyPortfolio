@@ -1,8 +1,20 @@
 import Books from "./books.json" assert { type: "json" };
 // let somma=0;
+var categorie = new Map(),
+  autori = new Map(),
+  lingue = new Map();
 Books.books.forEach((book) => {
   // somma+=book.pagine;
-  
+  // document.getElementById("myDropdown").innerHTML
+  categorie.has(book.categoria)
+    ? categorie.set(book.categoria, categorie.get(book.categoria) + 1)
+    : categorie.set(book.categoria, 1);
+  autori.has(book.autore)
+    ? autori.set(book.autore, autori.get(book.autore) + 1)
+    : autori.set(book.autore, 1);
+  lingue.has(book.lingua)
+    ? lingue.set(book.lingua, lingue.get(book.lingua) + 1)
+    : lingue.set(book.lingua, 1);
   let div_book = `
     <div class="card">
       <div class="photo">
@@ -29,8 +41,8 @@ Books.books.forEach((book) => {
         </div>
         
         <div class="center h-20">
-        <button class="link"><a target="_blank" href="${book.link}"></a>Scopri di più!</button>
-        <button class="amazon"><a target="_blank" href="${book.amazon}"></a>Compra</button>
+        <a target="_blank" class="link" href="${book.link}">Scopri di più!</a>
+        <a target="_blank" class="amazon" href="${book.amazon}">Compra</a>
         </div>
       </div>
     </div>
@@ -38,7 +50,34 @@ Books.books.forEach((book) => {
   let section = document.getElementById("section-books");
   section.innerHTML += div_book;
 });
+for (let [key, value] of categorie) {
+  document.getElementById("categoriesDropdown").innerHTML += `
+  <div class="center">
+    <input type="checkbox">
+    <label class="container">${key} (${value})</label>
+  </div>
+  
+    `;
+}
+for (let [key, value] of lingue) {
+  document.getElementById("languagesDropdown").innerHTML += `
+    <label class="container">${key} (${value})
+                                <input type="checkbox" >
+                                <span class="checkmark"></span>
+                            </label>
+    `;
+}
+for (let [key, value] of autori) {
+  document.getElementById("authorsDropdown").innerHTML += `
+    <label class="container">${key} (${value})
+                                <input type="checkbox" >
+                                <span class="checkmark"></span>
+                            </label>
+    `;
+}
 // console.log(somma);
-{/* <div class="center h-40">
+{
+  /* <div class="center h-40">
             <p>${book.descrizione}</p>
-        </div> */}
+        </div> */
+}
