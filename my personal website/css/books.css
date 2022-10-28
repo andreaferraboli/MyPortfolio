@@ -19,13 +19,13 @@
   align-items: center;
   text-align: center;
   display: flexbox;
-  width: 80%;
+  width: 70%;
   height: 100%;
   float: left;
   margin-right: 0;
 }
 .section-filter{
-  width: 10%;
+  width: 20%;
   height: 100%;
   float: left;
 }
@@ -119,113 +119,66 @@ p {
 }
 /*menu filter*/
 .menu-filter {
-  background-color: var(--third-color);
-  height: 100%;
-  position: fixed;
-}
-.container {
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-}
-input[type="checkbox"] {
-  /* Add if not using autoprefixer */
-  -webkit-appearance: none;
-  appearance: none;
-  /* For iOS < 15 to remove gradient background */
-  background-color: #fff;
-  /* Not removed via appearance */
-  margin: 0;
-}
-input[type="checkbox"] {
-  /* ...existing styles */
-  display: grid;
-  place-content: center;
-}
-input[type="checkbox"] {
-  appearance: none;
-  background-color: #fff;
-  margin: 0;
-  width: 80px;
-  height: 20px;
-  transform: translateY(-0.075em);
-}
-input[type="checkbox"]::before {
-  content: "";
-  width: 0.65em;
-  height: 0.65em;
-  transform: scale(0);
-  transition: 120ms transform ease-in-out;
-  box-shadow: inset 80% 80% var(--secondary-color);
-}
-
-input[type="checkbox"]:checked::before {
-  transform: scale(1);
-}
-/* Hide the browser's default checkbox */
-.container input {
-  display: none;
-}
-
-/* Create a custom checkbox */
-.checkmark {
   height: 100%;
   width: 100%;
-  background-color: #eee;
+}
+.container {
+  width: 100%;
+  font-size: 22px;
 }
 
+
+/* Create a custom checkbox */
+
+
 .show {
-  display: block;
+  display: contents;
 }
 .dropbtn {
   background-color: var(--secondary-color);
   color: var(--text-color);
-  padding: 10%;
-  font-size: 100%;
   width: 100%;
-  border: none;
-  cursor: pointer;
-}
-.dropbtn > i {
-  width: 15%;
-}
-.dropbtn > button {
-  width: 80%;
+  border:none;
+  height: 5%;
 }
 
-.dropbtn:hover {
-  opacity: 0.7;
-}
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--third-color);
-  width: 100%;
-  overflow: auto;
+  background-color: var(--primary-color);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  overflow: auto;
+  display: none;
 }
+.input_box{
+  float: left;
+  width: 20%;
+  height: 100%;
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+}
+.input_box>input{
+  transform : scale(2);
+}
+.input_text{
+  float: left;
+  width: 60%;
+  height: 100%;
+
+}
+.input_info{
+  float: left;
+  width: 20%;
+  height: 100%;
+
 }
 .arrow {
   font-size: 100%;
 }
 .apply-filters {
   position: absolute;
-  width: 100%;
   bottom: 0px;
+  height: 5%;
+  width: 20%;
 }
 .apply-filters .apply{
   width: 50%;

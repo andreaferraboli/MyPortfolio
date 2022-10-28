@@ -51,29 +51,53 @@ Books.books.forEach((book) => {
   section.innerHTML += div_book;
 });
 for (let [key, value] of categorie) {
+  let id = "input_" + "categorie_" + key.replace(/ /g, "_");
   document.getElementById("categoriesDropdown").innerHTML += `
-  <div class="center">
-    <input type="checkbox">
-    <label class="container">${key} (${value})</label>
-  </div>
-  
+    <div class="container center">
+      <div class="input_box">
+          <input id="${id}" type="checkbox">
+      </div>
+      <div class="input_text">
+        <label>${key}</label>
+      </div>
+      <div class="input_info">
+        <label>(${value})</label>
+      </div>
+    </div>
     `;
 }
 for (let [key, value] of lingue) {
+  let id = "input_" + "lingue_" + key.replace(/ /g, "_");
+
   document.getElementById("languagesDropdown").innerHTML += `
-    <label class="container">${key} (${value})
-                                <input type="checkbox" >
-                                <span class="checkmark"></span>
-                            </label>
-    `;
+    <div class="container center">
+      <div class="input_box">
+          <input id="${id}" type="checkbox">
+      </div>
+      <div class="input_text">
+        <label>${key}</label>
+      </div>
+      <div class="input_info">
+        <label>(${value})</label>
+      </div>
+    </div>
+  `;
 }
 for (let [key, value] of autori) {
+  let id = "input_" + "autori_" + key.replace(/ /g, "_");
   document.getElementById("authorsDropdown").innerHTML += `
-    <label class="container">${key} (${value})
-                                <input type="checkbox" >
-                                <span class="checkmark"></span>
-                            </label>
-    `;
+    <div class="container center">
+      <div class="input_box">
+          <input id="${id}" type="checkbox">
+      </div>
+      <div class="input_text">
+        <label>${key}</label>
+      </div>
+      <div class="input_info">
+        <label>(${value})</label>
+      </div>
+    </div>
+  `;
 }
 // console.log(somma);
 {

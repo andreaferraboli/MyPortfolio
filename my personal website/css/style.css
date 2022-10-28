@@ -4339,6 +4339,9 @@ p > span {
 .h-80 {
   height: 80%;
 }
+.h-95 {
+  height: 95%;
+}
 dd {
   margin-left: 2rem !important;
 }
