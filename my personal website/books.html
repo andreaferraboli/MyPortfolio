@@ -90,28 +90,8 @@
                     <div id="languagesDropdown" class="dropdown-content h-10"></div>
                 </div>
 
-
-                <!-- <label class="container">One
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-    
-                        <label class="container">Two
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-    
-                        <label class="container">Three
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-    
-                        <label class="container">Four
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label> -->
                 <div class="apply-filters">
-                    <button class="apply">Apply</button>
+                    <button class="apply" onclick="filterResults()">Apply</button>
                     <button class="discard" onclick="">Discard</button>
                 </div>
             </div>
@@ -122,14 +102,40 @@
 </body>
 <script src="js/books.js" type="module"></script>
 <script>
+    import {queryBooks} from './js/books.js';
     /* When the user clicks on the button, 
     toggle between hiding and showing the dropdown content */
     function showResults(id) {
         document.getElementById(id).classList.toggle("show");
-        document.getElementById("categories-arrow").classList.toggle("bx-chevron-down");
-        document.getElementById("categories-arrow").classList.toggle("bx-chevron-up");
+        let arrow_id=id.replace("Dropdown","")+"-arrow";
+        document.getElementById(arrow_id).classList.toggle("bx-chevron-down");
+        document.getElementById(arrow_id).classList.toggle("bx-chevron-up");
     }
 
+
+
+    function filterResults(){
+        let section = document.getElementById("section-books");
+        section.innerHTML = '';
+        let inputs=document.querySelectorAll('.input_user');
+        let selectedInputs=[];
+        inputs.forEach((input)=>{
+            if (input.checked === true)
+                selectedInputs.push(input.id);
+
+        })
+        let categoriesInput=[],authorsInput=[],languagesInput=[];
+        inputs.forEach((input)=>{
+            if (input.id.includes("categories"))
+                categoriesInput.push(input.id.replace("input_categories_",""))
+            else if(input.id.includes("authors"))
+                authorsInput.push(input.id.replace("input_authors_",""))
+            else
+                languagesInput.push(input.id.replace("input_languages_",""))
+        })
+        let booksFiltered=queryBooks(categoriesInput,authorsInput,languagesInput);
+        showBooks(booksFiltered);
+    }
 </script>
 
 </html>

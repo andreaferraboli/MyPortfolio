@@ -1,21 +1,28 @@
-import Books from "./books.json" assert { type: "json" };
-// let somma=0;
-var categorie = new Map(),
-  autori = new Map(),
-  lingue = new Map();
-Books.books.forEach((book) => {
-  // somma+=book.pagine;
-  // document.getElementById("myDropdown").innerHTML
-  categorie.has(book.categoria)
-    ? categorie.set(book.categoria, categorie.get(book.categoria) + 1)
-    : categorie.set(book.categoria, 1);
-  autori.has(book.autore)
-    ? autori.set(book.autore, autori.get(book.autore) + 1)
-    : autori.set(book.autore, 1);
-  lingue.has(book.lingua)
-    ? lingue.set(book.lingua, lingue.get(book.lingua) + 1)
-    : lingue.set(book.lingua, 1);
-  let div_book = `
+//create array of books
+import Books from "./books.json" assert {type: "json"};
+export {queryBooks}
+//create filter list
+var categories = new Map(),
+    authors = new Map(),
+    languages = new Map();
+
+//main
+showBooks(Books.books);
+createFilter(Books.books);
+showFilter(categories, "categories");
+showFilter(authors, "authors");
+showFilter(languages, "languages");
+
+//functions
+function addFilter(map, param) {
+    map.has(param)
+        ? map.set(param, map.get(param) + 1)
+        : map.set(param, 1);
+}
+
+function showBooks(arrayBooks) {
+    arrayBooks.forEach((book) => {
+        let div_book = `
     <div class="card">
       <div class="photo">
       <img src="${book.copertina}">
@@ -47,15 +54,27 @@ Books.books.forEach((book) => {
       </div>
     </div>
     `;
-  let section = document.getElementById("section-books");
-  section.innerHTML += div_book;
-});
-for (let [key, value] of categorie) {
-  let id = "input_" + "categorie_" + key.replace(/ /g, "_");
-  document.getElementById("categoriesDropdown").innerHTML += `
+        let section = document.getElementById("section-books");
+        section.innerHTML += div_book;
+
+    });
+}
+
+function createFilter(arrayBooks) {
+    arrayBooks.forEach((book) => {
+        addFilter(categories, book.categoria);
+        addFilter(authors, book.autore);
+        addFilter(languages, book.lingua);
+    });
+}
+
+function showFilter(filterList, idFilter) {
+    for (let [key, value] of filterList) {
+        let id = "input_" + idFilter + "_" + key.replace(/ /g, "_");
+        document.getElementById(idFilter + "Dropdown").innerHTML += `
     <div class="container center">
       <div class="input_box">
-          <input id="${id}" type="checkbox">
+          <input id="${id}" class="input_user" type="checkbox">
       </div>
       <div class="input_text">
         <label>${key}</label>
@@ -65,43 +84,21 @@ for (let [key, value] of categorie) {
       </div>
     </div>
     `;
+    }
 }
-for (let [key, value] of lingue) {
-  let id = "input_" + "lingue_" + key.replace(/ /g, "_");
 
-  document.getElementById("languagesDropdown").innerHTML += `
-    <div class="container center">
-      <div class="input_box">
-          <input id="${id}" type="checkbox">
-      </div>
-      <div class="input_text">
-        <label>${key}</label>
-      </div>
-      <div class="input_info">
-        <label>(${value})</label>
-      </div>
-    </div>
-  `;
+function queryBooks(categoriesInput, authorsInput, languagesInput) {
+    let outputBooks =[];
+    Books.books.forEach((book) => {
+        if (categoriesInput.has(book.categoria) || authorsInput.has(book.autore) || languagesInput.has(book.lingua))
+            outputBooks.push(book)
+    })
+    return outputBooks;
 }
-for (let [key, value] of autori) {
-  let id = "input_" + "autori_" + key.replace(/ /g, "_");
-  document.getElementById("authorsDropdown").innerHTML += `
-    <div class="container center">
-      <div class="input_box">
-          <input id="${id}" type="checkbox">
-      </div>
-      <div class="input_text">
-        <label>${key}</label>
-      </div>
-      <div class="input_info">
-        <label>(${value})</label>
-      </div>
-    </div>
-  `;
-}
+
 // console.log(somma);
 {
-  /* <div class="center h-40">
-            <p>${book.descrizione}</p>
-        </div> */
+    /* <div class="center h-40">
+              <p>${book.descrizione}</p>
+          </div> */
 }
