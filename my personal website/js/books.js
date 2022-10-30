@@ -32,7 +32,7 @@ function showBooks(arrayBooks) {
             <h1><span class="span">Lingua: </span>${book.lingua}</h1>
         </div>
         
-        <div class="center h-20">
+        <div class="center h-20" style="justify-content: space-evenly !important;">
         <a target="_blank" class="link" href="${book.link}">Scopri di più!</a>
         <a target="_blank" class="amazon" href="${book.amazon}">Compra</a>
         </div>
@@ -58,13 +58,13 @@ function showFilter(filterList, idFilter) {
         let id = "input_" + idFilter + "_" + key.replace(/ /g, "_");
         document.getElementById(idFilter + "Dropdown").innerHTML += `
     <div class="container center">
-      <div class="input_box">
+      <div class="input_box center">
           <input id="${id}" class="input_user" type="checkbox">
       </div>
-      <div class="input_text">
+      <div class="input_text center">
         <label>${key}</label>
       </div>
-      <div class="input_info">
+      <div class="input_info center">
         <label>(${value})</label>
       </div>
     </div>
