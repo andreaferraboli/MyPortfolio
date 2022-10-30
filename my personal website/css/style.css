@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
 * {
-    font-family: 'Marcellus' !important;
+    font-family: 'Marcellus', serif !important;
 }
 
 body {
@@ -77,19 +77,19 @@ hr {
 }
 
 .pb-0 {
-    padding-bottom: 0rem;
+    padding-bottom: 0;
 }
 
 .pt-0 {
-    padding-top: 0rem;
+    padding-top: 0;
 }
 
 .mb-0 {
-    margin-bottom: 0rem;
+    margin-bottom: 0;
 }
 
 .mt-0 {
-    margin-top: 0rem;
+    margin-top: 0;
 }
 
 .pb-1 {
@@ -325,7 +325,7 @@ hr {
 h1 {
     color: #fff;
     margin: 0;
-    font-family: font-file-82132;
+    font-family: font-file-82132, serif;
     font-weight: 400;
     font-size: 10.3rem;
     line-height: 8.7rem;
@@ -357,7 +357,7 @@ h1:after {
 
 .fake-h2,
 h2 {
-    font-family: font-file-82132;
+    font-family: font-file-82132, serif;
     color: var(--secondary-color);
     font-weight: 400;
     margin-top: 0;
@@ -373,7 +373,7 @@ h2 {
 }
 
 .fake-big {
-    font-family: font-file-82132;
+    font-family:  font-file-82132, serif;
     position: absolute;
     top: -11rem;
     left: 42vw;
@@ -473,7 +473,7 @@ h2 .blast:hover {
 }
 
 .logo-big span {
-    font-family: font-file-82132;
+    font-family:  font-file-82132, serif;
     color: var(--text-color);
     margin-top: 1px;
     font-size: 2.7rem;
@@ -483,7 +483,7 @@ h2 .blast:hover {
     width: 100%;
     height: 100%;
     align-items: center;
-    margin: 5% 0% 5% 20%;
+    margin: 5% 0 5% 20%;
 }
 
 input:-webkit-autofill,
@@ -576,7 +576,7 @@ select:-webkit-autofill:focus {
 }
 
 .logo span {
-    font-family: font-file-82132;
+    font-family:  font-file-82132, serif;
     margin-top: 1px;
     font-size: 2.7rem;
 }
@@ -870,7 +870,7 @@ select:-webkit-autofill:focus {
 }
 
 .work-box header {
-    font-family: font-file-82132;
+    font-family:  font-file-82132, serif;
     font-size: 2.6rem;
     line-height: 2rem;
     margin-bottom: 2rem;
@@ -899,7 +899,7 @@ select:-webkit-autofill:focus {
 
 .chart span {
     font-size: 18px;
-    font-family: font-file-82132;
+    font-family:  font-file-82132, serif;
     margin-bottom: 7px;
     display: block;
 }
@@ -936,9 +936,8 @@ select:-webkit-autofill:focus {
 
 .contact-form ul li {
     padding: 0;
-    margin: 0;
     list-style: none;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
     opacity: 1;
     overflow: hidden;
     display: block;
@@ -1099,9 +1098,7 @@ input:focus:-ms-input-placeholder {
     -ms-transform: translateY(100px);
     transform: translateY(100px);
     -webkit-transition: opacity 0.4s, -webkit-transform 0.9s;
-    transition: opacity 0.4s, -webkit-transform 0.9s;
     -o-transition: opacity 0.4s, transform 0.9s;
-    transition: opacity 0.4s, transform 0.9s;
     transition: opacity 0.4s, transform 0.9s, -webkit-transform 0.9s;
 }
 
@@ -1250,7 +1247,7 @@ input:focus:-ms-input-placeholder {
     text-align: right;
     float: left;
     font-size: 27px;
-    font-family: font-file-82132;
+    font-family:  font-file-82132, serif;
     margin-bottom: 10px;
     display: block;
 }
@@ -1565,7 +1562,7 @@ input:focus:-ms-input-placeholder {
 
 .section-about #myCanvasContainer li a {
     font-size: 30px;
-    font-family: font-file-82132;
+    font-family: font-file-82132, serif;
 }
 
 .page-about {
@@ -1618,7 +1615,7 @@ input:focus:-ms-input-placeholder {
 
 .page-about #myCanvasContainer li a {
     font-size: 30px;
-    font-family: font-file-82132;
+    font-family:  font-file-82132, serif;
 }
 
 .page-skills {
@@ -1715,9 +1712,7 @@ input:focus:-ms-input-placeholder {
     width: 50%;
     z-index: 2;
     background-color: var(--primary-color);
-    padding: 4rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding: 4rem 5rem;
     max-width: 80rem;
 }
 
@@ -1846,7 +1841,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .page-blog .page-blog__container {
-    padding: 0rem 15rem 0 3rem;
+    padding: 0 15rem 0 3rem;
     margin-left: 5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1862,17 +1857,16 @@ input:focus:-ms-input-placeholder {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: 34rem;
-    padding: 0 30px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-left: 4rem;
-    padding-top: 5rem;
+    padding: 5rem 30px 0;
 }
 
 .page-blog .widget_categories h6,
 .page-blog .widget_contact h6,
 .page-blog .widget_tag_cloud h6 {
-    font-family: font-file-82132;
+    font-family:  font-file-82132, serif;
     font-size: 34px;
     color: var(--text-color);
     text-transform: lowercase;
@@ -1902,9 +1896,7 @@ input:focus:-ms-input-placeholder {
     -ms-transform: translateY(30px);
     transform: translateY(30px);
     -webkit-transition: opacity 0.7s ease-out, -webkit-transform 0.7s;
-    transition: opacity 0.7s ease-out, -webkit-transform 0.7s;
     -o-transition: opacity 0.7s ease-out, transform 0.7s;
-    transition: opacity 0.7s ease-out, transform 0.7s;
     transition: opacity 0.7s ease-out, transform 0.7s, -webkit-transform 0.7s;
 }
 
@@ -2047,7 +2039,6 @@ input:focus:-ms-input-placeholder {
 }
 
 .page-blog-single .page-blog__container {
-    padding-top: 5rem;
     background: var(--primary-color);
     padding: 0;
 }
@@ -2255,7 +2246,7 @@ input:focus:-ms-input-placeholder {
 
 .post-article .blog-post-title h5 a {
     font-size: 27px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: var(--text-color);
     font-weight: 400;
     line-height: 35px;
@@ -2335,16 +2326,15 @@ body.blog-page {
 
 .article-navigation {
     list-style: none;
-    padding: 0;
     margin: 0;
-    padding-bottom: 4rem;
+    padding: 0 0 4rem;
     border-bottom: 1px solid #ccc;
     counter-reset: section;
 }
 
 .article-navigation .h2 {
     font-weight: normal;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
     margin-top: 1rem;
 }
 
@@ -2413,7 +2403,7 @@ body.blog-page {
 }
 
 .single-post .section-full {
-    padding: 0rem 3rem !important;
+    padding: 0 3rem !important;
 }
 
 .single-post .page-blog__container {
@@ -2433,7 +2423,7 @@ body.blog-page {
 }
 
 .single-post .widget h6 {
-    font-family: font-file-82132;
+    font-family:  font-file-82132, serif;
     font-size: 34px;
     color: var(--text-color);
     text-transform: lowercase;
@@ -2944,11 +2934,11 @@ body.blog-page {
     }
 
     .top-tags:after {
-        margin-left: 0rem;
+        margin-left: 0;
     }
 
     .bottom-tags:before {
-        margin-left: 0rem;
+        margin-left: 0;
     }
 
     .page-text .text-zone {
@@ -3193,7 +3183,7 @@ body.blog-page {
     .page-contact .text-zone + div,
     .section-contact .text-zone + div {
         position: relative !important;
-        left: 0%;
+        left: 0;
         margin-top: 4rem;
         height: 50rem;
         width: 100%;
@@ -3329,7 +3319,7 @@ body.blog-page {
 
     .page-skills .text-zone + div,
     .section-full .text-zone {
-        padding-left: 0rem;
+        padding-left: 0;
         padding-right: 0;
     }
 
@@ -3564,7 +3554,7 @@ body.blog-page {
 
     .page-blog .widget_contact h6,
     .page-blog .widget_tag_cloud h6 {
-        font-family: font-file-82132;
+        font-family:  font-file-82132, serif;
         font-size: 28px;
     }
 
@@ -4662,7 +4652,7 @@ body.blog-page {
 }
 
 .tagcloud {
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 .personal-job-area {
@@ -4974,8 +4964,7 @@ dd {
 
 .rb-container ul.rb li {
     list-style: none;
-    margin: auto;
-    margin-left: 10em;
+    margin: auto auto auto 10em;
     border-left: 1px dashed var(--secondary-color);
     padding: 0 0 5% 5%;
     position: relative;
@@ -5030,7 +5019,7 @@ ul.rb li .timestamp {
 
 /* progress list */
 .container-skills {
-    padding: 0% 10% 0% 10%;
+    padding: 0 10% 0 10%;
 }
 
 .progress {
