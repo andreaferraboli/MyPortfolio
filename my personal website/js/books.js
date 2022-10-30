@@ -104,12 +104,13 @@ function filterResults(library) {
         showBooks(library)
     else {
         selectedInputs.forEach((input) => {
-            if (input.includes("categories"))
-                categoriesInput.push(input.replace("input_categories_", "").replace("_", " "))
+            if (input.includes("categories")){
+                categoriesInput.push(input.replace("input_categories_", "").replaceAll("_", " "));
+            }
             else if (input.includes("authors"))
-                authorsInput.push(input.replace("input_authors_", "").replace("_", " "))
+                authorsInput.push(input.replace("input_authors_", "").replaceAll("_", " "))
             else
-                languagesInput.push(input.replace("input_languages_", "").replace("_", " "))
+                languagesInput.push(input.replace("input_languages_", "").replaceAll("_", " "))
         })
         let booksFiltered = queryBooks(categoriesInput, authorsInput, languagesInput, library);
         showBooks(booksFiltered);
