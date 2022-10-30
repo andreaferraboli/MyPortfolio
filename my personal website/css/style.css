@@ -19,7 +19,10 @@ body {
 svg {
     will-change: transform;
 }
-
+p{
+    margin: 0 0 1% 0;
+    font-size: 1vw;
+}
 a {
     color: var(--secondary-color);
     -webkit-transition: color 0.3s;
