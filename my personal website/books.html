@@ -20,7 +20,7 @@
 
 
     <title>Andrea Ferraboli</title>
-
+    <script type = "text/javascript" src="js/books.js" ></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -91,8 +91,8 @@
                 </div>
 
                 <div class="apply-filters">
-                    <button class="apply" onclick="filterResults()">Apply</button>
-                    <button class="discard" onclick="">Discard</button>
+                    <button id="apply_button" class="apply" onclick="">Apply</button>
+                    <button id="discard_button" class="discard" onclick="">Discard</button>
                 </div>
             </div>
         </section>
@@ -100,42 +100,23 @@
 
     </div>
 </body>
-<script src="js/books.js" type="module"></script>
-<script>
-    import {queryBooks} from './js/books.js';
-    /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
-    function showResults(id) {
-        document.getElementById(id).classList.toggle("show");
-        let arrow_id=id.replace("Dropdown","")+"-arrow";
-        document.getElementById(arrow_id).classList.toggle("bx-chevron-down");
-        document.getElementById(arrow_id).classList.toggle("bx-chevron-up");
-    }
+<script type="module">
+    //create array of books
+    import Books from "./js/books.json" assert {type: "json"};
+    //create filter list
+    var categories = new Map(),
+        authors = new Map(),
+        languages = new Map();
 
+    //main
+    showBooks(Books.books);
+    createFilter(Books.books,categories,authors,languages);
+    showFilter(categories, "categories");
+    showFilter(authors, "authors");
+    showFilter(languages, "languages");
+    document.getElementById("apply_button").onclick=function(){filterResults(Books.books);}
+    document.getElementById("discard_button").onclick=function(){discardFilter()};
 
-
-    function filterResults(){
-        let section = document.getElementById("section-books");
-        section.innerHTML = '';
-        let inputs=document.querySelectorAll('.input_user');
-        let selectedInputs=[];
-        inputs.forEach((input)=>{
-            if (input.checked === true)
-                selectedInputs.push(input.id);
-
-        })
-        let categoriesInput=[],authorsInput=[],languagesInput=[];
-        inputs.forEach((input)=>{
-            if (input.id.includes("categories"))
-                categoriesInput.push(input.id.replace("input_categories_",""))
-            else if(input.id.includes("authors"))
-                authorsInput.push(input.id.replace("input_authors_",""))
-            else
-                languagesInput.push(input.id.replace("input_languages_",""))
-        })
-        let booksFiltered=queryBooks(categoriesInput,authorsInput,languagesInput);
-        showBooks(booksFiltered);
-    }
 </script>
 
 </html>

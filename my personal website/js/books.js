@@ -1,18 +1,3 @@
-//create array of books
-import Books from "./books.json" assert {type: "json"};
-export {queryBooks}
-//create filter list
-var categories = new Map(),
-    authors = new Map(),
-    languages = new Map();
-
-//main
-showBooks(Books.books);
-createFilter(Books.books);
-showFilter(categories, "categories");
-showFilter(authors, "authors");
-showFilter(languages, "languages");
-
 //functions
 function addFilter(map, param) {
     map.has(param)
@@ -60,7 +45,7 @@ function showBooks(arrayBooks) {
     });
 }
 
-function createFilter(arrayBooks) {
+function createFilter(arrayBooks, categories, authors, languages) {
     arrayBooks.forEach((book) => {
         addFilter(categories, book.categoria);
         addFilter(authors, book.autore);
@@ -87,13 +72,56 @@ function showFilter(filterList, idFilter) {
     }
 }
 
-function queryBooks(categoriesInput, authorsInput, languagesInput) {
-    let outputBooks =[];
-    Books.books.forEach((book) => {
-        if (categoriesInput.has(book.categoria) || authorsInput.has(book.autore) || languagesInput.has(book.lingua))
+function queryBooks(categoriesInput, authorsInput, languagesInput, library) {
+    let outputBooks = [];
+    library.forEach((book) => {
+        if (categoriesInput.includes(book.categoria) || authorsInput.includes(book.autore) || languagesInput.includes(book.lingua))
             outputBooks.push(book)
     })
     return outputBooks;
+}
+
+function showResults(id) {
+    document.getElementById(id).classList.toggle("show");
+    let arrow_id = id.replace("Dropdown", "") + "-arrow";
+    document.getElementById(arrow_id).classList.toggle("bx-chevron-down");
+    document.getElementById(arrow_id).classList.toggle("bx-chevron-up");
+}
+
+
+function filterResults(library) {
+    let section = document.getElementById("section-books");
+    section.innerHTML = '';
+    let inputs = document.querySelectorAll('.input_user');
+    let selectedInputs = [];
+    inputs.forEach((input) => {
+        if (input.checked === true)
+            selectedInputs.push(input.id);
+
+    });
+    let categoriesInput = [], authorsInput = [], languagesInput = [];
+    if (selectedInputs.length === 0)
+        showBooks(library)
+    else {
+        selectedInputs.forEach((input) => {
+            if (input.includes("categories"))
+                categoriesInput.push(input.replace("input_categories_", "").replace("_", " "))
+            else if (input.includes("authors"))
+                authorsInput.push(input.replace("input_authors_", "").replace("_", " "))
+            else
+                languagesInput.push(input.replace("input_languages_", "").replace("_", " "))
+        })
+        let booksFiltered = queryBooks(categoriesInput, authorsInput, languagesInput, library);
+        showBooks(booksFiltered);
+    }
+
+}
+
+function discardFilter() {
+    let inputs = document.querySelectorAll('.input_user');
+    inputs.forEach((input) => {
+        input.checked = false;
+    });
 }
 
 // console.log(somma);
