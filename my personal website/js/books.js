@@ -4,8 +4,11 @@ function addFilter(map, param) {
         ? map.set(param, map.get(param) + 1)
         : map.set(param, 1);
 }
-
+function shuffle(array) {
+    array.sort(() => Math.random() - 0.5);
+}
 function showBooks(arrayBooks) {
+    shuffle(arrayBooks);
     arrayBooks.forEach((book) => {
         let div_book = `
     <div class="card">

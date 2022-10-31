@@ -144,13 +144,12 @@
                                     gestione dell'IT, nella gestione della sicurezza IT e nell'architettura aziendale
                                     IT.
                                     Persona altamente qualificata, dedita al lavoro di squadra ed entusiasta, con
-                                    eccellenti capacità di leadership,motivazione e di comunicazione.
-                                </p>
-
+                                    eccellenti capacità di leadership, motivazione e di comunicazione. Durante la mia
+                                    carriera ho avuto l'onore di lavorare per brand di calibro
+                                    internazionale:</p>
                             </div>
                             <div class="logo-carousel-container">
-                                <p>Durante la mia carriera ho avuto l'onore di lavorare per brand di calibro
-                                    internazionale:</p>
+
                                 <div class="logo-set1">
                                     <img src="https://uploads-ssl.webflow.com/5b54e064ef1d588c6d4a4264/62657425a9da5b113b2ec7d9_6060b782465d7108c644ae56_huawei.svg"
                                          loading="lazy" width="140" height="140" alt="Huawei logo" class="image-34"
@@ -203,7 +202,7 @@
                 </section>
                 <section id="section-about" data-load="about" class="section-full section-about  scroll">
                     <div class="text-zone ">
-                        <header class="h-20 " >
+                        <header class="h-20 ">
                             <h2 aria-label="Me, Myself and I" style="padding-top: 10%">
                                 <span class="blast" aria-hidden="true" style="opacity: 1">M</span><span class="blast"
                                                                                                         aria-hidden="true"
@@ -229,11 +228,11 @@
                             </h2>
                         </header>
                         <div class="h-70 center-btn">
-                            <p >
+                            <p>
                                 Dal 2020 sono alla ricerca di come ottenere il meglio da sè e
                                 dagli altri, come sprigionare il potere insito in ognuno di noi
                                 e raggiungere la qualità della vita che desideriamo e meritiamo.
-                                Il mio perchè più profondo è quello di costruire una società
+                                Il mio perché più profondo è quello di costruire una società
                                 migliore, formata da persone libere emotivamente ed
                                 economicamente, consapevoli delle loro qualità e delle loro
                                 innate doti di leadership.<br>
@@ -631,12 +630,12 @@
                                                                                             style="opacity: 1">s</span>
                                 </h2>
                                 <p>
-                                Ecco a voi una serie di libri che mi hanno formato durante
-                                tutto il mio personale percorso di crescita, aiutandomi a
-                                diventare una persona migliore e trasformando le mie debolezze
-                                in punti di forza. Sei interessato a scoprirli tutti?
-                                <span><a href="books.html">I miei libri</a></span>
-                            </p>
+                                    Ecco a voi una serie di libri che mi hanno formato durante
+                                    tutto il mio personale percorso di crescita, aiutandomi a
+                                    diventare una persona migliore e trasformando le mie debolezze
+                                    in punti di forza. Sei interessato a scoprirli tutti?
+                                    <span><a href="books.html">I miei libri</a></span>
+                                </p>
                             </div>
 
                         </div>
@@ -647,6 +646,7 @@
                                 <div class="magic-wall_item lazyloaded"
                                      data-bgset="https://www.lafeltrinelli.it/images/9788850259397_0_536_0_75.jpg"
                                      style="background-image: url('https://www.lafeltrinelli.it/images/9788850259397_0_536_0_75.jpg');">
+
                                     <div class="hover-content vcenter"></div>
                                 </div>
                             </li>
@@ -807,6 +807,15 @@
                     scrollTop: $($.attr(this, 'href')).offset().top
                 }, 1000); // 500 = 0.5 second
             });
+        });
+        $(function () {
+
+            $("#home-magicwalle").on("click", function (e) {
+                //your code here..
+                window.location.replace("books.html");
+                e.preventDefault(); //to prevent any other unwanted behavior clicking the div might cause
+            });
+
         });
 
         function isScrolledIntoView(el) {
