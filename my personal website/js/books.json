@@ -442,7 +442,42 @@
             "anno": 2022,
             "lingua":"Italiano"
         }
-        
+    ,
+        {
+            "titolo": "Il potere del quando. Scopri il tuo cronotipo e trova il momento giusto per tutto",
+            "autore": "Michael J.Breus",
+            "copertina": "https://www.lafeltrinelli.it/images/9788869871559_0_536_0_75.jpg",
+            "categoria":"Morning Routine",
+            "link":"https://www.lafeltrinelli.it/potere-del-quando-scopri-tuo-libro-michael-j-breus/e/9788869871559",
+            "amazon":"https://www.amazon.it/potere-quando-Scopri-cronotipo-momento/dp/886987155X/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1669025948&sr=8-1",
+            "pagine": 414,
+            "anno": 2017,
+            "lingua":"Italiano"
+        }
+    ,
+        {
+            "titolo": "Splendida mente. Come pensano i leader di successo",
+            "autore": "Roger L. Martin",
+            "copertina": "https://www.lafeltrinelli.it/images/9788820045579_0_536_0_75.jpg",
+            "categoria":"Leadership",
+            "link":"https://www.lafeltrinelli.it/splendida-mente-come-pensano-leader-libro-roger-l-martin/e/9788820045579",
+            "amazon":"https://www.amazon.it/Splendida-mente-pensano-leader-successo/dp/8820045575/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2U61FSBMC0XLC&keywords=splendida+mente&qid=1669025901&qu=eyJxc2MiOiIwLjAwIiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=splendida+mwnte%2Caps%2C82&sr=8-1",
+            "pagine": 196,
+            "anno": 2008,
+            "lingua":"Italiano"
+        }
+    ,
+        {
+            "titolo": "Tanti boss pochi leader. L'arte di diventare un capo eccellente",
+            "autore": "Rajeev Peshawaria",
+            "copertina": "https://www.lafeltrinelli.it/images/9788817051842_0_536_0_75.jpg",
+            "categoria":"Leadership",
+            "link":"https://www.lafeltrinelli.it/tanti-boss-pochi-leader-arte-libro-rajeev-peshawaria/e/9788817051842",
+            "amazon":"https://www.amazon.it/Tanti-pochi-leader-Peshawaria-Rajeev/dp/8817051845/ref=sr_1_5?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1FXNZDDE3DJ3K&keywords=tanti+boss&qid=1669025860&qu=eyJxc2MiOiIxLjM4IiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=tanti+boss%2Caps%2C92&sr=8-5",
+            "pagine": 219,
+            "anno": 2011,
+            "lingua":"Italiano"
+        }
 
     ]
 }
