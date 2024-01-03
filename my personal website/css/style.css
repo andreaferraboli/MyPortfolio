@@ -1613,7 +1613,8 @@ p > span {
 }
 
 .personal-profile__avatar {
-    padding-right: 0 !important
+    padding-right: 0 !important;
+    height: 100%;
 }
 
 .contact-list dt {
@@ -1898,11 +1899,14 @@ ul.rb li .timestamp {
     line-height: 1.1
 }
 
-.logo-set1 {
-    display: flex;
+.logo-carousel-container {
     width: 100%;
     min-width: 0;
     justify-content: center;
+  }
+  
+  .logo-set1 {
+    display: inline-flex;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -1911,9 +1915,11 @@ ul.rb li .timestamp {
     -ms-flex-align: center;
     align-items: center;
     align-content: stretch;
-    column-gap: 5%
+    column-gap: 10%;
+  }
+.image-34{
+    
 }
-
 .container-work {
     width: 100%;
     align-items: center;
