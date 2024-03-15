@@ -49,11 +49,14 @@ function showBooks(arrayBooks) {
 }
 
 function createFilter(arrayBooks, categories, authors, languages) {
+    //  var somma=0;
     arrayBooks.forEach((book) => {
+        // somma += book.pagine;
         addFilter(categories, book.categoria);
         addFilter(authors, book.autore);
         addFilter(languages, book.lingua);
     });
+    // console.log("pagine lette", somma)
 }
 
 function showFilter(filterList, idFilter) {
@@ -107,7 +110,7 @@ function filterResults(library) {
         showBooks(library)
     else {
         selectedInputs.forEach((input) => {
-            if (input.includes("categories")){
+            if (input.includes("categories")) {
                 categoriesInput.push(input.replace("input_categories_", "").replaceAll("_", " "));
             }
             else if (input.includes("authors"))
