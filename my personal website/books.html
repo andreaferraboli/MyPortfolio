@@ -101,21 +101,30 @@
     </div>
 </body>
 <script type="module">
+    console.log("eccomi")
+    let Books;
     //create array of books
-    import Books from "./js/books.json" assert {type: "json"};
-    //create filter list
-    var categories = new Map(),
-        authors = new Map(),
-        languages = new Map();
+    fetch('./js/books.json')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            Books=data;
+            //create filter list
+            var categories = new Map(),
+                authors = new Map(),
+                languages = new Map();
 
-    //main
-    showBooks(Books.books);
-    createFilter(Books.books,categories,authors,languages);
-    showFilter(categories, "categories");
-    showFilter(authors, "authors");
-    showFilter(languages, "languages");
-    document.getElementById("apply_button").onclick=function(){filterResults(Books.books);}
-    document.getElementById("discard_button").onclick=function(){discardFilter()};
+            //main
+            showBooks(Books.books);
+            createFilter(Books.books,categories,authors,languages);
+            showFilter(categories, "categories");
+            showFilter(authors, "authors");
+            showFilter(languages, "languages");
+            document.getElementById("apply_button").onclick=function(){filterResults(Books.books);}
+            document.getElementById("discard_button").onclick=function(){discardFilter()};
+        })
+        .catch(error => console.error('Error fetching the JSON:', error));
+
 
 </script>
 
