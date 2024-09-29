@@ -9,7 +9,7 @@
 body {
     background: var(--primary-color);
     color: var(--text-color);
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 :focus {
@@ -189,7 +189,6 @@ h1 .blast:hover, h2 .blast:hover {
     width: 100%;
     height: 100%;
     align-items: center;
-    margin: 5% 0 5% 20%
 }
 
 input:-webkit-autofill, input:-webkit-autofill:focus, input:-webkit-autofill:hover, textarea:-webkit-autofill, textarea:-webkit-autofill:focus, textarea:-webkit-autofill:hover {
@@ -242,7 +241,6 @@ input:-webkit-autofill, input:-webkit-autofill:focus, input:-webkit-autofill:hov
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 2rem 0
 }
 
 .main-menu__top > span {
@@ -303,7 +301,7 @@ input:-webkit-autofill, input:-webkit-autofill:focus, input:-webkit-autofill:hov
     display: block;
     font-size: calc(.5rem + 1vw);
     color: #909096;
-    line-height: 5rem;
+    line-height: 5vh;
     border-bottom: 1px solid #282828;
     -webkit-transition: color .3s, background-color .3s;
     -o-transition: color .3s, background-color .3s;
@@ -749,7 +747,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .fake-magicwall ul li {
-    width: 20%;
+    width: 16.666%;
     height: 50%;
     position: relative;
     overflow: hidden
@@ -819,9 +817,7 @@ input:focus:-ms-input-placeholder {
     width: 100%
 }
 
-.text-zone {
-    width: 40%
-}
+
 
 .tagcloud {
     width: 60%
@@ -979,7 +975,10 @@ input:focus:-ms-input-placeholder {
     opacity: .3;
     background-size: cover
 }
-
+.div_img{
+    width: 40%;
+    z-index: -1;
+}
 @media screen and (max-width: 1300px) {
     body {
         padding-left: 0
@@ -1521,9 +1520,9 @@ p > span {
 }
 
 .slider .slide-track {
-    animation: scroll 40s linear infinite;
+    animation: scroll 30s linear infinite alternate;
     display: flex;
-    width: calc(250px * 14);
+    width: calc(250px * 10);
     opacity: 1;
     z-index: 1
 }
@@ -1537,11 +1536,11 @@ p > span {
 }
 
 .slide > img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    filter: grayscale(1)
+    width:auto;              /* Imposta la larghezza dell'immagine al 100% del contenitore */
+    height: 100%;            /* Mantiene le proporzioni originali */
+    object-fit: contain;     /* Rende l'immagine contenuta nel suo box mantenendo le proporzioni */
 }
+
 
 .section-certificates {
     overflow: hidden;
@@ -1570,51 +1569,65 @@ p > span {
     margin: 0 4% 0 2%
 }
 
-.certificates > a > img {
-    border: 0;
-    max-width: 100%;
-    vertical-align: middle;
-    display: inline-block;
-    transition: .4s;
-    filter: brightness(0) invert(1)
+.img_certificate {
+    /*filter white*/
+    filter: brightness(0) invert(1);
 }
 
-.div-certificates {
-    padding: 5% 10% 5% 10%
-}
 
 .div-block-803 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    max-width: 100%;
-    height: 20%;
-    margin: 5% auto 5% auto;
-    padding-right: 80px;
-    padding-left: 80px;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
+
+.certificates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vh; /* Larghezza uniforme per tutti i certificati */
+    height: 25vh; /* Altezza fissa per garantire l'allineamento verticale delle descrizioni */
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.div_img_certificate {
+    display: flex;
+    flex: 0 0 80%; /* Occupa l'80% dello spazio verticale del contenitore */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.img_certificate {
+    max-width: 100%;
+    max-height: 100%; /* Assicura che l'immagine non superi l'altezza massima del div */
+    display: block;
+}
+
+.img-description {
+    flex: 0 0 20%; /* Occupa il 20% dello spazio verticale del contenitore */
+    text-align: center;
+    font-size: 14px;
+    color: #fff; /* Colore bianco per risaltare su sfondo scuro */
+    margin-top: 5px; /* Margine sopra la descrizione */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
 
 .personal-profile .personal-profile__avatar > img {
     border-radius: 5px;
     box-shadow: 0 0 27px rgb(96 96 96 / 34%);
-    width: 90%;
     -o-object-fit: cover;
     object-fit: cover;
     height: 90%
-}
-
-.personal-profile__avatar {
-    padding-right: 0 !important;
-    height: 100%;
 }
 
 .contact-list dt {
@@ -1676,7 +1689,7 @@ p > span {
 .v-center > a > i {
     font-size: 150%;
     margin-left: 5%;
-    margin-top: -2%; 
+    margin-top: -2%;
 }
 
 
@@ -1782,7 +1795,6 @@ dd {
     border-left: 1px dashed var(--secondary-color);
     padding: 0 0 5% 5%;
     position: relative;
-    width: 100%
 }
 
 .rb-container ul.rb li:last-child {
@@ -1815,7 +1827,9 @@ ul.rb li .timestamp {
 
 .item-title {
     color: var(--text-color);
-    font-size: calc(.5rem + 1vw)
+    font-size: calc(.5rem + 1vw);
+    overflow-wrap: break-word;
+    display: flex;
 }
 
 .container-3 {
@@ -1832,7 +1846,7 @@ ul.rb li .timestamp {
 }
 
 .container-skills {
-    padding: 0 10% 0 10%
+    padding: 1% 10% 0 10%
 }
 
 .progress {
@@ -1908,9 +1922,9 @@ ul.rb li .timestamp {
     width: 100%;
     min-width: 0;
     justify-content: center;
-  }
-  
-  .logo-set1 {
+}
+
+.logo-set1 {
     display: inline-flex;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -1921,8 +1935,9 @@ ul.rb li .timestamp {
     align-items: center;
     align-content: stretch;
     column-gap: 10%;
-  }
-  .image-34 {
+}
+
+.image-34 {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
@@ -1930,7 +1945,12 @@ ul.rb li .timestamp {
 
 .container-work {
     width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex
+}
+.container-slider-skills {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
