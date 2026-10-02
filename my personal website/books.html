@@ -1,7 +1,23 @@
-<html lang="en-US">
-
+<!DOCTYPE html>
+<html lang="it">
 <head>
-    <script type="text/javascript">
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>My Books - Andrea Ferraboli</title>
+    <meta name="description" content="I libri che hanno formato il percorso di crescita di Andrea Ferraboli."/>
+    <meta content="#eceff3" media="(prefers-color-scheme: light)" name="theme-color"/>
+    <meta content="#0b1220" media="(prefers-color-scheme: dark)" name="theme-color"/>
+    <meta content="https://pbs.twimg.com/profile_images/601407094277873664/WT2mk28E_400x400.jpg" property="og:image"/>
+    <link href="img/logo_final.png" rel="icon" sizes="57x57"/>
+
+    <script>
+        document.documentElement.classList.add("js");
+        try {
+            var t = localStorage.getItem("theme");
+            if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+    </script>
+    <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() {
             dataLayer.push(arguments);
@@ -9,123 +25,102 @@
         gtag("js", new Date());
         gtag("config", "UA-63172957-1");
     </script>
-    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-63172957-1"></script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000" />
-    <meta property="og:image" content="https://pbs.twimg.com/profile_images/601407094277873664/WT2mk28E_400x400.jpg" />
-    <link rel="icon" sizes="57x57" href="img/logo_final.png" />
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63172957-1"></script>
 
-
-    <title>Andrea Ferraboli</title>
-    <script type = "text/javascript" src="js/books.js" ></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-
-
-
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="css/books.css" type="text/css" media="all" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-
-
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap"
+          rel="stylesheet"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/books.css" rel="stylesheet"/>
 </head>
 
 <body>
-    <div class="w-100">
+<a class="skip-link" href="#main">Vai al contenuto</a>
 
-
-        <section class="section-menu">
-            <menu class="main-menu">
-                <div class="main-menu__top">
-                    <a class="logo" rel="home" href="index.html">
-                        <img class="logo-img" src="img/logo_final.png" alt="" href="https://andreaferraboli.it" />
-                        <span>Andrea</span>
-                        <span>Ferraboli</span>
-                    </a>
-                </div>
-                <nav class="main-menu_nav">
-                    <a rel="about" href="index.html#section-home">Home</a>
-                    <a rel="about" href="index.html#section-information">Introduction</a>
-                    <a rel="about" href="index.html#section-about">About</a>
-                    <a rel="about" href="index.html#section-education">Education</a>
-                    <a rel="skills" href="index.html#section-education">Skills</a>
-                    <a rel="skills" href="index.html#section-certificates">Certificate</a>
-                    <a rel="skills" href="index.html#section-books">My Books</a>
-                    <a rel="contact" href="index.html#section-contact">Contact</a>
-                </nav>
-
-                <ul class="main-menu__social">
-                    <a href="https://www.facebook.com/andrea.ferraboli.7/" target="_blank"><i
-                            class="bx bxl-facebook"></i></a>
-                    <a href="https://www.instagram.com/andrea_ferraboli/" target="_blank"><i
-                            class="bx bxl-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/andrea-ferraboli-845135188/" target="_blank"><i
-                            class="bx bxl-linkedin"></i></a> <br>
-                    <a href="https://github.com/andreaferraboli" target="_blank"><i class="bx bxl-github"></i></a>
-                    <a href="mailto: andrew.ferro04@gmail.com" target="_blank"><i class="bx bxl-gmail"></i></a>
-                    <a href="https://t.me/Ferro624" target="_blank"><i class="bx bxl-telegram"></i></a>
-                </ul>
-            </menu>
-        </section>
-
-        <section class="section-filter">
-            <div class="menu-filter">
-
-                <div class="h-90">
-                    <button onclick="showResults('categoriesDropdown')" class="dropbtn"> Categoria <i
-                            id="categories-arrow" class='arrow bx bx-chevron-down'></i></button>
-                    <div id="categoriesDropdown" class="dropdown-content h-40"></div>
-                    <button onclick="showResults('authorsDropdown')" class="dropbtn"> Autori <i id="authors-arrow"
-                            class='arrow bx bx-chevron-down'></i></button>
-                    <div id="authorsDropdown" class="dropdown-content h-30"></div>
-                    <button onclick="showResults('languagesDropdown')" class="dropbtn"> Lingue <i id="languages-arrow"
-                            class='arrow bx bx-chevron-down'></i></button>
-                    <div id="languagesDropdown" class="dropdown-content h-10"></div>
-                </div>
-
-                <div class="apply-filters">
-                    <button id="apply_button" class="apply" onclick="">Apply</button>
-                    <button id="discard_button" class="discard" onclick="">Discard</button>
-                </div>
-            </div>
-        </section>
-        <section class="section-books" id="section-books"></section>
-
+<header class="site-header">
+    <div class="container">
+        <a class="brand" href="index.html" rel="home">
+            <img alt="" height="34" src="img/logo.png" width="40"/>
+            <span>Andrea Ferraboli</span>
+        </a>
+        <nav aria-label="Sezioni" class="nav" id="site-nav">
+            <a href="index.html#section-home">Home</a>
+            <a href="index.html#section-information">Introduction</a>
+            <a href="index.html#section-about">About</a>
+            <a href="index.html#section-education">Education</a>
+            <a href="index.html#section-skills">Skills</a>
+            <a href="index.html#section-certificates">Certificate</a>
+            <a aria-current="page" href="books.html">My Books</a>
+            <a href="index.html#section-contact">Contact</a>
+        </nav>
+        <button aria-label="Cambia tema chiaro/scuro" aria-pressed="false" class="icon-btn theme-toggle" type="button">
+            <i aria-hidden="true" class="bx bx-moon"></i><i aria-hidden="true" class="bx bx-sun"></i>
+        </button>
+        <button aria-controls="site-nav" aria-expanded="false" aria-label="Menu" class="icon-btn menu-toggle" type="button">
+            <i aria-hidden="true" class="bx bx-menu"></i>
+        </button>
     </div>
+</header>
+
+<main class="container library" id="main">
+    <div class="library__head">
+        <h1 class="section-title">My Books</h1>
+        <p aria-live="polite" class="library__count" id="books-count"></p>
+    </div>
+
+    <div class="library__layout">
+        <aside aria-label="Filtri" class="library__filters">
+            <details class="filters" id="filters" open>
+                <summary class="filters__summary">
+                    <span>Filtri</span>
+                    <span class="filters__badge" id="filters-badge" hidden></span>
+                    <i aria-hidden="true" class="bx bx-chevron-down"></i>
+                </summary>
+                <form class="filters__form" id="filters-form">
+                    <fieldset class="filter-group">
+                        <legend>Categoria</legend>
+                        <div class="filter-group__list" id="categoriesDropdown"></div>
+                    </fieldset>
+                    <fieldset class="filter-group">
+                        <legend>Autori</legend>
+                        <div class="filter-group__list filter-group__list--scroll" id="authorsDropdown"></div>
+                    </fieldset>
+                    <fieldset class="filter-group">
+                        <legend>Lingue</legend>
+                        <div class="filter-group__list" id="languagesDropdown"></div>
+                    </fieldset>
+                    <div class="filters__actions">
+                        <button class="btn" id="apply_button" type="submit">Apply</button>
+                        <button class="btn btn--ghost" id="discard_button" type="button">Discard</button>
+                    </div>
+                </form>
+            </details>
+        </aside>
+
+        <section aria-labelledby="books-count" class="book-grid" id="section-books"></section>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <a class="brand" href="index.html">
+            <img alt="" height="34" loading="lazy" src="img/logo.png" width="40"/>
+            <span>Andrea Ferraboli</span>
+        </a>
+        <ul aria-label="Profili social" class="social">
+            <li><a aria-label="Facebook" href="https://www.facebook.com/andrea.ferraboli.7/" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bxl-facebook"></i></a></li>
+            <li><a aria-label="Instagram" href="https://www.instagram.com/andrea_ferraboli/" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bxl-instagram"></i></a></li>
+            <li><a aria-label="LinkedIn" href="https://www.linkedin.com/in/andrea-ferraboli-845135188/" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bxl-linkedin"></i></a></li>
+            <li><a aria-label="GitHub" href="https://github.com/andreaferraboli" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bxl-github"></i></a></li>
+            <li><a aria-label="Email" href="mailto:andrew.ferro04@gmail.com"><i aria-hidden="true" class="bx bxl-gmail"></i></a></li>
+            <li><a aria-label="Telegram" href="https://t.me/Ferro624" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bxl-telegram"></i></a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="js/site.js"></script>
+<script src="js/books.js"></script>
 </body>
-<script type="module">
-    console.log("eccomi")
-    let Books;
-    //create array of books
-    fetch('./js/books.json')
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-            Books=data;
-            //create filter list
-            var categories = new Map(),
-                authors = new Map(),
-                languages = new Map();
-
-            //main
-            showBooks(Books.books);
-            createFilter(Books.books,categories,authors,languages);
-            showFilter(categories, "categories");
-            showFilter(authors, "authors");
-            showFilter(languages, "languages");
-            document.getElementById("apply_button").onclick=function(){filterResults(Books.books);}
-            document.getElementById("discard_button").onclick=function(){discardFilter()};
-        })
-        .catch(error => console.error('Error fetching the JSON:', error));
-
-
-</script>
-
 </html>
