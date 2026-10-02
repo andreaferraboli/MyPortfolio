@@ -7,3 +7,8 @@
 - Books: pannello filtri con contatori, Discard ripristina tutti i libri.
 - Verifica: python3 -m http.server + Chrome headless a 1440/390/360, nessun errore console, nessuno scroll orizzontale, 76 libri caricati, filtro Psicologia+Tony Robbins = 13 come da JSON.
 - Aperti: telefono testo/link diversi (1379 vs 1378), CV mancante, carriera 2028-2032 al futuro, tag UA morto senza consenso, avatar 3 MB da comprimere, 6 immagini non piu usate.
+
+## 2026-10-02 - Pubblicazione su GitHub Pages via Actions
+- Aggiunto .github/workflows/pages.yml: a ogni push su main pubblica la cartella 'my personal website' su GitHub Pages (checkout, configure-pages, upload-pages-artifact, deploy-pages).
+- Pages attivato via API con build_type=workflow, URL https://andreaferraboli.github.io/MyPortfolio/.
+- Verifica: run del workflow su main e curl dell'URL pubblico (index, books.html, books.json).
