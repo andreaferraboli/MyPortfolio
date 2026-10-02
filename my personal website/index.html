@@ -1,965 +1,477 @@
-<html lang="en-US">
-
+<!DOCTYPE html>
+<html lang="it">
 <head>
-    <script type="text/javascript">
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag("js", new Date());
-        gtag("config", "UA-63172957-1");
-    </script>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-63172957-1" type="text/javascript"></script>
     <meta charset="UTF-8"/>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <meta content="#000" name="theme-color"/>
+    <title>Andrea Ferraboli</title>
+    <meta name="description" content="Andrea Ferraboli: Cybersecurity Specialist, Chief Information Security Officer, Senior Manager, Counselor, Mental Coach."/>
+    <meta content="#eceff3" media="(prefers-color-scheme: light)" name="theme-color"/>
+    <meta content="#0b1220" media="(prefers-color-scheme: dark)" name="theme-color"/>
     <meta content="https://pbs.twimg.com/profile_images/601407094277873664/WT2mk28E_400x400.jpg" property="og:image"/>
     <link href="img/logo_final.png" rel="icon" sizes="57x57"/>
 
+    <script>
+        document.documentElement.classList.add("js");
+        try {
+            var t = localStorage.getItem("theme");
+            if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-63172957-1");
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63172957-1"></script>
 
-    <title>Andrea Ferraboli</title>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <link href="css/style.css" media="all" rel="stylesheet" type="text/css"/>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap"
+          rel="stylesheet"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
 </head>
 
 <body>
-<div style="width: 100%">
+<a class="skip-link" href="#main">Vai al contenuto</a>
 
-
-    <menu class="main-menu">
-        <div class="main-menu__top">
-            <a class="logo" href="index.html" rel="home">
-                <img alt="" class="logo-img" href="https://andreaferraboli.it" src="img/logo_final.png"/>
-                <span>Andrea</span>
-                <span>Ferraboli</span>
-            </a>
-        </div>
-        <nav class="main-menu_nav">
-            <a href="#section-home" rel="about">Home</a>
-            <a href="#section-information" rel="about">Introduction</a>
-            <a href="#section-about" rel="about">About</a>
-            <a href="#section-education" rel="about">Education</a>
-            <a href="#section-skills" rel="skills">Skills</a>
-            <a href="#section-certificates" rel="skills">Certificate</a>
-            <a href="#section-books" rel="skills">My Books</a>
-            <a href="#section-contact" rel="contact">Contact</a>
+<header class="site-header">
+    <div class="container">
+        <a class="brand" href="index.html" rel="home">
+            <img alt="" height="34" src="img/logo.png" width="40"/>
+            <span>Andrea Ferraboli</span>
+        </a>
+        <nav aria-label="Sezioni" class="nav" id="site-nav">
+            <a href="#section-home">Home</a>
+            <a href="#section-information">Introduction</a>
+            <a href="#section-about">About</a>
+            <a href="#section-education">Education</a>
+            <a href="#section-skills">Skills</a>
+            <a href="#section-certificates">Certificate</a>
+            <a href="#section-books">My Books</a>
+            <a href="#section-contact">Contact</a>
         </nav>
+        <button aria-label="Cambia tema chiaro/scuro" aria-pressed="false" class="icon-btn theme-toggle" type="button">
+            <i aria-hidden="true" class="bx bx-moon"></i><i aria-hidden="true" class="bx bx-sun"></i>
+        </button>
+        <button aria-controls="site-nav" aria-expanded="false" aria-label="Menu" class="icon-btn menu-toggle" type="button">
+            <i aria-hidden="true" class="bx bx-menu"></i>
+        </button>
+    </div>
+</header>
 
-        <ul class="main-menu__social">
-            <a href="https://www.facebook.com/andrea.ferraboli.7/" target="_blank"><i
-                    class="bx bxl-facebook"></i></a>
-            <a href="https://www.instagram.com/andrea_ferraboli/" target="_blank"><i
-                    class="bx bxl-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/andrea-ferraboli-845135188/" target="_blank"><i
-                    class="bx bxl-linkedin"></i></a> <br>
-            <a href="https://github.com/andreaferraboli" target="_blank"><i class="bx bxl-github"></i></a>
-            <a href="mailto: andrew.ferro04@gmail.com" target="_blank"><i class="bx bxl-gmail"></i></a>
-            <a href="https://t.me/Ferro624" target="_blank"><i class="bx bxl-telegram"></i></a>
-        </ul>
-    </menu>
-    <div class="w-90" id="ajaxify">
-        <div class="page-outer">
-            <div class="page-inner">
-                <div class="aboutMe">
-                    <section class="section-full section-home js-page-home loaded scroll" id="section-home">
-                        <div class="text-zone personal-job-area">
-                            <h1 class="personal-job-area">
-                                <span class="text-job">Cybersecurity Specialist </span> <br/>
-                                <span class="text-job">Chief Information Security Officer</span>
-                                <br/>
-                                <span class="text-job">Senior Manager</span> <br/>
-                                <span class="text-job">Counselor</span> <br/>
-                                <span class="text-job">Mental Coach</span> <br/>
-                            </h1>
-                            <br/>
-                            <p class="aforisma">
-                                "Se fai ciò che hai sempre fatto otterrai ciò che hai sempre
-                                ottenuto."
-                            </p>
-                            <br/>
-                            <div class="center-btn">
-                                <a class="flat-button center-btn" href="/contact/" rel="contact">
-                                    <span class="bg"></span> <span class="base"></span>
-                                    <span class="text">Scopri di più</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="div_img">
-                            <img alt="andrea ferraboli" class="img" src="img/foto-no-background.png"/>
-                        </div>
-
-                    </section>
+<main id="main">
+    <!-- Hero -->
+    <section aria-labelledby="hero-name" class="hero" id="section-home">
+        <div class="container">
+            <div class="hero__text">
+                <h1 class="hero__name" data-reveal id="hero-name" style="--i:0">Andrea Ferraboli</h1>
+                <ul class="hero__roles">
+                    <li data-reveal style="--i:1">Cybersecurity Specialist</li>
+                    <li data-reveal style="--i:2">Chief Information Security Officer</li>
+                    <li data-reveal style="--i:3">Senior Manager</li>
+                    <li data-reveal style="--i:4">Counselor</li>
+                    <li data-reveal style="--i:5">Mental Coach</li>
+                </ul>
+                <p class="hero__quote" data-reveal style="--i:7">
+                    "Se fai ciò che hai sempre fatto otterrai ciò che hai sempre ottenuto."
+                </p>
+                <div class="hero__cta" data-reveal style="--i:8">
+                    <a class="btn" href="#section-information">Scopri di più</a>
                 </div>
-                <section class="section-information scroll" id="section-information">
-                    <div class="container h-70">
-                        <div class="row personal-profile">
-                            <div class="col-md-6 personal-profile__avatar">
-                                <img class="" src="img/my avatar.png"
-                                     style="background-size: cover;float: right;margin-right: 20%">
-                            </div>
-                            <div class="col-md-6">
-                                <h2 class="personal-profile__name">Andrea Ferraboli</h2>
-                                <p class="personal-profile__work">Cybersecurity Specialist, mental coach</p>
-                                <div class="personal-profile__contacts">
-                                    <dl class="contact-list contact-list__opacity-titles">
-                                        <dt>Age:</dt>
-                                        <dd alt="06/02/2004" id="age"></dd>
-                                        <dt>Phone:</dt>
-                                        <dd><a href="tel:+39 3339431378">(+39) 333 9431379</a></dd>
-                                        <dt>Email:</dt>
-                                        <dd><a href="mailto:andrew.ferro04@gmail.com">andrew.ferro04@gmail.com</a>
-                                        </dd>
-                                        <dt>Address:</dt>
-                                        <dd>Via G. A. Cavellini 1, 25134, Brescia</dd>
-                                    </dl>
-                                </div>
-                                <p class="personal-profile__social">
-                                    <a href="https://www.facebook.com/andrea.ferraboli.7/" target="_blank"><i
-                                            class="bx bxl-facebook"></i></a>
-                                    <a href="https://www.instagram.com/andrea_ferraboli/" target="_blank"><i
-                                            class="bx bxl-instagram"></i></a>
-                                    <a href="https://www.linkedin.com/in/andrea-ferraboli-845135188/"
-                                       target="_blank"><i class="bx bxl-linkedin"></i></a>
-                                    <a href="https://github.com/andreaferraboli" target="_blank"><i
-                                            class="bx bxl-github"></i></a>
-                                    <a href="mailto: andrew.ferro04@gmail.com" target="_blank"><i
-                                            class="bx bxl-gmail"></i></a>
-                                    <a href="https://t.me/Ferro624" target="_blank"><i
-                                            class="bx bxl-telegram"></i></a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cv-container h-30" id="hello">
-                        <div class="row">
-                            <div>
-                                <p class="section__description">
-                                    Nel mio futuro professionale desidero unire
-                                    la mia passione per la cybersecurity e l'intelligenza artificiale
-                                    con ruoli che richiedano competenze di management e leadership.
-                                    Voglio contribuire alla crescita dell'azienda per la quale lavoro
-                                    tramite un percorso di crescita a medio-lungo termine,
-                                    assumendo responsabilità crescenti.
-                                    Il mio obiettivo è evolvermi continuamente, guidando team verso soluzioni sicure
-                                    e innovative che creino un impatto positivo nella società.</p>
-                            </div>
-                            <!--                            <div class="logo-carousel-container">-->
-                            <!--                                <div class="logo-set1" id="logoSet1">-->
-                            <!--                                    &lt;!&ndash; Gli elementi img verranno aggiunti dinamicamente qui &ndash;&gt;-->
-                            <!--                                </div>-->
-                            <!--                            </div>-->
-
-                            <!--                            <script>-->
-                            <!--                                // Array di URL delle immagini-->
-                            <!--                                var logos = [-->
-                            <!--                                    "https://uploads-ssl.webflow.com/5b54e064ef1d588c6d4a4264/62657425a9da5b113b2ec7d9_6060b782465d7108c644ae56_huawei.svg",-->
-                            <!--                                    "https://uploads-ssl.webflow.com/5b54e064ef1d588c6d4a4264/6265742245767bffe055bde5_6060b7b87a71c7ec1df814e4_honor.svg",-->
-                            <!--                                    "https://uploads-ssl.webflow.com/5b54e064ef1d588c6d4a4264/62657423c6c1fb96b3b0af43_6060b7b98165d5ec6edf6f27_logitech.svg",-->
-                            <!--                                    "https://uploads-ssl.webflow.com/5b54e064ef1d588c6d4a4264/6265742452d56eb75ac33232_6060b7bc07f5362efacd827a_swatch.svg",-->
-                            <!--                                    "https://uploads-ssl.webflow.com/5b54e064ef1d588c6d4a4264/6265742558a08c7f19e3ef64_6060b7bd7291140fe1383f82_technogym.svg",-->
-                            <!--                                    "https://uploads-ssl.webflow.com/5b54e064ef1d588c6d4a4264/62657423dcc383e516f71fc1_6060b7bc5fb119a344744527_nike.svg",-->
-                            <!--                                    "https://uploads-ssl.webflow.com/5b54e064ef1d588c6d4a4264/6265742352d56e6123c33231_6060b7b895cee7fbb8cdf093_apple.svg",-->
-                            <!--                                    "https://uploads-ssl.webflow.com/5b54e064ef1d588c6d4a4264/6265742249337be3e8344a86_6060b7b95fb119dab77444e3_hasbro.svg",-->
-                            <!--                                    "https://uploads-ssl.webflow.com/5b54e064ef1d588c6d4a4264/6265742176dd5bff9730427e_6060b7b8e5454af47920d90a_bbc.svg",-->
-                            <!--                                    "https://uploads-ssl.webflow.com/5b54e064ef1d588c6d4a4264/626574240f23dce3cf70b8a4_6060b7bc59cb0e1bf8f39646_oxford.svg",-->
-                            <!--                                    "https://uploads-ssl.webflow.com/5b54e064ef1d588c6d4a4264/6265742576dd5bf87530432f_6060b7bd9a7d3d888cfcd520_wwe.svg",-->
-                            <!--                                    "https://uploads-ssl.webflow.com/5b54e064ef1d588c6d4a4264/6265742223fd2116071c8e2f_6060b7b9b72627f2d26a43ea_foot_locker.svg"-->
-                            <!--                                    // Aggiungi altri URL delle immagini secondo necessità-->
-                            <!--                                ];-->
-
-                            <!--                                // Elemento HTML padre-->
-                            <!--                                var logoSet1 = document.getElementById("logoSet1");-->
-
-                            <!--                                // Creazione dinamica degli elementi img-->
-                            <!--                                logos.forEach(function (logoURL) {-->
-                            <!--                                    var imgElement = document.createElement("img");-->
-                            <!--                                    imgElement.src = logoURL;-->
-                            <!--                                    imgElement.alt = "Logo";-->
-                            <!--                                    imgElement.width = 100;-->
-                            <!--                                    imgElement.height = 120;-->
-                            <!--                                    imgElement.className = "image-34";-->
-                            <!--                                    // Aggiungi l'elemento img al div padre-->
-                            <!--                                    logoSet1.appendChild(imgElement);-->
-                            <!--                                });-->
-                            <!--                            </script>-->
-
-
-                            <div class="v-center">
-                                <a class="section_btn site-btn" href="">Download CV <i class='bx bx-download'></i>
-                                    <!--<i
-                                class="bx bx-download"></i>-->
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-                <section class="section-full section-about  scroll" data-load="about" id="section-about">
-                    <div class="text-zone ">
-                        <header class="h-20 ">
-                            <h2 aria-label="Me, Myself and I" style="padding-top: 10%">
-                                <span aria-hidden="true" class="blast" style="opacity: 1">M</span><span
-                                    aria-hidden="true" class="blast" style="opacity: 1">e</span><span aria-hidden="true"
-                                                                                                      class="blast"
-                                                                                                      style="opacity: 1">,</span>
-                                <span aria-hidden="true" class="blast" style="opacity: 1">M</span><span
-                                    aria-hidden="true" class="blast" style="opacity: 1">y</span><span aria-hidden="true"
-                                                                                                      class="blast"
-                                                                                                      style="opacity: 1">s</span><span
-                                    aria-hidden="true"
-                                    class="blast" style="opacity: 1">e</span><span aria-hidden="true"
-                                                                                   class="blast"
-                                                                                   style="opacity: 1">l</span><span
-                                    aria-hidden="true"
-                                    class="blast" style="opacity: 1">f</span>
-                                <span aria-hidden="true" class="blast" style="opacity: 1">a</span><span
-                                    aria-hidden="true" class="blast" style="opacity: 1">n</span><span aria-hidden="true"
-                                                                                                      class="blast"
-                                                                                                      style="opacity: 1">d</span>
-                                <span aria-hidden="true" class="blast" style="opacity: 1">I</span>
-                            </h2>
-                        </header>
-                        <div class="h-70 center-btn">
-                            <p>
-                                Dal 2020 ho intrapreso un percorso per comprendere
-                                come sfruttare al meglio il potenziale personale e altrui,
-                                con l'obiettivo di liberare il potere insito in ciascuno di noi e
-                                raggiungere la qualità di vita che desideriamo e meritiamo.
-                                Il mio scopo più profondo è contribuire alla costruzione di una società migliore,
-                                formata da persone libere, sia emotivamente che economicamente,
-                                consapevoli del proprio valore e capaci di esprimere il loro naturale talento di
-                                leadership.
-                                Credo che il ruolo di un manager aziendale consista nel riconoscere che il successo di
-                                un'impresa
-                                dipende dai propri dipendenti e che ogni individuo rappresenta un universo unico da
-                                scoprire,
-                                comprendere e valorizzare.
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="tagcloud" id="tag"></div>
-                    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-                    <script src="js/cloud.js"></script>
-                    <script>
-                        $(document).ready(function () {
-                            var entries = [
-                                {label: "Potenzialità"},
-                                {label: "Guida"},
-                                {label: "Assertività"},
-                                {label: "Mentalità"},
-                                {label: "Flessibilità"},
-                                {label: "Apertura"},
-                                {label: "Collaborazione"},
-                                {label: "Individualità"},
-                                {label: "Affermazione di sé"},
-                                {label: "Resilienza"},
-                                {label: "Risoluzione Problemi"},
-                                {label: "Intelligenza Emotiva"},
-                                {label: "Intelligenza Sociale"},
-                                {label: "Leadership Emotiva"},
-                                {label: "Integrità"},
-                                {label: "Motivazione"},
-                                {label: "Disciplina"},
-                                {label: "Ispirazione"},
-                                {label: "Decision Making"},
-                                {label: "Empatia"},
-                                {label: "Immersione"},
-                                {label: "Successo"},
-                            ];
-                            var settings = {
-                                entries: entries,
-                                width: 1000,
-                                height: 700,
-                                radius: "80%",
-                                radiusMin: 100,
-                                bgDraw: true,
-                                bgColor: "#00000000",
-                                opacityOver: 1.0,
-                                opacityOut: 0.05,
-                                opacitySpeed: 6,
-                                fov: 800,
-                                speed: 0.7,
-                                fontFamily: "Oswald, Arial, sans-serif",
-                                fontSize: "20",
-                                fontColor: "#D5212E",
-                                fontWeight: "normal", //bold
-                                fontStyle: "normal", //italic
-                                fontStretch: "normal", //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
-                                fontToUpperCase: true,
-                                tooltipFontFamily: "Oswald, Arial, sans-serif",
-                                tooltipFontSize: "11",
-                                tooltipFontColor: "#c91818",
-                                tooltipFontWeight: "normal", //bold
-                                tooltipFontStyle: "normal", //italic
-                                tooltipFontStretch: "normal", //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
-                                tooltipFontToUpperCase: false,
-                                tooltipTextAnchor: "left",
-                            };
-                            $("#tag").svg3DTagCloud(settings);
-                        });
-                    </script>
-                </section>
-                <section class="section-education scroll" id="section-education">
-                    <div class="">
-                        <div class="rightbox f-left">
-                            <div class="center-btn">
-                                <h3>Educazione</h3>
-                            </div>
-                            <div class="rb-container">
-
-                                <ul class="rb">
-
-
-                                    <li class="rb-item" data-date="2017-2022" ng-repeat="itembx">
-                                        <div class="timestamp">
-                                            2017-2022
-                                        </div>
-                                        <div>
-                                            <i class='bx bx-map-pin'></i> <a
-                                                href="https://www.iiscastelli.edu.it/Pager.aspx?Page=mainpage">I.T.I.S
-                                            Castelli</a>
-                                        </div>
-                                        <div class="item-title">Diploma istituto tecnico industriale come Tecnico
-                                            Informatico
-                                        </div>
-
-                                    </li>
-                                    <li class="rb-item" ng-repeat="itembx">
-                                        <div class="timestamp">
-                                            2022-2025
-                                        </div>
-                                        <i class='bx bx-map-pin'></i> <a href="https://www.unimi.it/it">Università
-                                        statale di Milano</a>
-                                        <div class="item-title">Laurea Triennale in Sicurezza dei sistemi e delle
-                                            reti
-                                            informatiche
-                                        </div>
-
-                                    </li>
-
-                                    <li class="rb-item" ng-repeat="itembx">
-                                        <div class="timestamp">
-                                            2023-2026
-                                        </div>
-                                        <i class='bx bx-map-pin'></i> <a href="https://www.unimi.it/it">Università
-                                        statale di Milano</a>
-                                        <div class="item-title">Laurea Triennale in Economia e Management</div>
-
-                                    </li>
-                                    <li class="rb-item" ng-repeat="itembx">
-                                        <div class="timestamp">
-                                            2025-2027
-                                        </div>
-                                        <i class='bx bx-map-pin'></i> <a href="https://www.unimi.it/it">Università
-                                        statale di Milano</a>
-                                        <div class="item-title">Laurea Magistrale in Sicurezza dei sistemi e delle
-                                            reti
-                                            informatiche
-                                        </div>
-
-                                    </li>
-                                    <li class="rb-item" ng-repeat="itembx">
-                                        <div class="timestamp">
-                                            2027
-                                        </div>
-                                        <i class='bx bx-map-pin'></i> <a href="https://www.unimi.it/it">Università
-                                        statale di Milano</a>
-                                        <div class="item-title">Master in Cybersecurity</div>
-
-                                    </li>
-
-                                </ul>
-
-                            </div>
-                        </div>
-                        <div class="rightbox f-right">
-                            <div class="center-btn">
-                                <h3>Carriera</h3>
-                            </div>
-                            <div class="rb-container">
-                                <ul class="rb">
-
-                                    <li class="rb-item" data-date="2025-2026" ng-repeat="itembx">
-                                        <div class="timestamp">
-                                            2025-2026
-                                        </div>
-                                        <div class="item-title">Junior Security Analyst presso TechSecure S.p.A.</div>
-                                    </li>
-
-                                    <li class="rb-item" data-date="2026-2028" ng-repeat="itembx">
-                                        <div class="timestamp">
-                                            2026-2028
-                                        </div>
-                                        <div class="item-title">Consultant in Cybersecurity e Compliance presso
-                                            BusinessSecure Consulting
-                                        </div>
-                                    </li>
-
-                                    <li class="rb-item" data-date="2028-2030" ng-repeat="itembx">
-                                        <div class="timestamp">
-                                            2028-2030
-                                        </div>
-                                        <div class="item-title">IT Security Manager presso Innovatech S.r.l.</div>
-                                    </li>
-
-                                    <li class="rb-item" data-date="2030-2032" ng-repeat="itembx">
-                                        <div class="timestamp">
-                                            2030-2032
-                                        </div>
-                                        <div class="item-title">Chief Information Security Officer (CISO) presso Global
-                                            Enterprises S.p.A.
-                                        </div>
-                                    </li>
-
-                                    <li class="rb-item" data-date="2032" ng-repeat="itembx">
-                                        <div class="timestamp">
-                                            2032
-                                        </div>
-                                        <div class="item-title">Responsabile della divisione Sicurezza Informatica e
-                                            Innovazione presso TechVision Group
-                                        </div>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="section-education scroll" id="section-skills">
-                    <div class="container-skills" id="div-skills">
-                        <div class="row section__resume progress-list js-progress-list">
-                            <div class="col-md-12 container-skills-title">
-                                <p>general skills</p>
-                            </div>
-                            <div class="h-50">
-                                <div class="col-md-6 mr-auto">
-                                    <div class="progress-list__skill">
-                                        <p>
-                                                <span class="progress-list__skill-title">Networking and System
-                                                    Administration</span>
-                                            <span class="progress-list__skill-value">80%</span>
-                                        </p>
-                                        <div class="progress">
-                                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80"
-                                                 class="progress-bar" role="progressbar" style="width: 80%;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="progress-list__skill">
-                                        <p>
-                                                <span class="progress-list__skill-title">Operating Systems and Virtual
-                                                    Machines</span>
-                                            <span class="progress-list__skill-value">70%</span>
-                                        </p>
-                                        <div class="progress">
-                                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70"
-                                                 class="progress-bar" role="progressbar" style="width: 70%;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="progress-list__skill">
-                                        <p>
-                                            <span class="progress-list__skill-title">Network Security Control</span>
-                                            <span class="progress-list__skill-value">90%</span>
-                                        </p>
-                                        <div class="progress">
-                                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="90"
-                                                 class="progress-bar" role="progressbar" style="width: 90%;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="progress-list__skill">
-                                        <p>
-                                            <span class="progress-list__skill-title"> Coding</span>
-                                            <span class="progress-list__skill-value">80%</span>
-                                        </p>
-                                        <div class="progress">
-                                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80"
-                                                 class="progress-bar" role="progressbar" style="width: 80%;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mr-auto">
-                                    <div class="progress-list__skill">
-                                        <p>
-                                            <span class="progress-list__skill-title">Cloud Security</span>
-                                            <span class="progress-list__skill-value">80%</span>
-                                        </p>
-                                        <div class="progress">
-                                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80"
-                                                 class="progress-bar" role="progressbar" style="width: 80%;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="progress-list__skill">
-                                        <p>
-                                            <span class="progress-list__skill-title">Blockchain Security</span>
-                                            <span class="progress-list__skill-value" id="span-1">60%</span>
-                                        </p>
-                                        <div class="progress">
-                                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60"
-                                                 class="progress-bar" role="progressbar" style="width: 60%;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="progress-list__skill">
-                                        <p>
-                                            <span class="progress-list__skill-title">The Internet of Things </span>
-                                            <span class="progress-list__skill-value">90%</span>
-                                        </p>
-                                        <div class="progress">
-                                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="90"
-                                                 class="progress-bar" role="progressbar" style="width: 90%;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="progress-list__skill">
-                                        <p>
-                                            <span class="progress-list__skill-title">Artificial Intelligence</span>
-                                            <span class="progress-list__skill-value">80%</span>
-                                        </p>
-                                        <div class="progress">
-                                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80"
-                                                 class="progress-bar" role="progressbar" style="width: 80%;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-slider-skills h-30">
-                        <div class="w-100 container-skills-title">
-                            <p>TOOLS</p>
-                        </div>
-                        <div class="slider">
-                            <div class="slide-track">
-                                <div class="slide"><img
-                                        src="https://cdn.worldvectorlogo.com/logos/office-365-1.svg">
-                                </div>
-                                <div class="slide"><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/640px-Matlab_Logo.png">
-                                </div>
-                                <div class="slide"><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png">
-                                </div>
-                                <div class="slide"><img
-                                        src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png">
-                                </div>
-                                <div class="slide"><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png">
-                                </div>
-                                <div class="slide"><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/1200px-Windows_logo_-_2012.svg.png">
-                                </div>
-                                <div class="slide"><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Tux.png/220px-Tux.png">
-                                </div>
-                                <div class="slide"><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Kali-dragon-icon.svg/2048px-Kali-dragon-icon.svg.png">
-                                </div>
-                                <div class="slide"><img
-                                        src="https://www.svgrepo.com/show/331488/mongodb.svg">
-                                </div>
-                                <div class="slide"><img
-                                        src="https://www.gstatic.com/devrel-devsite/prod/vdf5af65c45d9e2fdd493c581ff01cb1d11a21b4420a9fcc957400a26863da9d2/firebase/images/touchicon-180.png">
-                                </div>
-                                <div class="slide"><img
-                                        src="https://www.svgrepo.com/show/303251/mysql-logo.svg">
-                                </div>
-                                <div class="slide"><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png">
-                                </div>
-                                <div class="slide"><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="section-certificates scroll" id="section-certificates">
-                    <div class="container-work h-20">
-                        <div class="
-                         f-left">
-                            <h2>Worked with</h2>
-                        </div>
-                        <div class="slider col-7 f-right">
-                            <div class="slide-track">
-                                <div class="slide">
-                                    <img alt="IBM Logo"
-                                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/2560px-IBM_logo.svg.png">
-                                </div>
-                                <div class="slide">
-                                    <img alt="Microsoft Logo"
-                                         src="https://loghi-famosi.com/wp-content/uploads/2020/10/Microsoft-Logo.png">
-                                </div>
-                                <div class="slide">
-                                    <img alt="Accenture Logo"
-                                         src="http://portiamovalore.uniba.it/uploads/loghi/Acc_Logo_Black_Purple_RGB_1539701038.PNG">
-                                </div>
-                                <div class="slide">
-                                    <img alt="Almaviva Digital Logo"
-                                         src="https://www.opencampus.it/wp-content/uploads/2020/02/AlmavivADigitaltec.png">
-                                </div>
-                                <div class="slide">
-                                    <img alt="HP Logo"
-                                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/480px-HP_logo_2012.svg.png">
-                                </div>
-                                <div class="slide">
-                                    <img alt="Zucchetti Logo"
-                                         src="https://www.zucchetti.it/website/templates/website/img/logo.png">
-                                </div>
-                                <div class="slide">
-                                    <img alt="TeamSystem Logo"
-                                         src="https://mktg.teamsystem.com/hs-fs/hubfs/TeamSystem_Colore-500px.png?width=500&name=TeamSystem_Colore-500px.png">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="div-certificates h-80">
-                        <h3 class="heading-77-copy"><strong
-                                class="bold-text-3-copy thin-copy">Certificazioni<br></strong>
-                        </h3>
-                        <div class="div-block-803">
-                            <div class="certificates">
-                                <a class="div_img_certificate" href="img/CompTIA.png" target="_blank">
-                                    <img alt="" class="img_certificate" src="img/CompTIA.png" width="150">
-                                </a>
-                                <p class="img-description">Certificazione CompTIA</p>
-                            </div>
-                            <div class="certificates">
-                                <a class="div_img_certificate" href="img/ccna.png" target="_blank">
-                                    <img alt="" class="img_certificate" src="img/ccna.png" width="185">
-                                </a>
-                                <p class="img-description">Certificazione CCNA</p>
-                            </div>
-                            <div class="certificates">
-                                <a class="div_img_certificate" href="img/ceh.png" target="_blank">
-                                    <img alt="" class="img_certificate" src="img/ceh.png" width="150">
-                                </a>
-                                <p class="img-description">Certificazione CEH</p>
-                            </div>
-                        </div>
-                        <div class="div-block-803">
-                            <div class="certificates">
-                                <a class="div_img_certificate" href="img/certificato_coaching.png" target="_blank">
-                                    <img alt="" class="img_certificate" src="img/certificato_coaching.png" width="150">
-                                </a>
-                                <p class="img-description">Certificato di Coaching</p>
-                            </div>
-                            <div class="certificates">
-                                <a class="div_img_certificate" href="img/CISSP.png" target="_blank">
-                                    <img alt="" class="img_certificate" src="img/CISSP.png" width="185">
-                                </a>
-                                <p class="img-description">Certificazione CISSP</p>
-                            </div>
-                            <div class="certificates">
-                                <a class="div_img_certificate" href="img/oscp.png" target="_blank">
-                                    <img alt="" class="img_certificate" src="img/oscp.png" width="150">
-                                </a>
-                                <p class="img-description">Certificazione OSCP</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-                <section class="section-full section-work scroll" data-load="work" id="section-books">
-
-                    <div class="text-zone h-20" style="width: 100% !important;margin-top: 3%">
-                        <div class="w-90">
-                            <div>
-                                <h2 aria-label="My Portfolio">
-                                    <span aria-hidden="true" class="blast" style="opacity: 1">M</span><span
-                                        aria-hidden="true" class="blast" style="opacity: 1">y</span>
-                                    <span aria-hidden="true" class="blast" style="opacity: 1">B</span><span
-                                        aria-hidden="true" class="blast" style="opacity: 1">o</span><span
-                                        aria-hidden="true" class="blast" style="opacity: 1">o</span><span
-                                        aria-hidden="true" class="blast" style="opacity: 1">k</span><span
-                                        aria-hidden="true" class="blast" style="opacity: 1">s</span>
-                                </h2>
-                                <p>
-                                    Ecco a voi una serie di libri che mi hanno formato durante
-                                    tutto il mio personale percorso di crescita, aiutandomi a
-                                    diventare una persona migliore e trasformando le mie debolezze
-                                    in punti di forza. Sei interessato a scoprirli tutti?
-                                    <span><a href="books.html">I miei libri</a></span>
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="fake-magicwall h-70" id="home-magicwalle">
-                        <ul>
-                            <li>
-                                <div class="magic-wall_item lazyloaded"
-                                     data-bgset="https://www.lafeltrinelli.it/images/9788850259397_0_536_0_75.jpg"
-                                     style="background-image: url('https://www.lafeltrinelli.it/images/9788850259397_0_536_0_75.jpg');">
-
-                                    <div class="hover-content vcenter"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="magic-wall_item lazyloaded"
-                                     data-bgset="https://www.lafeltrinelli.it/images/9788893881289_0_536_0_75.jpg"
-                                     style="background-image: url('https://www.lafeltrinelli.it/images/9788893881289_0_536_0_75.jpg');">
-                                    <div class="hover-content vcenter"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="magic-wall_item lazyloaded"
-                                     data-bgset="https://www.lafeltrinelli.it/images/9788817050166_0_536_0_75.jpg"
-                                     style="background-image: url('https://www.lafeltrinelli.it/images/9788817050166_0_536_0_75.jpg');">
-                                    <div class="hover-content vcenter"></div>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div class="magic-wall_item lazyloaded"
-                                     data-bgset="https://www.lafeltrinelli.it/images/9788830103146_0_536_0_75.jpg"
-                                     style="background-image: url('https://www.lafeltrinelli.it/images/9788830103146_0_536_0_75.jpg');">
-                                    <div class="hover-content vcenter"></div>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div class="magic-wall_item lazyloaded"
-                                     data-bgset="https://www.lafeltrinelli.it/images/9788820385712_0_536_0_75.jpg"
-                                     style="background-image: url('https://www.lafeltrinelli.it/images/9788820385712_0_536_0_75.jpg');">
-                                    <div class="hover-content vcenter"></div>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div class="magic-wall_item lazyloaded"
-                                     data-bgset="https://www.lafeltrinelli.it/images/9788830104334_0_536_0_75.jpg"
-                                     style="background-image: url('https://www.lafeltrinelli.it/images/9788830104334_0_536_0_75.jpg');">
-                                    <div class="hover-content vcenter"></div>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div class="magic-wall_item lazyloaded"
-                                     data-bgset="https://www.lafeltrinelli.it/images/9788863661309_0_536_0_75.jpg"
-                                     style="background-image: url('https://www.lafeltrinelli.it/images/9788863661309_0_536_0_75.jpg');">
-                                    <div class="hover-content vcenter"></div>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div class="magic-wall_item lazyloaded"
-                                     data-bgset="https://www.lafeltrinelli.it/images/9788863663259_0_536_0_75.jpg"
-                                     style="background-image: url('https://www.lafeltrinelli.it/images/9788863663259_0_536_0_75.jpg');">
-                                    <div class="hover-content vcenter"></div>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div class="magic-wall_item lazyloaded"
-                                     data-bgset="https://www.lafeltrinelli.it/images/9788830105874_0_536_0_75.jpg"
-                                     style="background-image: url('https://www.lafeltrinelli.it/images/9788830105874_0_536_0_75.jpg');">
-                                    <div class="hover-content vcenter"></div>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div class="magic-wall_item lazyloaded"
-                                     data-bgset="https://www.lafeltrinelli.it/images/9788817069113_0_536_0_75.jpg"
-                                     style="background-image: url('https://www.lafeltrinelli.it/images/9788817069113_0_536_0_75.jpg');">
-                                    <div class="hover-content vcenter"></div>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div class="magic-wall_item lazyloaded"
-                                     data-bgset="https://www.lafeltrinelli.it/images/9788833620671_0_536_0_75.jpg"
-                                     style="background-image: url('https://www.lafeltrinelli.it/images/9788833620671_0_536_0_75.jpg');">
-                                    <div class="hover-content vcenter"></div>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div class="magic-wall_item lazyloaded"
-                                     data-bgset="https://www.lafeltrinelli.it/images/9788836006182_0_536_0_75.jpg"
-                                     style="background-image: url('https://www.lafeltrinelli.it/images/9788836006182_0_536_0_75.jpg');">
-                                    <div class="hover-content vcenter"></div>
-
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section class="section-full section-contact  scroll" data-load="contact" id="section-contact">
-                    <video autoplay class="back-video" loop muted plays-inline>
-                        <source src="img/Unbroken - Motivational Video_Trim.mp4" type="video/mp4">
-                    </video>
-                    <div class="text-zone">
-                        <header>
-                            <h2 aria-label="Contact me" id="contattami">
-                                Contattami!
-                            </h2>
-                        </header>
-                        <p>
-                            Concediti un minuto per <span> CAMBIARE LA TUA VITA</span> ed entrare nel mondo della
-                            crescita personale e del successo in ogni ambito
-                            della tua vita. Fallo per te, non tornerai più indietro!
-                        </p>
-                        <div class="contact-form">
-                            <form autocomplete="off" id="contact">
-                                <ul>
-                                    <li class="half">
-                                        <input class="input__field input__field--hoshi" name="name"
-                                               placeholder="Name" type="text"/>
-                                        <label
-                                                class="input__label input__label--hoshi input__label--hoshi-color-2"></label>
-                                    </li>
-                                    <li class="half">
-                                        <input class="input__field input__field--hoshi" name="email"
-                                               placeholder="Email" type="email"/>
-                                        <label
-                                                class="input__label input__label--hoshi input__label--hoshi-color-2"></label>
-                                    </li>
-                                    <li>
-                                        <input class="input__field input__field--hoshi" name="subject"
-                                               placeholder="Subject" type="text"/>
-                                        <label
-                                                class="input__label input__label--hoshi input__label--hoshi-color-2"></label>
-                                    </li>
-                                    <li>
-                                            <textarea class="input__field input__field--hoshi" name="msg"
-                                                      placeholder="Message"></textarea><label
-                                            class="input__label input__label--hoshi input__label--hoshi-color-2"></label>
-                                    </li>
-                                    <li class="submit">
-                                        <input name="ip" type="hidden" value="212.171.145.48"/>
-                                        <a class="flat-button submit-form" href="" id="submit-form">
-                                            <div>
-                                                <span class="bg"></span> <span class="base"></span>
-                                                <span class="text">Invia!</span>
-                                            </div>
-                                        </a>
-                                        <input class="flat-button" id="submit" style="display: none" type="submit"
-                                               value="SEND"/>
-                                    </li>
-                                </ul>
-                            </form>
-                        </div>
-                    </div>
-                </section>
+            </div>
+            <div class="hero__portrait" data-reveal style="--i:4">
+                <img alt="Andrea Ferraboli" height="1077" src="img/foto-no-background.png" width="673"/>
             </div>
         </div>
+    </section>
+
+    <!-- Introduction -->
+    <section aria-labelledby="profile-name" class="section" id="section-information">
+        <div class="container">
+            <div class="profile">
+                <div class="profile__photo">
+                    <img alt="Ritratto di Andrea Ferraboli" height="2368" loading="lazy" src="img/my avatar.png" width="1300"/>
+                </div>
+                <div>
+                    <h2 class="profile__name" id="profile-name">Andrea Ferraboli</h2>
+                    <p class="profile__role">Cybersecurity Specialist, mental coach</p>
+                    <dl class="facts">
+                        <div>
+                            <dt>Age</dt>
+                            <dd id="age"></dd>
+                        </div>
+                        <div>
+                            <dt>Phone</dt>
+                            <dd><a href="tel:+393339431378">(+39) 333 9431379</a></dd>
+                        </div>
+                        <div>
+                            <dt>Email</dt>
+                            <dd><a href="mailto:andrew.ferro04@gmail.com">andrew.ferro04@gmail.com</a></dd>
+                        </div>
+                        <div>
+                            <dt>Address</dt>
+                            <dd>Via G. A. Cavellini 1, 25134, Brescia</dd>
+                        </div>
+                    </dl>
+                    <ul aria-label="Profili social" class="social">
+                        <li><a aria-label="Facebook" href="https://www.facebook.com/andrea.ferraboli.7/" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bxl-facebook"></i></a></li>
+                        <li><a aria-label="Instagram" href="https://www.instagram.com/andrea_ferraboli/" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bxl-instagram"></i></a></li>
+                        <li><a aria-label="LinkedIn" href="https://www.linkedin.com/in/andrea-ferraboli-845135188/" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bxl-linkedin"></i></a></li>
+                        <li><a aria-label="GitHub" href="https://github.com/andreaferraboli" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bxl-github"></i></a></li>
+                        <li><a aria-label="Email" href="mailto:andrew.ferro04@gmail.com"><i aria-hidden="true" class="bx bxl-gmail"></i></a></li>
+                        <li><a aria-label="Telegram" href="https://t.me/Ferro624" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bxl-telegram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="vision">
+                <p>
+                    Nel mio futuro professionale desidero unire la mia passione per la cybersecurity e
+                    l'intelligenza artificiale con ruoli che richiedano competenze di management e leadership.
+                    Voglio contribuire alla crescita dell'azienda per la quale lavoro tramite un percorso di
+                    crescita a medio-lungo termine, assumendo responsabilità crescenti. Il mio obiettivo è
+                    evolvermi continuamente, guidando team verso soluzioni sicure e innovative che creino un
+                    impatto positivo nella società.
+                </p>
+                <!-- TODO: il CV non è ancora nel repo; quando c'è, metti il percorso in href e togli aria-disabled -->
+                <a aria-disabled="true" class="btn btn--ghost" href="#" id="cv-download" role="link">
+                    Download CV <i aria-hidden="true" class="bx bx-download"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section aria-labelledby="about-title" class="section" id="section-about">
+        <div class="container about">
+            <div class="about__text">
+                <h2 class="section-title" id="about-title">Me, Myself and I</h2>
+                <p>
+                    Dal 2020 ho intrapreso un percorso per comprendere come sfruttare al meglio il potenziale
+                    personale e altrui, con l'obiettivo di liberare il potere insito in ciascuno di noi e
+                    raggiungere la qualità di vita che desideriamo e meritiamo. Il mio scopo più profondo è
+                    contribuire alla costruzione di una società migliore, formata da persone libere, sia
+                    emotivamente che economicamente, consapevoli del proprio valore e capaci di esprimere il loro
+                    naturale talento di leadership. Credo che il ruolo di un manager aziendale consista nel
+                    riconoscere che il successo di un'impresa dipende dai propri dipendenti e che ogni individuo
+                    rappresenta un universo unico da scoprire, comprendere e valorizzare.
+                </p>
+            </div>
+            <div aria-label="Parole chiave: Potenzialità, Guida, Assertività, Mentalità, Flessibilità, Apertura, Collaborazione, Individualità, Affermazione di sé, Resilienza, Risoluzione Problemi, Intelligenza Emotiva, Intelligenza Sociale, Leadership Emotiva, Integrità, Motivazione, Disciplina, Ispirazione, Decision Making, Empatia, Immersione, Successo"
+                 class="tagcloud" id="tag" role="img"></div>
+        </div>
+    </section>
+
+    <!-- Education + career -->
+    <section aria-label="Educazione e carriera" class="section" id="section-education">
+        <div class="container journey">
+            <div>
+                <h2 class="section-title">Educazione</h2>
+                <ol class="timeline">
+                    <li>
+                        <div class="timeline__period">2017-2022</div>
+                        <p class="timeline__title">Diploma istituto tecnico industriale come Tecnico Informatico</p>
+                        <a class="timeline__place" href="https://www.iiscastelli.edu.it/Pager.aspx?Page=mainpage" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bx-map-pin"></i> I.T.I.S Castelli</a>
+                    </li>
+                    <li>
+                        <div class="timeline__period">2022-2025</div>
+                        <p class="timeline__title">Laurea Triennale in Sicurezza dei sistemi e delle reti informatiche</p>
+                        <a class="timeline__place" href="https://www.unimi.it/it" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bx-map-pin"></i> Università statale di Milano</a>
+                    </li>
+                    <li>
+                        <div class="timeline__period">2023-2026</div>
+                        <p class="timeline__title">Laurea Triennale in Economia e Management</p>
+                        <a class="timeline__place" href="https://www.unimi.it/it" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bx-map-pin"></i> Università statale di Milano</a>
+                    </li>
+                    <li>
+                        <div class="timeline__period">2025-2027</div>
+                        <p class="timeline__title">Laurea Magistrale in Sicurezza dei sistemi e delle reti informatiche</p>
+                        <a class="timeline__place" href="https://www.unimi.it/it" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bx-map-pin"></i> Università statale di Milano</a>
+                    </li>
+                    <li>
+                        <div class="timeline__period">2027</div>
+                        <p class="timeline__title">Master in Cybersecurity</p>
+                        <a class="timeline__place" href="https://www.unimi.it/it" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bx-map-pin"></i> Università statale di Milano</a>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <h2 class="section-title">Carriera</h2>
+                <ol class="timeline">
+                    <li>
+                        <div class="timeline__period">2025-2026</div>
+                        <p class="timeline__title">Junior Security Analyst presso TechSecure S.p.A.</p>
+                    </li>
+                    <li>
+                        <div class="timeline__period">2026-2028</div>
+                        <p class="timeline__title">Consultant in Cybersecurity e Compliance presso BusinessSecure Consulting</p>
+                    </li>
+                    <li>
+                        <div class="timeline__period">2028-2030</div>
+                        <p class="timeline__title">IT Security Manager presso Innovatech S.r.l.</p>
+                    </li>
+                    <li>
+                        <div class="timeline__period">2030-2032</div>
+                        <p class="timeline__title">Chief Information Security Officer (CISO) presso Global Enterprises S.p.A.</p>
+                    </li>
+                    <li>
+                        <div class="timeline__period">2032</div>
+                        <p class="timeline__title">Responsabile della divisione Sicurezza Informatica e Innovazione presso TechVision Group</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section aria-labelledby="skills-title" class="section" id="section-skills">
+        <div class="container">
+            <h2 class="section-title" id="skills-title">General skills</h2>
+            <ul class="meters">
+                <li class="meter" style="--v:80%">
+                    <div class="meter__head"><span class="meter__label">Networking and System Administration</span><span class="meter__value">80%</span></div>
+                    <div aria-label="Networking and System Administration" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="meter__track" role="progressbar"><div class="meter__fill"></div></div>
+                </li>
+                <li class="meter" style="--v:80%">
+                    <div class="meter__head"><span class="meter__label">Cloud Security</span><span class="meter__value">80%</span></div>
+                    <div aria-label="Cloud Security" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="meter__track" role="progressbar"><div class="meter__fill"></div></div>
+                </li>
+                <li class="meter" style="--v:70%">
+                    <div class="meter__head"><span class="meter__label">Operating Systems and Virtual Machines</span><span class="meter__value">70%</span></div>
+                    <div aria-label="Operating Systems and Virtual Machines" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="meter__track" role="progressbar"><div class="meter__fill"></div></div>
+                </li>
+                <li class="meter" style="--v:60%">
+                    <div class="meter__head"><span class="meter__label">Blockchain Security</span><span class="meter__value">60%</span></div>
+                    <div aria-label="Blockchain Security" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="meter__track" role="progressbar"><div class="meter__fill"></div></div>
+                </li>
+                <li class="meter" style="--v:90%">
+                    <div class="meter__head"><span class="meter__label">Network Security Control</span><span class="meter__value">90%</span></div>
+                    <div aria-label="Network Security Control" aria-valuemax="100" aria-valuemin="0" aria-valuenow="90" class="meter__track" role="progressbar"><div class="meter__fill"></div></div>
+                </li>
+                <li class="meter" style="--v:90%">
+                    <div class="meter__head"><span class="meter__label">The Internet of Things</span><span class="meter__value">90%</span></div>
+                    <div aria-label="The Internet of Things" aria-valuemax="100" aria-valuemin="0" aria-valuenow="90" class="meter__track" role="progressbar"><div class="meter__fill"></div></div>
+                </li>
+                <li class="meter" style="--v:80%">
+                    <div class="meter__head"><span class="meter__label">Coding</span><span class="meter__value">80%</span></div>
+                    <div aria-label="Coding" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="meter__track" role="progressbar"><div class="meter__fill"></div></div>
+                </li>
+                <li class="meter" style="--v:80%">
+                    <div class="meter__head"><span class="meter__label">Artificial Intelligence</span><span class="meter__value">80%</span></div>
+                    <div aria-label="Artificial Intelligence" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="meter__track" role="progressbar"><div class="meter__fill"></div></div>
+                </li>
+            </ul>
+
+            <div class="tools">
+                <h3 class="subhead">Tools</h3>
+                <div aria-label="Tools" class="marquee" role="region" style="--duration:45s">
+                    <div class="marquee__track">
+                        <ul class="marquee__group">
+                            <li class="logo-tile"><img alt="Office 365" src="img/logos/office-365.svg"/></li>
+                            <li class="logo-tile"><img alt="MATLAB" src="img/logos/matlab.png"/></li>
+                            <li class="logo-tile"><img alt="Python" src="img/logos/python.svg"/></li>
+                            <li class="logo-tile"><img alt="Java" src="img/logos/java.svg"/></li>
+                            <li class="logo-tile"><img alt="JavaScript" src="img/logos/javascript.svg"/></li>
+                            <li class="logo-tile"><img alt="Windows" src="img/logos/windows.svg"/></li>
+                            <li class="logo-tile"><img alt="Linux" src="img/logos/linux-tux.png"/></li>
+                            <li class="logo-tile"><img alt="Kali Linux" src="img/logos/kali.svg"/></li>
+                            <li class="logo-tile"><img alt="MongoDB" src="img/logos/mongodb.svg"/></li>
+                            <li class="logo-tile"><img alt="Firebase" src="img/logos/firebase.svg"/></li>
+                            <li class="logo-tile"><img alt="MySQL" src="img/logos/mysql.svg"/></li>
+                            <li class="logo-tile"><img alt="PHP" src="img/logos/php.svg"/></li>
+                            <li class="logo-tile"><img alt="C" src="img/logos/c.png"/></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates -->
+    <section aria-labelledby="certs-title" class="section" id="section-certificates">
+        <div class="container">
+            <div class="worked">
+                <h2 class="subhead">Worked with</h2>
+                <div aria-label="Worked with" class="marquee marquee--wide" role="region" style="--duration:35s">
+                    <div class="marquee__track">
+                        <ul class="marquee__group">
+                            <li class="logo-tile"><img alt="IBM" src="img/logos/ibm.svg"/></li>
+                            <li class="logo-tile"><img alt="Microsoft" src="img/logos/microsoft.png"/></li>
+                            <li class="logo-tile"><img alt="Accenture" src="img/logos/accenture.png"/></li>
+                            <li class="logo-tile logo-tile--zoom"><img alt="Almaviva Digital" src="img/logos/almaviva-digital.png"/></li>
+                            <li class="logo-tile"><img alt="HP" src="img/logos/hp.svg"/></li>
+                            <li class="logo-tile"><img alt="Zucchetti" src="img/logos/zucchetti.png"/></li>
+                            <li class="logo-tile"><img alt="TeamSystem" src="img/logos/teamsystem.png"/></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" id="certs-title">Certificazioni</h2>
+            <ul class="certs">
+                <li><a class="cert" href="img/CompTIA.png" target="_blank"><span class="cert__img"><img alt="Logo CompTIA" loading="lazy" src="img/CompTIA.png"/></span><span class="cert__name">Certificazione CompTIA</span></a></li>
+                <li><a class="cert" href="img/ccna.png" target="_blank"><span class="cert__img"><img alt="Logo CCNA" loading="lazy" src="img/ccna.png"/></span><span class="cert__name">Certificazione CCNA</span></a></li>
+                <li><a class="cert" href="img/ceh.png" target="_blank"><span class="cert__img"><img alt="Logo CEH" loading="lazy" src="img/ceh.png"/></span><span class="cert__name">Certificazione CEH</span></a></li>
+                <li><a class="cert" href="img/certificato_coaching.png" target="_blank"><span class="cert__img"><img alt="Certificato di Coaching" loading="lazy" src="img/certificato_coaching.png"/></span><span class="cert__name">Certificato di Coaching</span></a></li>
+                <li><a class="cert" href="img/CISSP.png" target="_blank"><span class="cert__img"><img alt="Logo CISSP" loading="lazy" src="img/CISSP.png"/></span><span class="cert__name">Certificazione CISSP</span></a></li>
+                <li><a class="cert" href="img/oscp.png" target="_blank"><span class="cert__img"><img alt="Logo OSCP" loading="lazy" src="img/oscp.png"/></span><span class="cert__name">Certificazione OSCP</span></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Books -->
+    <section aria-labelledby="books-title" class="section" id="section-books">
+        <div class="container">
+            <div class="books-intro">
+                <div>
+                    <h2 class="section-title" id="books-title">My Books</h2>
+                    <p>
+                        Ecco a voi una serie di libri che mi hanno formato durante tutto il mio personale percorso di
+                        crescita, aiutandomi a diventare una persona migliore e trasformando le mie debolezze in punti
+                        di forza. Sei interessato a scoprirli tutti?
+                    </p>
+                </div>
+                <a class="btn" href="books.html">I miei libri</a>
+            </div>
+            <ul class="shelf">
+                <li><a class="book" href="books.html"><span class="book__body"><span class="book__back"></span><span class="book__pages"></span><span class="book__cover"><img alt="Il club delle 5 del mattino, Robin Sharma" loading="lazy" src="https://www.lafeltrinelli.it/images/9788850259397_0_536_0_75.jpg"/></span></span></a></li>
+                <li><a class="book" href="books.html"><span class="book__body"><span class="book__back"></span><span class="book__pages"></span><span class="book__cover"><img alt="Le 48 leggi del potere, Robert Greene" loading="lazy" src="https://www.lafeltrinelli.it/images/9788893881289_0_536_0_75.jpg"/></span></span></a></li>
+                <li><a class="book" href="books.html"><span class="book__body"><span class="book__back"></span><span class="book__pages"></span><span class="book__cover"><img alt="Intelligenza emotiva, Daniel Goleman" loading="lazy" src="https://www.lafeltrinelli.it/images/9788817050166_0_536_0_75.jpg"/></span></span></a></li>
+                <li><a class="book" href="books.html"><span class="book__body"><span class="book__back"></span><span class="book__pages"></span><span class="book__cover"><img alt="Come ottenere il meglio da sé e dagli altri, Tony Robbins" loading="lazy" src="https://www.lafeltrinelli.it/images/9788830103146_0_536_0_75.jpg"/></span></span></a></li>
+                <li><a class="book" href="books.html"><span class="book__body"><span class="book__back"></span><span class="book__pages"></span><span class="book__cover"><img alt="I principi del successo, Ray Dalio" loading="lazy" src="https://www.lafeltrinelli.it/images/9788820385712_0_536_0_75.jpg"/></span></span></a></li>
+                <li><a class="book" href="books.html"><span class="book__body"><span class="book__back"></span><span class="book__pages"></span><span class="book__cover"><img alt="Come migliorare il proprio stato mentale, fisico e finanziario, Tony Robbins" loading="lazy" src="https://www.lafeltrinelli.it/images/9788830104334_0_536_0_75.jpg"/></span></span></a></li>
+                <li><a class="book" href="books.html"><span class="book__body"><span class="book__back"></span><span class="book__pages"></span><span class="book__cover"><img alt="Pensa e arricchisci te stesso, Napoleon Hill" loading="lazy" src="https://www.lafeltrinelli.it/images/9788863661309_0_536_0_75.jpg"/></span></span></a></li>
+                <li><a class="book" href="books.html"><span class="book__body"><span class="book__back"></span><span class="book__pages"></span><span class="book__cover"><img alt="Abitudini per il successo milionario, Dean Graziosi" loading="lazy" src="https://www.lafeltrinelli.it/images/9788863663259_0_536_0_75.jpg"/></span></span></a></li>
+                <li><a class="book" href="books.html"><span class="book__body"><span class="book__back"></span><span class="book__pages"></span><span class="book__cover"><img alt="Come trattare gli altri e farseli amici, Dale Carnegie" loading="lazy" src="https://www.lafeltrinelli.it/images/9788830105874_0_536_0_75.jpg"/></span></span></a></li>
+                <li><a class="book" href="books.html"><span class="book__body"><span class="book__back"></span><span class="book__pages"></span><span class="book__cover"><img alt="Leadership emotiva, Daniel Goleman" loading="lazy" src="https://www.lafeltrinelli.it/images/9788817069113_0_536_0_75.jpg"/></span></span></a></li>
+                <li><a class="book" href="books.html"><span class="book__body"><span class="book__back"></span><span class="book__pages"></span><span class="book__cover"><img alt="Introduzione alla PNL, Richard Bandler, Alessio Roberti, Owen Fitzpatrick" loading="lazy" src="https://www.lafeltrinelli.it/images/9788833620671_0_536_0_75.jpg"/></span></span></a></li>
+                <li><a class="book" href="books.html"><span class="book__body"><span class="book__back"></span><span class="book__pages"></span><span class="book__cover"><img alt="A spasso per Wall Street, Burton G. Malkiel" loading="lazy" src="https://www.lafeltrinelli.it/images/9788836006182_0_536_0_75.jpg"/></span></span></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section aria-labelledby="contattami" class="section contact" id="section-contact">
+        <video aria-hidden="true" class="contact__video" loop muted playsinline preload="none">
+            <source src="img/Unbroken - Motivational Video_Trim.mp4" type="video/mp4"/>
+        </video>
+        <div class="container">
+            <div>
+                <h2 class="section-title" id="contattami">Contattami!</h2>
+                <p class="contact__lead">
+                    Concediti un minuto per <strong>CAMBIARE LA TUA VITA</strong> ed entrare nel mondo della crescita
+                    personale e del successo in ogni ambito della tua vita. Fallo per te, non tornerai più indietro!
+                </p>
+            </div>
+            <form autocomplete="off" class="form" id="contact">
+                <div class="field">
+                    <label for="f-name">Name</label>
+                    <input id="f-name" name="name" required type="text"/>
+                </div>
+                <div class="field">
+                    <label for="f-email">Email</label>
+                    <input id="f-email" name="email" required type="email"/>
+                </div>
+                <div class="field field--full">
+                    <label for="f-subject">Subject</label>
+                    <input id="f-subject" name="subject" type="text"/>
+                </div>
+                <div class="field field--full">
+                    <label for="f-msg">Message</label>
+                    <textarea id="f-msg" name="msg" required></textarea>
+                </div>
+                <input name="ip" type="hidden" value="212.171.145.48"/>
+                <div class="form__actions">
+                    <button class="btn" type="submit">Invia!</button>
+                    <p aria-live="polite" class="form__status" id="form-status"></p>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <a class="brand" href="#section-home">
+            <img alt="" height="34" loading="lazy" src="img/logo.png" width="40"/>
+            <span>Andrea Ferraboli</span>
+        </a>
+        <ul aria-label="Profili social" class="social">
+            <li><a aria-label="Facebook" href="https://www.facebook.com/andrea.ferraboli.7/" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bxl-facebook"></i></a></li>
+            <li><a aria-label="Instagram" href="https://www.instagram.com/andrea_ferraboli/" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bxl-instagram"></i></a></li>
+            <li><a aria-label="LinkedIn" href="https://www.linkedin.com/in/andrea-ferraboli-845135188/" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bxl-linkedin"></i></a></li>
+            <li><a aria-label="GitHub" href="https://github.com/andreaferraboli" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bxl-github"></i></a></li>
+            <li><a aria-label="Email" href="mailto:andrew.ferro04@gmail.com"><i aria-hidden="true" class="bx bxl-gmail"></i></a></li>
+            <li><a aria-label="Telegram" href="https://t.me/Ferro624" rel="noopener" target="_blank"><i aria-hidden="true" class="bx bxl-telegram"></i></a></li>
+        </ul>
     </div>
-    <script type="text/javascript">
-        //add age
-        function getAge(dateString) {
+</footer>
+
+<script src="js/site.js"></script>
+<script src="js/cloud.js"></script>
+<script>
+    (function () {
+        // age, from the birth date 6 Feb 2004
+        function getAge(birth) {
             var today = new Date();
-            var birthDate = new Date(dateString);
-            var age = today.getFullYear() - birthDate.getFullYear();
-            var m = today.getMonth() - birthDate.getMonth();
-            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-                age--;
-            }
+            var age = today.getFullYear() - birth.getFullYear();
+            var m = today.getMonth() - birth.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) age--;
             return age;
         }
+        document.getElementById("age").textContent = getAge(new Date(2004, 1, 6));
 
-        var myAge = '2/6/2004';
-        document.getElementById("age").innerHTML = getAge(myAge);
-
-        $(function () {
-            $(".main-menu_nav a").on('click', function () {
-                $("html,body").animate({
-                    scrollTop: $($.attr(this, 'href')).offset().top
-                }, 1000); // 500 = 0.5 second
-            });
-        });
-        $(function () {
-
-            $("#home-magicwalle").on("click", function (e) {
-                //your code here..
-                window.location.replace("books.html");
-                e.preventDefault(); //to prevent any other unwanted behavior clicking the div might cause
-            });
-
+        // CV link stays inert until a CV file is added
+        document.getElementById("cv-download").addEventListener("click", function (e) {
+            if (this.getAttribute("aria-disabled") === "true") e.preventDefault();
         });
 
-        function isScrolledIntoView(el) {
-            var rect = el.getBoundingClientRect();
-            var elemTop = rect.top;
-            var elemBottom = rect.bottom;
-
-            // Only completely visible elements return true:
-            // var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
-            // Partially visible elements return true:
-            isVisible = elemTop + 100 < window.innerHeight && elemBottom >= 0;
-            return isVisible;
+        // 3D tag cloud (js/cloud.js, used without jQuery)
+        var tag = document.getElementById("tag");
+        var narrow = window.matchMedia("(max-width: 640px)").matches;
+        var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        var labels = ["Potenzialità", "Guida", "Assertività", "Mentalità", "Flessibilità", "Apertura",
+            "Collaborazione", "Individualità", "Affermazione di sé", "Resilienza", "Risoluzione Problemi",
+            "Intelligenza Emotiva", "Intelligenza Sociale", "Leadership Emotiva", "Integrità", "Motivazione",
+            "Disciplina", "Ispirazione", "Decision Making", "Empatia", "Immersione", "Successo"];
+        if (tag && window.SVG3DTagCloud) {
+            new SVG3DTagCloud(tag, {
+                entries: labels.map(function (l) { return {label: l}; }),
+                width: "100%",
+                height: "85%",
+                radius: narrow ? "62%" : "84%",
+                radiusMin: narrow ? 60 : 100,
+                bgDraw: false,
+                opacityOver: 1.0,
+                opacityOut: 0.12,
+                opacitySpeed: 6,
+                fov: 800,
+                speed: reduce ? 0.15 : 0.6,
+                fontFamily: "Big Shoulders Display, Arial Narrow, sans-serif",
+                fontSize: narrow ? "14" : "19",
+                fontColor: "#b4141f",
+                fontWeight: "700",
+                fontToUpperCase: true
+            });
         }
 
-        function isIntoView(el) {
-            var rect = el.getBoundingClientRect();
-            var elemTop = rect.top;
-            var elemBottom = rect.bottom;
-
-            // Only completely visible elements return true:
-            var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
-            return isVisible;
-        }
-
-        // If element is scrolled into view, fade it in
-        $(window).scroll(function () {
-            $("#section-books").each(function () {
-                if (isScrolledIntoView(this) === true) {
-                    // this.style.animation = "fadeOutLeft 3s cubic-bezier(0.36, 0.07, 0.19, 0.97) both alternate-reverse ";
-                    this.style.animation = "puff-in-center 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) both";
-                }
-                if (isScrolledIntoView(this) === false)
-                    this.style.animation = "";
-
-            });
-            $(".progress-list__skill").each(function () {
-                if (isIntoView(this) === true) {
-                    let name = this.querySelectorAll("p .progress-list__skill-value ")[0].textContent.trim().replace('%', '');
-                    let temp_animation = "load_" + name + " 3s normal forwards";
-                    this.querySelectorAll("div div")[1].style.animation = temp_animation;
-                }
-            })
+        // contact form: opens the visitor's mail app with the message filled in
+        var form = document.getElementById("contact");
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            var d = new FormData(form);
+            var subject = d.get("subject") || "Contatto dal sito";
+            var body = d.get("msg") + "\n\n" + d.get("name") + " <" + d.get("email") + ">";
+            window.location.href = "mailto:andrew.ferro04@gmail.com?subject=" +
+                encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+            document.getElementById("form-status").textContent =
+                "Si apre la tua app di posta con il messaggio pronto da inviare.";
         });
-
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
-    <script src="js/color.js" type="text/javascript"></script>
-    <script>
-        $(document).ready(function () {
-            $.scrollify({
-                section: '.scroll',
-                sectionName: 'section- name',
-                easing: "easeOutExpo",
-                scrollSpeed: 1900,
-                offset: 0,
-                setHeights: true,
-                updateHash: true,
-                scrollbars: true,
-                overflowScroll: true,
-                touchScroll: true,
-            })
-        });
-
-    </script>
-</div>
-<script id="oscil" src="https://jacekjeznach.com/wp-content/themes/new/js/vendor/osciliator.js"></script>
-<script id="tagcanvas" src="https://jacekjeznach.com/wp-content/themes/new/js/vendor/tagcanvas.js"></script>
+    })();
+</script>
 </body>
-
 </html>

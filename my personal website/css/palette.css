@@ -1,11 +1,80 @@
+/*
+  Design tokens. Light is the default; dark follows the system setting
+  unless the visitor picks a theme with the toggle (stored as data-theme on <html>).
+*/
 :root {
-    /* --primary-color: #171717;
-    --secondary-color:  #e92d2d;
-    --third-color: #444444;
-    --text-color: #ededed; */
-    --primary-color: #0e0b0b;
-    --secondary-color: #d30000;
-    /* --secondary-color:    #D5212E #CB1F40; */
-    --third-color: #9ba5c9;
-    --text-color: #ffffff;
+  /* colour */
+  --paper: #eceff3;        /* page background, cool porcelain */
+  --surface: #f8f9fb;      /* cards, panels */
+  --ink: #0e1726;          /* main text, navy ink */
+  --muted: #465065;        /* secondary text (AA on paper and surface) */
+  --line: #ccd2dc;         /* hairlines and tracks */
+  --accent: #b4141f;       /* brand crimson, from the original #d30000 */
+  --accent-ink: #ffffff;   /* text on accent */
+  --accent-soft: #f6dadc;  /* tinted fills */
+  --tile: #ffffff;         /* always-white tile behind third-party logos */
+  --arch: #b4141f;         /* the red arch behind the hero portrait */
+  --shadow: 0 1px 2px rgb(14 23 38 / 0.06), 0 12px 32px -18px rgb(14 23 38 / 0.35);
+
+  /* type */
+  --font-display: "Big Shoulders Display", "Arial Narrow", sans-serif;
+  --font-body: "Newsreader", Georgia, "Times New Roman", serif;
+  --step--1: 0.875rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.25rem;
+  --step-2: 1.6rem;
+  --step-3: clamp(2rem, 1.4rem + 2.6vw, 3.25rem);
+  --step-4: clamp(2.6rem, 1.6rem + 4.4vw, 5rem);
+  --step-hero: clamp(2.25rem, 0.8rem + 4.6vw, 5.25rem);
+
+  /* space (4px base) */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4.5rem;
+  --s-9: clamp(4.5rem, 3rem + 6vw, 8rem);
+
+  --radius-s: 6px;
+  --radius-m: 14px;
+  --container: 1180px;
+  --gutter: clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
+  --header-h: 64px;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0b1220;
+    --surface: #131c2e;
+    --ink: #e7ebf2;
+    --muted: #a3adc0;
+    --line: #26324a;
+    --accent: #ff5a62;
+    --accent-ink: #1a0306;
+    --accent-soft: #3a1820;
+    --tile: #f3f5f8;
+    --arch: #c41c28;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 14px 36px -18px rgb(0 0 0 / 0.7);
+    color-scheme: dark;
   }
+}
+
+:root[data-theme="dark"] {
+  --paper: #0b1220;
+  --surface: #131c2e;
+  --ink: #e7ebf2;
+  --muted: #a3adc0;
+  --line: #26324a;
+  --accent: #ff5a62;
+  --accent-ink: #1a0306;
+  --accent-soft: #3a1820;
+  --tile: #f3f5f8;
+  --arch: #c41c28;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 14px 36px -18px rgb(0 0 0 / 0.7);
+  color-scheme: dark;
+}
