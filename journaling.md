@@ -22,3 +22,12 @@
 - Video saltato sotto 768px, con reduced-motion e save-data; tutti gli asset img/hf opzionali (provato senza cartella: fallback a gradiente).
 - Verifica: http.server + Chromium headless a 1440 e 390, chiaro e scuro, nessun errore console, nessuno scroll orizzontale, 76 libri, filtro Psicologia+Tony Robbins = 13, Discard torna a 76.
 - Aperti: in tema chiaro il vetro delle certificazioni resta bianco per i loghi; non fatta passata 21st-ui-review separata ne prova su telefono vero; restano i punti aperti del 2026-10-02.
+
+## 2026-10-12 - Immagini Higgsfield come sfondi di sezione
+- Su richiesta di Andrea le immagini di sezione (growth, security, books) passano da card con titolo a sfondi a tutta larghezza, come il video dell'hero. Asset non rigenerati ne modificati.
+- About, Skills e My Books diventano capitoli scuri in entrambi i temi: immagine cover sul lato opposto al testo, velatura scura, aurora e grana come l'hero, zoom lento e leggera parallasse (spenti con reduced-motion), niente background-attachment fixed.
+- Alternanza chiaro/scuro voluta nel tema chiaro: bordi di 72px che passano dal colore pagina al navy senza grigio; nel tema scuro sfumatura lunga. Token --chapter-fade, --chapter-mask, --chapter-dusk in palette.css.
+- About: testo in pannello di vetro, righe sotto i 56 caratteri, nuvola di parole sull'immagine; su mobile pannello a tutta larghezza e nuvola sotto. books.html: intestazione sull'immagine dei libri che sfuma prima dei filtri. Rimossi CSS e JS delle vecchie card.
+- File: index.html, books.html, css/fx.css, css/books.css, css/palette.css, js/site.js.
+- Verifica: http.server + Chromium headless a 1440, 390 e 360, chiaro e scuro, nessun errore console, nessuno scroll orizzontale, 76 libri, filtro Psicologia+Tony Robbins = 13; prova senza img/hf con fallback a gradiente. Primo giro scartato: su mobile About restava stretto e nel tema chiaro le sfumature creavano una fascia grigia, corretti nel secondo giro.
+- Aperti: su telefono l'immagine di About si vede poco sotto la velatura (fa atmosfera); prova su telefono vero non fatta.

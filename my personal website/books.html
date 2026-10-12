@@ -49,7 +49,7 @@
     <link href="css/books.css" rel="stylesheet"/>
 </head>
 
-<body>
+<body class="has-hero">
 <div aria-hidden="true" class="scroll-progress"><span></span></div>
 <div aria-hidden="true" class="grain grain--page"></div>
 <a class="skip-link" href="#main">Vai al contenuto</a>
@@ -79,16 +79,25 @@
     </div>
 </header>
 
-<main class="container library" id="main">
-    <div class="band band--books library__head" data-parallax>
-        <img alt="" class="band__img" decoding="async" fetchpriority="high" onerror="this.remove()" src="img/hf/section-books.webp"/>
-        <div class="band__title">
-            <h1 class="section-title" data-lines>My Books</h1>
-            <p class="library__lead">I libri che mi hanno formato nel percorso di crescita personale.</p>
+<main id="main">
+    <!-- page header: the books image is a full-bleed backdrop that fades into the page -->
+    <section class="chapter chapter--books page-hero" data-parallax>
+        <div aria-hidden="true" class="scene">
+            <img alt="" class="scene__img" decoding="async" fetchpriority="high" onerror="this.remove()" src="img/hf/section-books.webp"/>
+            <div class="scene__aurora"><span></span><span></span></div>
+            <div class="scene__shade"></div>
+            <div class="grain grain--scene"></div>
         </div>
-        <p aria-live="polite" class="library__count" id="books-count"></p>
-    </div>
+        <div class="container page-hero__inner">
+            <div>
+                <h1 class="section-title" data-lines>My Books</h1>
+                <p class="library__lead">I libri che mi hanno formato nel percorso di crescita personale.</p>
+            </div>
+            <p aria-live="polite" class="library__count" id="books-count"></p>
+        </div>
+    </section>
 
+    <div class="container library">
     <div class="library__layout">
         <aside aria-label="Filtri" class="library__filters">
             <details class="filters" id="filters" open>
@@ -119,6 +128,7 @@
         </aside>
 
         <section aria-labelledby="books-count" class="book-grid" id="section-books"></section>
+    </div>
     </div>
 </main>
 

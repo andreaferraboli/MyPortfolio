@@ -174,14 +174,17 @@
     </section>
 
     <!-- About -->
-    <section aria-labelledby="about-title" class="section" id="section-about">
-        <div class="container">
-            <div class="band band--growth" data-parallax>
-                <img alt="" class="band__img" decoding="async" loading="lazy" onerror="this.remove()" src="img/hf/section-growth.webp"/>
-                <div class="band__title"><h2 class="section-title" data-lines id="about-title">Me, Myself and I</h2></div>
-            </div>
-            <div class="about">
-            <div class="about__text" data-rise>
+    <!-- dark chapter: the image is the section background in both themes -->
+    <section aria-labelledby="about-title" class="section chapter chapter--growth" data-parallax id="section-about">
+        <div aria-hidden="true" class="scene">
+            <img alt="" class="scene__img" decoding="async" loading="lazy" onerror="this.remove()" src="img/hf/section-growth.webp"/>
+            <div class="scene__aurora"><span></span><span></span></div>
+            <div class="scene__shade"></div>
+            <div class="grain grain--scene"></div>
+        </div>
+        <div class="container about">
+            <div class="about__text glass-panel" data-rise>
+                <h2 class="section-title" data-lines id="about-title">Me, Myself and I</h2>
                 <p>
                     Dal 2020 ho intrapreso un percorso per comprendere come sfruttare al meglio il potenziale
                     personale e altrui, con l'obiettivo di liberare il potere insito in ciascuno di noi e
@@ -195,7 +198,6 @@
             </div>
             <div aria-label="Parole chiave: Potenzialità, Guida, Assertività, Mentalità, Flessibilità, Apertura, Collaborazione, Individualità, Affermazione di sé, Resilienza, Risoluzione Problemi, Intelligenza Emotiva, Intelligenza Sociale, Leadership Emotiva, Integrità, Motivazione, Disciplina, Ispirazione, Decision Making, Empatia, Immersione, Successo"
                  class="tagcloud" id="tag" role="img"></div>
-            </div>
         </div>
     </section>
 
@@ -261,12 +263,17 @@
     </section>
 
     <!-- Skills -->
-    <section aria-labelledby="skills-title" class="section" id="section-skills">
+    <!-- dark chapter -->
+    <section aria-labelledby="skills-title" class="section chapter chapter--security" data-parallax id="section-skills">
+        <div aria-hidden="true" class="scene">
+            <img alt="" class="scene__img" decoding="async" loading="lazy" onerror="this.remove()" src="img/hf/section-security.webp"/>
+            <div class="scene__aurora"><span></span><span></span></div>
+            <div class="scene__shade"></div>
+            <div class="grain grain--scene"></div>
+        </div>
         <div class="container">
-            <div class="band band--security" data-parallax>
-                <img alt="" class="band__img" decoding="async" loading="lazy" onerror="this.remove()" src="img/hf/section-security.webp"/>
-                <div class="band__title"><h2 class="section-title" data-lines id="skills-title">General skills</h2></div>
-            </div>
+            <div class="skills__panel">
+            <h2 class="section-title" data-lines id="skills-title">General skills</h2>
             <ul class="meters" data-stagger>
                 <li class="meter" style="--v:80%">
                     <div class="meter__head"><span class="meter__label">Networking and System Administration</span><span class="meter__value">80%</span></div>
@@ -301,6 +308,7 @@
                     <div aria-label="Artificial Intelligence" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="meter__track" role="progressbar"><div class="meter__fill"></div></div>
                 </li>
             </ul>
+            </div>
 
             <div class="tools" data-rise>
                 <h3 class="subhead">Tools</h3>
@@ -360,14 +368,18 @@
     </section>
 
     <!-- Books -->
-    <section aria-labelledby="books-title" class="section" id="section-books">
+    <!-- dark chapter, it runs into the dark contact section below -->
+    <section aria-labelledby="books-title" class="section chapter chapter--books chapter--into-dark" data-parallax id="section-books">
+        <div aria-hidden="true" class="scene">
+            <img alt="" class="scene__img" decoding="async" loading="lazy" onerror="this.remove()" src="img/hf/section-books.webp"/>
+            <div class="scene__aurora"><span></span><span></span></div>
+            <div class="scene__shade"></div>
+            <div class="grain grain--scene"></div>
+        </div>
         <div class="container">
-            <div class="band band--books" data-parallax>
-                <img alt="" class="band__img" decoding="async" loading="lazy" onerror="this.remove()" src="img/hf/section-books.webp"/>
-                <div class="band__title"><h2 class="section-title" data-lines id="books-title">My Books</h2></div>
-            </div>
             <div class="books-intro" data-rise>
                 <div>
+                    <h2 class="section-title" data-lines id="books-title">My Books</h2>
                     <p>
                         Ecco a voi una serie di libri che mi hanno formato durante tutto il mio personale percorso di
                         crescita, aiutandomi a diventare una persona migliore e trasformando le mie debolezze in punti
@@ -492,7 +504,7 @@
                 speed: reduce ? 0.15 : 0.6,
                 fontFamily: "Big Shoulders Display, Arial Narrow, sans-serif",
                 fontSize: narrow ? "14" : "19",
-                fontColor: "#b4141f",
+                fontColor: "#ff5a62", // the CSS fill (var(--accent)) wins over this attribute
                 fontWeight: "700",
                 fontToUpperCase: true
             });

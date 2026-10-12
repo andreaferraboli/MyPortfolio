@@ -1,7 +1,7 @@
 /*
   Cinematic layer (2026-10-12), loaded after style.css on both pages.
-  Hero, grain, aurora, glass tilt cards, magnetic and glowing buttons, parallax bands,
-  scroll reveals and the scroll progress bar. Every image under img/hf/ is optional:
+  Hero, dark chapters (section art as full-bleed background), grain, aurora, glass tilt
+  cards, magnetic and glowing buttons, scroll reveals and the scroll progress bar. Every image under img/hf/ is optional:
   each block has a gradient fallback, so a missing file never leaves a hole.
   Ideas ported from 21st.dev: PrismaHero (@rahil1202), Scramble Text (@kevingirelli),
   Tilt Card (@tom_ui), Spotlight (@ibelick), Magnetic Button (@mohammadshehadeh),
@@ -31,7 +31,8 @@
   mix-blend-mode: soft-light;
 }
 
-.grain--hero {
+.grain--hero,
+.grain--scene {
   z-index: -1;
   inset: -40px;
   opacity: 0.22;
@@ -199,7 +200,8 @@
   opacity: 1;
 }
 
-.hero__aurora {
+.hero__aurora,
+.scene__aurora {
   position: absolute;
   inset: 0;
   z-index: -4;
@@ -207,7 +209,8 @@
   pointer-events: none;
 }
 
-.hero__aurora span {
+.hero__aurora span,
+.scene__aurora span {
   position: absolute;
   width: 60vmax;
   height: 60vmax;
@@ -218,13 +221,15 @@
   animation: drift 22s ease-in-out infinite alternate;
 }
 
-.hero__aurora span:first-child {
+.hero__aurora span:first-child,
+.scene__aurora span:first-child {
   left: -18vmax;
   bottom: -30vmax;
   background: radial-gradient(circle, rgb(196 28 40 / 0.85), transparent 65%);
 }
 
-.hero__aurora span:last-child {
+.hero__aurora span:last-child,
+.scene__aurora span:last-child {
   right: -20vmax;
   top: -28vmax;
   background: radial-gradient(circle, rgb(60 96 190 / 0.65), transparent 65%);
@@ -457,109 +462,235 @@
   transform: none;
 }
 
-/* ---------- parallax bands with section art ---------- */
-.band {
+/* ---------- dark chapters: section art as a full-bleed background ---------- */
+.chapter {
+  /* inside a chapter the tokens turn dark in both themes, so every component follows */
+  --paper: var(--night);
+  --surface: rgb(255 255 255 / 0.06);
+  --ink: var(--night-ink);
+  --muted: var(--night-muted);
+  --line: rgb(255 255 255 / 0.18);
+  --accent: #ff5a62;
+  --accent-ink: #1a0306;
+  --accent-soft: rgb(255 90 98 / 0.16);
+  --glass: rgb(8 13 25 / 0.55);
+  --glass-line: rgb(255 255 255 / 0.12);
+  --fade: var(--chapter-fade);
+  --fade-top: var(--fade);
+  --fade-bottom: var(--fade);
+  --focus: 50% 50%;
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  min-height: clamp(220px, 10rem + 18vw, 440px);
-  margin-bottom: var(--s-7);
-  padding: clamp(1.25rem, 0.8rem + 2vw, 2.5rem);
-  border-radius: var(--radius-m);
-  color: var(--night-ink);
-  background:
-    radial-gradient(80% 120% at 88% 0%, rgb(255 70 81 / 0.55), transparent 62%),
-    radial-gradient(70% 110% at 8% 100%, rgb(52 84 160 / 0.55), transparent 62%),
-    var(--night);
-  box-shadow: var(--shadow);
+  color: var(--ink);
+  color-scheme: dark;
+  padding-block:
+    calc(var(--fade-top) + clamp(2rem, 1rem + 3vw, 4rem))
+    calc(var(--fade-bottom) + clamp(2rem, 1rem + 3vw, 4rem));
 }
 
-.band--growth {
-  background:
-    radial-gradient(80% 120% at 85% 10%, rgb(255 140 70 / 0.5), transparent 62%),
-    radial-gradient(70% 110% at 10% 100%, rgb(180 20 31 / 0.6), transparent 62%),
-    var(--night);
+.section.chapter,
+.chapter + .section {
+  border-top: 0;
 }
 
-.band--books {
-  background:
-    radial-gradient(80% 120% at 80% 0%, rgb(255 210 160 / 0.35), transparent 62%),
-    radial-gradient(70% 110% at 12% 100%, rgb(180 20 31 / 0.55), transparent 62%),
-    var(--night);
-}
-
-.band::before {
-  /* a faint grid, the security vernacular, under the art */
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -3;
-  background-image:
-    linear-gradient(rgb(255 255 255 / 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(255 255 255 / 0.05) 1px, transparent 1px);
-  background-size: 44px 44px;
-  mask-image: radial-gradient(ellipse at 70% 30%, #000 10%, transparent 75%);
-  -webkit-mask-image: radial-gradient(ellipse at 70% 30%, #000 10%, transparent 75%);
-}
-
-.band::after {
-  content: "";
+.scene {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(0deg, rgb(6 10 19 / 0.88) 0%, rgb(6 10 19 / 0.35) 48%, rgb(6 10 19 / 0) 78%);
+  overflow: hidden;
+  pointer-events: none;
+  /* gradient fallback when the image is missing; the edges dissolve into the page */
+  background:
+    radial-gradient(60% 55% at 80% 40%, rgb(255 70 81 / 0.28), transparent 70%),
+    radial-gradient(55% 50% at 15% 70%, rgb(52 84 160 / 0.32), transparent 70%),
+    var(--night);
+  /* dark theme: the edges dissolve into the page (--chapter-mask: 1); light theme paints a dusk instead */
+  --mt: calc(var(--fade-top) * var(--chapter-mask));
+  --mb: calc(var(--fade-bottom) * var(--chapter-mask));
+  mask-image: linear-gradient(180deg,
+    transparent 0, rgb(0 0 0 / 0.45) calc(var(--mt) * 0.45), #000 var(--mt),
+    #000 calc(100% - var(--mb)), rgb(0 0 0 / 0.45) calc(100% - var(--mb) * 0.45), transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg,
+    transparent 0, rgb(0 0 0 / 0.45) calc(var(--mt) * 0.45), #000 var(--mt),
+    #000 calc(100% - var(--mb)), rgb(0 0 0 / 0.45) calc(100% - var(--mb) * 0.45), transparent 100%);
 }
 
-.band__img {
+/* light theme: a short eased dusk from the paper through blue-navy, never through mid grey */
+.chapter::before,
+.chapter::after {
+  content: "";
   position: absolute;
   left: 0;
-  top: -14%;
-  z-index: -2;
+  right: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: var(--chapter-dusk);
+  --dusk: #eceff3 0%, #dde3ef 14%, #9fb0d6 34%, #4a5f94 56%, #1a2648 78%, rgb(10 15 28 / 0) 100%;
+}
+
+.chapter::before {
+  top: 0;
+  height: var(--fade-top);
+  background: linear-gradient(180deg, var(--dusk));
+}
+
+.chapter::after {
+  bottom: 0;
+  height: var(--fade-bottom);
+  background: linear-gradient(0deg, var(--dusk));
+}
+
+.scene__img {
+  /* about one viewport tall, anchored at the top: a tall section does not blow the art up,
+     and below it the scene carries on as night + aurora */
+  position: absolute;
+  left: 0;
+  top: -4%;
   width: 100%;
-  height: 128%;
+  height: min(116%, calc(max(56.25vw, 100vh) * 1.12));
   object-fit: cover;
+  mask-image: linear-gradient(180deg, #000 0%, #000 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 70%, transparent 100%);
+  object-position: var(--focus);
   transform: translate3d(0, var(--shift, 0px), 0);
+  animation: breathe 32s ease-in-out infinite alternate;
   will-change: transform;
 }
 
-.band__title {
-  position: relative;
-  min-width: 0;
+@keyframes breathe {
+  from { scale: 1.02; }
+  to { scale: 1.1; }
 }
 
-/* the generated stills leave their empty side for the title */
-.band--security,
-.band--books {
-  justify-content: flex-end;
+.scene__aurora span {
+  opacity: 0.32;
+}
+
+.scene__shade {
+  position: absolute;
+  inset: 0;
+  background: var(--shade);
+}
+
+.grain--scene {
+  opacity: 0.16;
+}
+
+.chapter--growth {
+  --focus: 62% 50%;
+  --shade:
+    linear-gradient(90deg, rgb(6 10 19 / 0.88) 0%, rgb(6 10 19 / 0.62) 45%, rgb(6 10 19 / 0.18) 78%, rgb(6 10 19 / 0.35) 100%);
+}
+
+.chapter--security {
+  --focus: 30% 50%;
+  --shade:
+    linear-gradient(270deg, rgb(6 10 19 / 0.9) 0%, rgb(6 10 19 / 0.7) 42%, rgb(6 10 19 / 0.15) 75%, rgb(6 10 19 / 0.3) 100%),
+    linear-gradient(0deg, rgb(6 10 19 / 0.8) 0%, rgb(6 10 19 / 0) 40%);
+}
+
+.chapter--books {
+  --focus: 0% 50%;
+  --shade:
+    linear-gradient(270deg, rgb(6 10 19 / 0.88) 0%, rgb(6 10 19 / 0.6) 45%, rgb(6 10 19 / 0.1) 78%, rgb(6 10 19 / 0.25) 100%),
+    linear-gradient(0deg, rgb(6 10 19 / 0.85) 0%, rgb(6 10 19 / 0) 50%);
+}
+
+/* the books chapter on the home page runs straight into the dark contact section */
+.chapter--into-dark {
+  --fade-bottom: 0px;
+}
+
+.chapter--into-dark .scene__shade {
+  background:
+    var(--shade),
+    linear-gradient(180deg, transparent 72%, #0b1220 100%);
+}
+
+.glass-panel {
+  padding: clamp(1.5rem, 1rem + 2vw, 2.75rem);
+  border: 1px solid var(--glass-line);
+  border-radius: var(--radius-m);
+  background: var(--glass);
+  backdrop-filter: blur(16px) saturate(1.3);
+  -webkit-backdrop-filter: blur(16px) saturate(1.3);
+  box-shadow: 0 30px 70px -40px rgb(0 0 0 / 0.8);
+}
+
+.chapter .about {
+  align-items: center;
+}
+
+@media (min-width: 961px) {
+  .chapter .about {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  }
+}
+
+.chapter .about__text .section-title {
+  margin-bottom: var(--s-5);
+}
+
+.chapter .about__text p {
+  font-size: var(--step-1);
+  line-height: 1.7;
+  max-width: 56ch;
+}
+
+.skills__panel {
+  width: min(100%, 48rem);
+  margin-left: auto;
+}
+
+.skills__panel .meters {
+  gap: var(--s-5) var(--s-6);
+}
+
+.chapter .meter__label {
+  color: var(--ink);
+}
+
+.chapter .books-intro {
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: start;
+  width: min(100%, 40rem);
+  margin-left: auto;
+  gap: var(--s-5);
+}
+
+.chapter .books-intro .section-title {
+  margin-bottom: var(--s-5);
+}
+
+.chapter .shelf {
+  margin-top: clamp(2rem, 1rem + 4vw, 5rem);
+}
+
+.chapter .book__cover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 0.3), 0 22px 34px -14px rgb(0 0 0 / 0.85);
+}
+
+/* books.html: the page header is a chapter that sits under the transparent header */
+.page-hero {
+  --fade-top: 0px;
+  margin-top: calc(-1 * var(--header-h));
+  padding-top: calc(var(--header-h) + clamp(4rem, 2rem + 8vw, 9rem));
+}
+
+.page-hero__inner {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--s-4) var(--s-5);
+  min-height: clamp(220px, 8rem + 14vw, 360px);
   text-align: right;
 }
 
-.band--security::after,
-.band--books::after {
-  background:
-    linear-gradient(270deg, rgb(6 10 19 / 0.7) 0%, rgb(6 10 19 / 0) 55%),
-    linear-gradient(0deg, rgb(6 10 19 / 0.8) 0%, rgb(6 10 19 / 0) 60%);
-}
-
-.band--growth .band__img {
-  object-position: 70% 50%;
-}
-
-.band .section-title {
+.page-hero__inner .section-title {
   margin: 0;
-  color: var(--night-ink);
-  text-shadow: 0 2px 30px rgb(0 0 0 / 0.35);
-}
-
-.js .band {
-  clip-path: inset(6% 3% round var(--radius-m));
-  transition: clip-path 1.2s var(--ease-out);
-}
-
-.js .band.is-in {
-  clip-path: inset(0 round var(--radius-m));
 }
 
 /* ---------- scroll reveals ---------- */
@@ -793,12 +924,22 @@
       linear-gradient(180deg, rgb(6 10 19 / 0.75) 0%, rgb(6 10 19 / 0.55) 55%, rgb(6 10 19 / 0.8) 100%);
   }
 
-  .band {
-    margin-bottom: var(--s-6);
+  /* the text spans the full width here, so the overlay evens out */
+  .chapter--growth,
+  .chapter--security,
+  .chapter--books {
+    --shade: linear-gradient(180deg, rgb(6 10 19 / 0.6) 0%, rgb(6 10 19 / 0.78) 40%, rgb(6 10 19 / 0.85) 100%);
   }
 
-  .band--security .band__img {
-    object-position: 20% 50%;
+  .chapter--growth { --focus: 70% 30%; }
+  .chapter--security { --focus: 22% 20%; }
+  .chapter--books { --focus: 22% 30%; }
+
+  .page-hero__inner {
+    text-align: left;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
   }
 }
 
@@ -810,6 +951,9 @@
 
 @media (prefers-reduced-motion: reduce) {
   .grain--hero,
+  .grain--scene,
+  .scene__img,
+  .scene__aurora span,
   .hero__aurora span,
   .hero__art,
   .section--aurora::before,
@@ -830,15 +974,12 @@
     transform: none;
   }
 
-  .js .band {
-    clip-path: none;
-  }
 
   [data-tilt] {
     transform: none !important;
   }
 
-  .band__img {
+  .scene__img {
     transform: none !important;
   }
 
