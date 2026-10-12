@@ -12,3 +12,13 @@
 - Aggiunto .github/workflows/pages.yml: a ogni push su main pubblica la cartella 'my personal website' su GitHub Pages (checkout, configure-pages, upload-pages-artifact, deploy-pages).
 - Pages attivato via API con build_type=workflow, URL https://andreaferraboli.github.io/MyPortfolio/.
 - Verifica: run del workflow su main e curl dell'URL pubblico (index, books.html, books.json).
+
+## 2026-10-12 - Effetto wow sul portfolio con asset Higgsfield
+- Asset generati con Higgsfield CLI in img/hf/: video hero 5s 1080p (Kling 3.0 pro, 677 KB), arte hero e tre immagini di sezione (GPT Image 2.5), og-cover 1200x630. 24 crediti spesi, 82 residui.
+- Hero a tutto schermo con video, aurora, grana, spotlight sul cursore, nome che si decodifica, ruoli in sequenza, bottoni magnetici con bordo animato. Card immagine con parallasse su About, Skills, My Books e books.html.
+- Reveal allo scroll, timeline che si riempie, contatori delle skill, barra di progresso, card certificazioni in vetro con tilt 3D, meta Open Graph e Twitter, canonical.
+- Nuovo css/fx.css; toccati index.html, books.html, css/palette.css, css/style.css, css/books.css, js/site.js, js/books.js. Nessuna libreria esterna.
+- Spunti 21st.dev adattati in vanilla: PrismaHero (@rahil1202), Scramble Text e Aurora (@kevingirelli), Tilt Card (@tom_ui), Spotlight (@ibelick), Magnetic Button (@mohammadshehadeh), Moving Border (@phucbm), Parallax Image (@pulkitxm), Scroll Progress (@cnippet-dev), Number Ticker (@danielpetho).
+- Video saltato sotto 768px, con reduced-motion e save-data; tutti gli asset img/hf opzionali (provato senza cartella: fallback a gradiente).
+- Verifica: http.server + Chromium headless a 1440 e 390, chiaro e scuro, nessun errore console, nessuno scroll orizzontale, 76 libri, filtro Psicologia+Tony Robbins = 13, Discard torna a 76.
+- Aperti: in tema chiaro il vetro delle certificazioni resta bianco per i loghi; non fatta passata 21st-ui-review separata ne prova su telefono vero; restano i punti aperti del 2026-10-02.

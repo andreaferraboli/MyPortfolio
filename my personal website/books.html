@@ -7,7 +7,19 @@
     <meta name="description" content="I libri che hanno formato il percorso di crescita di Andrea Ferraboli."/>
     <meta content="#eceff3" media="(prefers-color-scheme: light)" name="theme-color"/>
     <meta content="#0b1220" media="(prefers-color-scheme: dark)" name="theme-color"/>
-    <meta content="https://pbs.twimg.com/profile_images/601407094277873664/WT2mk28E_400x400.jpg" property="og:image"/>
+    <link href="https://andreaferraboli.github.io/MyPortfolio/books.html" rel="canonical"/>
+    <meta content="website" property="og:type"/>
+    <meta content="it_IT" property="og:locale"/>
+    <meta content="Andrea Ferraboli" property="og:site_name"/>
+    <meta content="My Books, Andrea Ferraboli" property="og:title"/>
+    <meta content="I libri che hanno formato il percorso di crescita di Andrea Ferraboli." property="og:description"/>
+    <meta content="https://andreaferraboli.github.io/MyPortfolio/books.html" property="og:url"/>
+    <meta content="https://andreaferraboli.github.io/MyPortfolio/img/hf/og-cover.jpg" property="og:image"/>
+    <meta content="Andrea Ferraboli, cybersecurity e crescita personale" property="og:image:alt"/>
+    <meta content="summary_large_image" name="twitter:card"/>
+    <meta content="My Books, Andrea Ferraboli" name="twitter:title"/>
+    <meta content="I libri che hanno formato il percorso di crescita di Andrea Ferraboli." name="twitter:description"/>
+    <meta content="https://andreaferraboli.github.io/MyPortfolio/img/hf/og-cover.jpg" name="twitter:image"/>
     <link href="img/logo_final.png" rel="icon" sizes="57x57"/>
 
     <script>
@@ -33,10 +45,13 @@
           rel="stylesheet"/>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/fx.css" rel="stylesheet"/>
     <link href="css/books.css" rel="stylesheet"/>
 </head>
 
 <body>
+<div aria-hidden="true" class="scroll-progress"><span></span></div>
+<div aria-hidden="true" class="grain grain--page"></div>
 <a class="skip-link" href="#main">Vai al contenuto</a>
 
 <header class="site-header">
@@ -65,8 +80,12 @@
 </header>
 
 <main class="container library" id="main">
-    <div class="library__head">
-        <h1 class="section-title">My Books</h1>
+    <div class="band band--books library__head" data-parallax>
+        <img alt="" class="band__img" decoding="async" fetchpriority="high" onerror="this.remove()" src="img/hf/section-books.webp"/>
+        <div class="band__title">
+            <h1 class="section-title" data-lines>My Books</h1>
+            <p class="library__lead">I libri che mi hanno formato nel percorso di crescita personale.</p>
+        </div>
         <p aria-live="polite" class="library__count" id="books-count"></p>
     </div>
 
