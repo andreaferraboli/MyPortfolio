@@ -1,6 +1,6 @@
 /* Shared behaviour for index.html and books.html. No dependencies.
    The cinematic layer (2026-10-12) adds: header over the hero, scroll progress, scroll
-   reveals, parallax bands, timeline fill, hero video/spotlight/scramble, magnetic buttons,
+   reveals, parallax chapter backgrounds, timeline fill, hero video/spotlight/scramble, magnetic buttons,
    tilt cards and meter counters. Everything is skipped with prefers-reduced-motion,
    and pointer effects only run with a fine pointer. */
 (function () {
@@ -37,12 +37,13 @@
   /* ---- header: transparent over the hero, solid after it ---- */
   var header = document.querySelector(".site-header");
   var hero = document.querySelector(".hero");
+  var pageHero = hero || document.querySelector(".page-hero");
   var menuOpen = false;
   function syncHeader() {
     if (!header) return;
     var solid = true;
-    if (hero && !menuOpen) {
-      solid = hero.getBoundingClientRect().bottom <= header.offsetHeight + 1;
+    if (pageHero && !menuOpen) {
+      solid = pageHero.getBoundingClientRect().bottom <= header.offsetHeight + 1;
     }
     header.classList.toggle("is-solid", solid);
     header.classList.toggle("is-over", !solid && window.scrollY > 8);
@@ -98,7 +99,7 @@
     });
   });
 
-  var revealSel = ".hero, .meters, .band, [data-lines], [data-rise], [data-stagger]";
+  var revealSel = ".hero, .meters, [data-lines], [data-rise], [data-stagger]";
 
   if (!("IntersectionObserver" in window)) {
     document.querySelectorAll(revealSel).forEach(function (el) {
@@ -175,7 +176,7 @@
   var parallax = [];
   var visible = new Set();
   document.querySelectorAll("[data-parallax]").forEach(function (el) {
-    var img = el.querySelector(".band__img");
+    var img = el.querySelector(".scene__img");
     if (img) parallax.push({ el: el, img: img });
   });
   var timelines = Array.prototype.slice.call(document.querySelectorAll(".timeline"));
@@ -212,9 +213,10 @@
       parallax.forEach(function (p) {
         if (!visible.has(p.el) || !p.img.isConnected) return;
         var r = p.el.getBoundingClientRect();
-        // -1 when the band enters at the bottom, 1 when it leaves at the top
+        // -1 when the section enters at the bottom, 1 when it leaves at the top
         var t = (r.top + r.height / 2 - vh / 2) / (vh / 2 + r.height / 2);
-        p.img.style.setProperty("--shift", (t * r.height * 0.12).toFixed(1) + "px");
+        // small drift only: the image has a few % of slack above and fades out at the bottom
+        p.img.style.setProperty("--shift", (t * Math.min(r.height, window.innerHeight) * 0.04).toFixed(1) + "px");
       });
 
       timelines.forEach(function (tl) {
