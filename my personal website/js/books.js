@@ -34,9 +34,9 @@
         return array;
     }
 
-    function bookCard(book) {
+    function bookCard(book, i) {
         return (
-            '<article class="book-card">' +
+            '<article class="book-card" style="--i:' + Math.min(i, 14) + '">' +
             '<div class="book book--sm" aria-hidden="true"><span class="book__body">' +
             '<span class="book__back"></span><span class="book__pages"></span>' +
             '<span class="book__cover"><img src="' + esc(book.copertina) + '" alt="" loading="lazy" decoding="async"></span>' +

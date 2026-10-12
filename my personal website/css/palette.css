@@ -44,6 +44,19 @@
   --gutter: clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
   --header-h: 64px;
 
+  /* cinematic layer (added 2026-10-12): the hero stays dark in both themes */
+  --night: #060a13;                 /* hero base, deeper than the dark paper */
+  --night-ink: #f2f4f8;             /* text on the hero */
+  --night-muted: #b9c1cf;           /* secondary text on the hero */
+  --ember: #ff4651;                 /* glow colour, a lit version of the crimson */
+  --glow: rgb(255 70 81 / 0.22);    /* cursor spotlight on the hero */
+  --aurora-a: rgb(180 20 31 / 0.20);
+  --aurora-b: rgb(52 84 160 / 0.16);
+  --glass: rgb(255 255 255 / 0.55);
+  --glass-line: rgb(255 255 255 / 0.75);
+  --grain-opacity: 0.07;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
   color-scheme: light;
 }
 
@@ -60,6 +73,11 @@
     --tile: #f3f5f8;
     --arch: #c41c28;
     --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 14px 36px -18px rgb(0 0 0 / 0.7);
+    --aurora-a: rgb(255 90 98 / 0.16);
+    --aurora-b: rgb(70 110 210 / 0.16);
+    --glass: rgb(19 28 46 / 0.55);
+    --glass-line: rgb(255 255 255 / 0.10);
+    --grain-opacity: 0.09;
     color-scheme: dark;
   }
 }
@@ -76,5 +94,10 @@
   --tile: #f3f5f8;
   --arch: #c41c28;
   --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 14px 36px -18px rgb(0 0 0 / 0.7);
+  --aurora-a: rgb(255 90 98 / 0.16);
+  --aurora-b: rgb(70 110 210 / 0.16);
+  --glass: rgb(19 28 46 / 0.55);
+  --glass-line: rgb(255 255 255 / 0.10);
+  --grain-opacity: 0.09;
   color-scheme: dark;
 }

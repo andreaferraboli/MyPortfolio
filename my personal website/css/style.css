@@ -355,109 +355,7 @@ a:hover {
   color: var(--accent-ink);
 }
 
-/* ---------- hero ---------- */
-.hero {
-  position: relative;
-  overflow: hidden;
-  padding-top: clamp(2.5rem, 1rem + 5vw, 5rem);
-}
-
-.hero .container {
-  display: grid;
-  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
-  align-items: end;
-  gap: var(--s-6);
-}
-
-.hero__text {
-  padding-bottom: clamp(3rem, 2rem + 4vw, 6rem);
-  min-width: 0;
-}
-
-.hero__name {
-  font-size: var(--step-2);
-  font-weight: 700;
-  color: var(--accent);
-  letter-spacing: 0.02em;
-  margin-bottom: var(--s-4);
-}
-
-.hero__roles {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: var(--step-hero);
-  line-height: 0.9;
-  letter-spacing: -0.005em;
-}
-
-.hero__roles li {
-  display: block;
-}
-
-.hero__roles li:nth-child(even) {
-  color: transparent;
-  -webkit-text-stroke: 1.5px var(--ink);
-}
-
-.hero__quote {
-  margin-top: var(--s-6);
-  max-width: 34ch;
-  font-size: var(--step-1);
-  font-style: italic;
-  line-height: 1.45;
-  color: var(--muted);
-}
-
-.hero__cta {
-  margin-top: var(--s-6);
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--s-3);
-}
-
-.hero__portrait {
-  position: relative;
-  align-self: end;
-  justify-self: center;
-  width: min(100%, 440px);
-}
-
-.hero__portrait::before {
-  /* the arch: a classical frame for the cut-out portrait */
-  content: "";
-  position: absolute;
-  inset: 14% 4% 0 4%;
-  border-radius: 999px 999px 0 0;
-  background: var(--arch);
-}
-
-.hero__portrait img {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-/* load sequence (ported from the 21st.dev "Portfolio Hero" BlurText) */
-.js .hero [data-reveal] {
-  opacity: 0;
-  filter: blur(10px);
-  transform: translateY(-0.25em);
-  transition: opacity 0.6s ease-out, filter 0.6s ease-out, transform 0.6s ease-out;
-  transition-delay: calc(var(--i, 0) * 110ms);
-}
-
-.js .hero.is-in [data-reveal] {
-  opacity: 1;
-  filter: blur(0);
-  transform: none;
-}
-
-.js .hero .hero__portrait[data-reveal] {
-  transform: translateY(24px);
-}
+/* ---------- hero: see fx.css ---------- */
 
 /* ---------- intro / profile ---------- */
 .profile {
@@ -1071,18 +969,6 @@ html:not(.js) .marquee__group {
 
 /* ---------- responsive ---------- */
 @media (max-width: 960px) {
-  .hero .container {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .hero__text {
-    padding-bottom: var(--s-4);
-  }
-
-  .hero__portrait {
-    width: min(78%, 360px);
-  }
-
   .profile,
   .about,
   .journey,
@@ -1139,23 +1025,6 @@ html:not(.js) .marquee__group {
 
   .brand span {
     font-size: 1.2rem;
-  }
-
-  .hero__roles {
-    font-size: clamp(2.5rem, 11vw, 3.25rem);
-    line-height: 0.92;
-  }
-
-  .hero__roles li:nth-child(even) {
-    -webkit-text-stroke-width: 1.2px;
-  }
-
-  .hero .container {
-    gap: 0;
-  }
-
-  .hero__portrait {
-    margin-top: calc(-1 * var(--s-6));
   }
 
   .profile__photo {
